@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useTranslations } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 
 export default function GSASection() {
   const t = useTranslations('gsa');
@@ -14,46 +15,74 @@ export default function GSASection() {
   ];
 
   return (
-    <section className="section-md gradient-primary text-white">
-      <div className="container text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="display-serif text-white text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6">
-            {t('title')}
-          </h2>
-          <p className="text-base md:text-xl text-gray-200 mb-3 md:mb-4">
-            {t('subtitle')}
-          </p>
-          <p className="text-sm md:text-base text-gray-300 mb-8 md:mb-10 px-4">
-            {t('description')}
-          </p>
+    <section id="network" className="min-h-screen flex items-center section-md bg-[#070612] relative overflow-hidden py-32">
+      {/* Expansive Background Gradient Blob */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-[#0A2463]/10 rounded-full blur-[180px] pointer-events-none opacity-50" />
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-10">
+      <div className="container relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-10 md:gap-20"
+          >
+            <div className="flex-1">
+                <h2 className="display-serif text-white text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight">
+                {t('title')}
+                </h2>
+                <p className="text-xl md:text-2xl text-white/50 font-light">
+                {t('subtitle')}
+                </p>
+            </div>
+            <div className="flex-1 md:max-w-lg">
+                <p className="text-base md:text-lg text-white/40 leading-relaxed font-light">
+                {t('description')}
+                </p>
+            </div>
+          </motion.div>
+
+          {/* Minimalist Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-20 md:mb-28">
             {routes.map((route, index) => (
-              <div
+              <motion.div
                 key={route.key}
-                className={`bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-3 md:p-4 hover-lift-glow animate-pulse-glow opacity-0 animate-fade-in-up stagger-${index + 1}`}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                className="glass-panel glass-panel-hover rounded-3xl p-8 md:p-10 flex flex-col justify-between items-start h-[180px] md:h-[220px]"
               >
-                <div className="text-accent-foreground font-bold text-sm md:text-lg">
+                <div className="text-white font-serif font-bold text-lg md:text-xl mb-3 tracking-wide">
                   {t(`routes.${route.key}`) || route.label}
                 </div>
-                <div className="text-xs md:text-sm text-gray-300 mt-1">
-                  {t('routes.dailyService') || 'Daily Service'}
+                <div className="h-0.5 w-8 bg-[#FF6B35]/50 mb-3" />
+                <div className="text-xs md:text-sm text-white/30 uppercase tracking-widest">
+                  {t('routes.dailyService') || 'Daily'}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          <Link href="/network-solutions" className="btn btn-primary btn-large group">
-            <span>{t('cta')}</span>
-            <svg 
-              className="w-5 h-5 inline-block ml-2 transition-transform group-hover:translate-x-1" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <Link href="/network-solutions" className="group inline-flex items-center justify-center px-10 py-5 rounded-full bg-white text-[#070612] text-sm font-bold uppercase tracking-wider hover:bg-[#FF6B35] hover:text-white transition-all duration-300">
+              <span>{t('cta')}</span>
+              <svg 
+                className="w-4 h-4 ml-3 transition-transform group-hover:translate-x-1" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>

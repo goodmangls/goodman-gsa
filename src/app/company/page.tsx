@@ -61,13 +61,13 @@ export default function CompanyPage() {
                   </h2>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      Welcome to GOODMAN GLS. Since our founding in 2004, we've built our reputation on a simple principle: <strong>trust through action</strong>.
+                      Welcome to GOODMAN GLS. Since our founding in 2004, we&apos;ve built our reputation on a simple principle: <strong>trust through action</strong>.
                     </p>
                     <p>
-                      While we may not be the largest forwarder, we are strategically positioned as Korea's gateway to global logistics. Our membership in WCA, MPL, and EAN networks, combined with our GSA/CSA airline partnerships, gives us capabilities that rival companies many times our size.
+                      While we may not be the largest forwarder, we are strategically positioned as Korea&apos;s gateway to global logistics. Our membership in WCA, MPL, and EAN networks, combined with our GSA/CSA airline partnerships, gives us capabilities that rival companies many times our size.
                     </p>
                     <p>
-                      Our team of logistics professionals brings decades of combined experience in time-critical air freight, complex ocean shipments, and specialized project cargo. We understand that in logistics, every shipment carries not just cargo, but our clients' trust and reputation.
+                      Our team of logistics professionals brings decades of combined experience in time-critical air freight, complex ocean shipments, and specialized project cargo. We understand that in logistics, every shipment carries not just cargo, but our clients&apos; trust and reputation.
                     </p>
                     <p className="font-semibold" style={{ color: 'var(--color-primary-700)' }}>
                       Thank you for considering GOODMAN GLS as your strategic partner in Korea and beyond.
@@ -146,7 +146,7 @@ export default function CompanyPage() {
                 People-Centered Logistics
               </h3>
               <p className="text-gray-700 max-w-2xl mx-auto">
-                We believe logistics is fundamentally a people business. Behind every shipment is a relationship built on trust, communication, and reliability. That's why we invest in our team's expertise and empower them to make decisions that serve our clients' best interests.
+                We believe logistics is fundamentally a people business. Behind every shipment is a relationship built on trust, communication, and reliability. That&apos;s why we invest in our team&apos;s expertise and empower them to make decisions that serve our clients&apos; best interests.
               </p>
             </div>
           </div>
