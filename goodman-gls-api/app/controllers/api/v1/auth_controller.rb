@@ -83,7 +83,7 @@ module Api
       def reset_password
         user = User.find_by(password_reset_token: params[:token])
 
-        unless user && user.password_reset_sent_at > 2.hours.ago
+        unless user && user.password_reset_sent_at&.>(2.hours.ago)
           return render json: { error: { code: "INVALID_TOKEN", message: "Invalid or expired reset token" } }, status: :unprocessable_entity
         end
 

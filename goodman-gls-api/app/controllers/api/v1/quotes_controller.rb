@@ -93,7 +93,7 @@ module Api
         if current_user.admin?
           params.permit(:status, :notes, :quoted_rate, :currency, :valid_until, :responded_by)
         else
-          params.permit(:status, :notes)
+          params.permit(:notes)
         end
       end
 

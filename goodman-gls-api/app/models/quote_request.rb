@@ -11,6 +11,7 @@ class QuoteRequest < ApplicationRecord
   validates :origin, :destination, :cargo_details, presence: true
   validates :status, inclusion: { in: STATUSES }
   validates :guest_name, :guest_email, presence: true, if: :is_guest?
+  validates :reference_no, uniqueness: true, allow_nil: true
 
   before_create :generate_reference_no
 
@@ -19,9 +20,16 @@ class QuoteRequest < ApplicationRecord
   private
 
   def generate_reference_no
-    year = Date.current.year
-    last = QuoteRequest.where("reference_no LIKE ?", "GQ-#{year}-%").maximum(:reference_no)
-    seq = last ? last.split("-").last.to_i + 1 : 1
-    self.reference_no = format("GQ-%d-%04d", year, seq)
+    retries = 0
+    begin
+      year = Date.current.year
+      last = QuoteRequest.where("reference_no LIKE ?", "GQ-#{year}-%").maximum(:reference_no)
+      seq = last ? last.split("-").last.to_i + 1 : 1
+      self.reference_no = format("GQ-%d-%04d", year, seq + retries)
+    rescue ActiveRecord::RecordNotUnique
+      retries += 1
+      retry if retries < 5
+      raise
+    end
   end
 end

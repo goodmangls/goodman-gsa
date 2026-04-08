@@ -17,7 +17,16 @@ module Api
       # PATCH /api/v1/users/:id
       def update
         user = User.find(params[:id])
-        if user.update(params.permit(:name, :role, :status))
+        permitted = params.permit(:name, :role, :status)
+
+        if permitted[:role].present?
+          allowed_roles = current_user.role == "super_admin" ? User::ROLES : User::ROLES - ["super_admin"]
+          unless allowed_roles.include?(permitted[:role])
+            return render json: { error: { code: "FORBIDDEN", message: "Cannot assign role: #{permitted[:role]}" } }, status: :forbidden
+          end
+        end
+
+        if user.update(permitted)
           render json: admin_user_json(user)
         else
           render json: { error: { code: "VALIDATION_ERROR", message: user.errors.full_messages.join(", ") } }, status: :unprocessable_entity

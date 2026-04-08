@@ -27,5 +27,4 @@ Rails.application.routes.draw do
     end
   end
 
-  match "*path", to: "application#set_cors_headers", via: :options
 end
