@@ -101,7 +101,7 @@ export default function PortalSidebar() {
     return pathname?.startsWith(href);
   };
 
-  const SidebarContent = () => (
+  const sidebarContent = (
     <div className="flex flex-col h-full">
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5 border-b border-white/10">
@@ -230,7 +230,7 @@ export default function PortalSidebar() {
         transition={{ duration: 0.3, ease: [0.215, 0.61, 0.355, 1] }}
         className="hidden lg:flex flex-col h-screen sticky top-0 border-r border-white/10 bg-[#070612]/60 backdrop-blur-xl z-40 flex-shrink-0"
       >
-        <SidebarContent />
+        {sidebarContent}
         {/* Collapse toggle */}
         <button
           onClick={() => setCollapsed(!collapsed)}
@@ -276,7 +276,7 @@ export default function PortalSidebar() {
               transition={{ duration: 0.3, ease: [0.215, 0.61, 0.355, 1] }}
               className="lg:hidden fixed left-0 top-0 bottom-0 w-[280px] bg-[#070612] border-r border-white/10 z-50"
             >
-              <SidebarContent />
+              {sidebarContent}
             </motion.aside>
           </>
         )}

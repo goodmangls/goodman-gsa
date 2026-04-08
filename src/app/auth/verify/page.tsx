@@ -47,7 +47,8 @@ function VerifyContent() {
 
   useEffect(() => {
     if (token) {
-      verifyEmail();
+      const id = requestAnimationFrame(() => verifyEmail());
+      return () => cancelAnimationFrame(id);
     }
   }, [token, verifyEmail]);
 

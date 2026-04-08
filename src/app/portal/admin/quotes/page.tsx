@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import Link from 'next/link';
 import { useTranslations } from '@/contexts/LanguageContext';
 import QuoteCard from '@/components/quotes/QuoteCard';
 import QuoteFilters from '@/components/quotes/QuoteFilters';

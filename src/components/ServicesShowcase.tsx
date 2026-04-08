@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from '@/contexts/LanguageContext';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FaPlane, FaShip, FaBoxOpen, FaScrewdriverWrench, FaArrowRight } from 'react-icons/fa6';

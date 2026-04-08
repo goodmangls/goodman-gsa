@@ -98,7 +98,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 export function useToast() {
   const context = useContext(ToastContext);
   if (!context) {
-    return { toast: (message: string, _type?: ToastType) => { console.warn('ToastProvider missing:', message); } };
+    return { toast: (message: string, _type?: ToastType) => { void _type; console.warn('ToastProvider missing:', message); } };
   }
   return context;
 }

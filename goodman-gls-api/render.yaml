@@ -1,0 +1,34 @@
+databases:
+  - name: goodman-gls-db
+    databaseName: goodman_gls_api
+    user: goodman_gls
+    plan: starter
+    region: oregon
+
+services:
+  - type: web
+    name: goodman-gls-api
+    runtime: ruby
+    rootDir: goodman-gls-api
+    buildCommand: "bundle install && bundle exec rails db:prepare"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    plan: starter
+    region: oregon
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: goodman-gls-db
+          property: connectionString
+      - key: SECRET_KEY_BASE
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: 'https://goodman-gls.vercel.app'
+      - key: FRONTEND_URL
+        value: 'https://goodman-gls.vercel.app'
+      - key: SENDGRID_API_KEY
+        sync: false
+      - key: CONTACT_EMAIL_TO
+        value: 'info@goodmangls.com'
+    healthCheckPath: /up
