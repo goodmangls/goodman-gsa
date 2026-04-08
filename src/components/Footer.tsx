@@ -26,6 +26,30 @@ function EanBadge() {
   return <div ref={containerRef} className="inline-flex items-center" />;
 }
 
+function MplBadge() {
+  return (
+    <a
+      href="https://www.marcopololine.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group inline-flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+    >
+      {/* MPL Shield Icon */}
+      <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+        <path d="M18 0L35 8V20C35 30.5 27.5 37.5 18 40C8.5 37.5 1 30.5 1 20V8L18 0Z" fill="#0A2463" fillOpacity="0.3" stroke="#4A90D9" strokeWidth="1.5"/>
+        <path d="M18 4L32 10.5V20C32 28.8 25.8 34.8 18 37C10.2 34.8 4 28.8 4 20V10.5L18 4Z" fill="#0A2463" fillOpacity="0.5"/>
+        <text x="18" y="18" textAnchor="middle" fill="#4A90D9" fontSize="8" fontWeight="700" fontFamily="system-ui">MPL</text>
+        <text x="18" y="27" textAnchor="middle" fill="white" fillOpacity="0.6" fontSize="4.5" fontFamily="system-ui">MEMBER</text>
+        <text x="18" y="33" textAnchor="middle" fill="white" fillOpacity="0.4" fontSize="3.5" fontFamily="system-ui">MarcoPoloLine</text>
+      </svg>
+      <div className="text-left">
+        <div className="text-xs font-bold text-white/80 group-hover:text-white transition-colors">MarcoPoloLine</div>
+        <div className="text-[10px] text-white/40">Certified Member</div>
+      </div>
+    </a>
+  );
+}
+
 export default function Footer() {
   return (
     <footer className="bg-[#070612] text-white border-t border-white/5 relative z-10">
@@ -135,15 +159,13 @@ export default function Footer() {
         {/* Memberships & Certifications */}
         <div className="border-t border-white/10 pt-10 mb-10">
           <div className="flex flex-col items-center gap-6 text-sm">
-            <span className="font-semibold text-white/40">Proud Member of:</span>
+            <span className="font-semibold text-white/40 uppercase tracking-wider text-xs">Memberships & Certifications</span>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              {['MPL', 'IATA Certified'].map((item) => (
-                <span key={item} className="px-5 py-2.5 bg-white/5 backdrop-blur-sm border border-white/5 hover:bg-white/10 transition-all rounded-full font-semibold text-xs md:text-sm text-white/70">
-                  {item}
-                </span>
-              ))}
+              <MplBadge />
+              <span className="px-5 py-3 bg-white/5 border border-white/10 rounded-xl font-semibold text-xs text-white/60">
+                IATA Certified Agent
+              </span>
             </div>
-            {/* EAN Certification Badge (auto-updating widget) */}
             <EanBadge />
           </div>
         </div>
