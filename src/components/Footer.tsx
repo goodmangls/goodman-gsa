@@ -26,29 +26,6 @@ function EanBadge() {
   return <div ref={containerRef} className="inline-flex items-center" />;
 }
 
-function MplBadge() {
-  return (
-    <a
-      href="https://www.marcopololine.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group inline-flex items-center gap-3 px-5 py-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-    >
-      {/* MPL Shield Icon */}
-      <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-        <path d="M18 0L35 8V20C35 30.5 27.5 37.5 18 40C8.5 37.5 1 30.5 1 20V8L18 0Z" fill="#0A2463" fillOpacity="0.3" stroke="#4A90D9" strokeWidth="1.5"/>
-        <path d="M18 4L32 10.5V20C32 28.8 25.8 34.8 18 37C10.2 34.8 4 28.8 4 20V10.5L18 4Z" fill="#0A2463" fillOpacity="0.5"/>
-        <text x="18" y="18" textAnchor="middle" fill="#4A90D9" fontSize="8" fontWeight="700" fontFamily="system-ui">MPL</text>
-        <text x="18" y="27" textAnchor="middle" fill="white" fillOpacity="0.6" fontSize="4.5" fontFamily="system-ui">MEMBER</text>
-        <text x="18" y="33" textAnchor="middle" fill="white" fillOpacity="0.4" fontSize="3.5" fontFamily="system-ui">MarcoPoloLine</text>
-      </svg>
-      <div className="text-left">
-        <div className="text-xs font-bold text-white/80 group-hover:text-white transition-colors">MarcoPoloLine</div>
-        <div className="text-[10px] text-white/40">Certified Member</div>
-      </div>
-    </a>
-  );
-}
 
 export default function Footer() {
   return (
@@ -158,15 +135,47 @@ export default function Footer() {
 
         {/* Memberships & Certifications */}
         <div className="border-t border-white/10 pt-10 mb-10">
-          <div className="flex flex-col items-center gap-6 text-sm">
-            <span className="font-semibold text-white/40 uppercase tracking-wider text-xs">Memberships & Certifications</span>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <MplBadge />
-              <span className="px-5 py-3 bg-white/5 border border-white/10 rounded-xl font-semibold text-xs text-white/60">
-                IATA Certified Agent
-              </span>
+          <span className="block text-center font-semibold text-white/40 uppercase tracking-wider text-xs mb-6">Memberships & Certifications</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {/* MPL Badge */}
+            <a
+              href="https://www.marcopololine.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+            >
+              <svg width="48" height="54" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <path d="M18 0L35 8V20C35 30.5 27.5 37.5 18 40C8.5 37.5 1 30.5 1 20V8L18 0Z" fill="#0A2463" fillOpacity="0.3" stroke="#4A90D9" strokeWidth="1.5"/>
+                <path d="M18 4L32 10.5V20C32 28.8 25.8 34.8 18 37C10.2 34.8 4 28.8 4 20V10.5L18 4Z" fill="#0A2463" fillOpacity="0.5"/>
+                <text x="18" y="18" textAnchor="middle" fill="#4A90D9" fontSize="8" fontWeight="700" fontFamily="system-ui">MPL</text>
+                <text x="18" y="27" textAnchor="middle" fill="white" fillOpacity="0.6" fontSize="4.5" fontFamily="system-ui">MEMBER</text>
+              </svg>
+              <div>
+                <div className="text-sm font-bold text-white/80 group-hover:text-white transition-colors">MarcoPoloLine</div>
+                <div className="text-xs text-white/40 mt-0.5">Certified Member</div>
+                <div className="text-[10px] text-white/30 mt-1">Global Logistics Network</div>
+              </div>
+            </a>
+
+            {/* IATA Badge */}
+            <div className="flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-2xl">
+              <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <rect x="1" y="1" width="46" height="52" rx="8" fill="#003F72" fillOpacity="0.3" stroke="#0078D4" strokeWidth="1.5"/>
+                <text x="24" y="24" textAnchor="middle" fill="#0078D4" fontSize="11" fontWeight="700" fontFamily="system-ui">IATA</text>
+                <text x="24" y="36" textAnchor="middle" fill="white" fillOpacity="0.6" fontSize="5" fontFamily="system-ui">CERTIFIED</text>
+                <text x="24" y="44" textAnchor="middle" fill="white" fillOpacity="0.4" fontSize="4" fontFamily="system-ui">AGENT</text>
+              </svg>
+              <div>
+                <div className="text-sm font-bold text-white/80">IATA</div>
+                <div className="text-xs text-white/40 mt-0.5">Certified Agent</div>
+                <div className="text-[10px] text-white/30 mt-1">Accredited Standards</div>
+              </div>
             </div>
-            <EanBadge />
+
+            {/* EAN Badge */}
+            <div className="flex items-center p-5 bg-white/5 border border-white/10 rounded-2xl min-h-[88px]">
+              <EanBadge />
+            </div>
           </div>
         </div>
 
