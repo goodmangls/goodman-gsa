@@ -1,0 +1,162 @@
+# Completion Report: goodman-gls-api
+
+> Rails 8 API 백엔드 마이그레이션 — Next.js API Routes + Prisma + NextAuth에서 전환
+
+---
+
+## 1. Overview
+
+| Item | Detail |
+|------|--------|
+| **Feature** | goodman-gls-api |
+| **Date** | 2026-04-08 |
+| **Type** | Architecture Migration |
+| **Match Rate** | 100% |
+| **Commits** | 6건 |
+| **Files Created** | 40+ (Rails API) |
+| **Files Removed** | 15+ (NextAuth, Prisma, API Routes) |
+| **Packages Removed** | 7 (next-auth, prisma, @prisma/client, @auth/prisma-adapter, bcryptjs, resend, @types/bcryptjs) |
+
+---
+
+## 2. What Changed
+
+### Before (Next.js Monolith)
+```
+Next.js 16 + Prisma + NextAuth v5 + Resend
+├── src/app/api/auth/    (NextAuth + custom routes)
+├── src/app/api/quotes/  (Next.js API routes)
+├── src/app/api/contact/ (Next.js API route)
+├── src/lib/auth/        (NextAuth config)
+├── src/lib/db.ts        (Prisma client)
+├── src/lib/email/       (Resend email)
+└── prisma/schema.prisma (DB schema)
+```
+
+### After (Frontend + Rails API)
+```
+Next.js 16 (Frontend only)          Rails 8 API-only (Backend)
+├── src/contexts/AuthContext.tsx     ├── app/controllers/api/v1/ (5 controllers)
+├── src/lib/apiClient.ts            ├── app/models/ (4 models)
+├── src/lib/authStorage.ts          ├── app/mailers/ (2 mailers)
+└── No API routes, Prisma, NextAuth └── goodman-gls-api/ (standalone)
+```
+
+---
+
+## 3. Phase Breakdown
+
+### Phase 1: Rails 프로젝트 생성
+- `rails new goodman-gls-api --api --database=postgresql --skip-thruster`
+- Gemfile: bcrypt, jwt, rack-cors, kaminari, rspec
+- DB Migrations: 4 tables (users, companies, quote_requests, contact_messages)
+- JWT concern (smart-quote 패턴 재사용)
+- CORS: `CORS_ORIGINS` 환경변수 기반
+
+### Phase 2: 인증 API
+- AuthController: 7 actions (register, login, me, refresh, verify-email, forgot-password, reset-password)
+- User model: `has_secure_password`, role/status enum, email verification
+- UserMailer: verification + password_reset (HTML + text)
+- 보안: 이메일 열거 방지, 2시간 토큰 만료, pending 상태 로그인 차단
+
+### Phase 3: 비즈니스 API
+- QuotesController: CRUD + guest public endpoint (GQ-YYYY-NNNN 자동 채번)
+- ContactController: 저장 + ContactMailer 발송
+- CompaniesController: 사용자 회사 정보 (singular resource)
+- UsersController: Admin 전용 사용자 관리
+- seeds.rb: super_admin 유저
+
+### Phase 4: 프론트엔드 전환
+- AuthContext.tsx: JWT login/signup/logout, 14분 auto-refresh
+- authStorage.ts: access token (memory) + refresh token (localStorage)
+- apiClient.ts: 중앙 API 클라이언트, 401 자동 refresh
+- Providers.tsx: SessionProvider → AuthProvider
+- Login/Portal: signIn/useSession → useAuth()
+- Portal layout: 서버사이드 auth → 클라이언트 AuthGuard
+- middleware.ts: passthrough (JWT는 클라이언트 전용)
+
+### Phase 5: 정리 & 배포 설정
+- npm uninstall: 7개 패키지 제거
+- 파일 삭제: prisma/, src/lib/auth/, src/lib/db.ts, src/lib/email/, next-auth.d.ts, src/app/api/ 전체
+- postinstall 스크립트 제거
+- render.yaml 작성 (Starter plan, Oregon region)
+- CLAUDE.md 업데이트
+- ApplicationMailer from 주소 수정
+
+---
+
+## 4. Gap Analysis Results
+
+| Round | Match Rate | Gaps Found | Action |
+|-------|:----------:|:----------:|--------|
+| 1차 (Phase 1-3) | 97% | Mailer HTML 템플릿 누락, 에러 포맷 불일치 | 수동 수정 |
+| 2차 (Phase 1-5) | 98% | ApplicationMailer from 주소 | 수동 수정 |
+| **최종** | **100%** | 0 | - |
+
+---
+
+## 5. Architecture Decisions
+
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| JWT vs Session | JWT (access + refresh) | smart-quote 패턴 검증 완료, SPA 적합 |
+| Thruster | 제외 | CORS 헤더 드랍 이슈 (smart-quote 교훈) |
+| ENV priority for JWT | `ENV > credentials > app` | Render 배포 안정성 (smart-quote 교훈) |
+| Render plan | Starter ($7/mo) | Free Tier DB 90일 만료 방지 (smart-quote 교훈) |
+| Email | SendGrid + Action Mailer | Resend보다 Rails 통합 우수 |
+| singular `resource :company` | One company per user | Prisma 1:1 관계 유지 |
+
+---
+
+## 6. Lessons Applied (from smart-quote-emax)
+
+| Lesson | Application |
+|--------|-------------|
+| Render Free Tier DB 90일 만료 | render.yaml에 Starter plan 명시 |
+| schema.rb 컬럼 누락 | 마이그레이션 후 즉시 검증 |
+| JWT secret 불안정 | `ENV["SECRET_KEY_BASE"]` 최우선 |
+| Thruster CORS 드랍 | `--skip-thruster` 옵션으로 생성 |
+| docker-entrypoint 조건문 | 무조건 db:prepare + db:migrate |
+| CORS origins 하드코딩 | `CORS_ORIGINS` 환경변수 사용 |
+
+---
+
+## 7. Remaining Tasks
+
+| # | Task | Type |
+|---|------|------|
+| 1 | Render 서비스 생성 + DB 연결 | Manual (대시보드) |
+| 2 | 환경변수: RAILS_MASTER_KEY, SENDGRID_API_KEY | Manual (대시보드) |
+| 3 | Vercel: NEXT_PUBLIC_API_URL 설정 | Manual (대시보드) |
+| 4 | E2E 테스트: 가입→인증→로그인→견적→문의 | Testing |
+| 5 | RSpec 테스트 작성 (auth, quotes) | Development |
+
+---
+
+## 8. Metrics
+
+| Metric | Value |
+|--------|-------|
+| Total commits | 6 |
+| Files created (backend) | 40+ |
+| Files removed (frontend) | 15+ |
+| Packages removed | 7 |
+| DB tables | 4 |
+| API endpoints | 22 |
+| Controllers | 5 |
+| Models | 4 |
+| Mailers | 2 (6 templates) |
+| TypeScript errors | 0 |
+| ESLint errors | 0 |
+| Gap match rate | 100% |
+
+---
+
+```
+[Plan] ✅ → [Design] ✅ → [Do] ✅ → [Check] ✅ (100%) → [Report] ✅
+```
+
+**Phase**: Completed
+**Date**: 2026-04-08
+
+*Generated by PDCA report-generator | GOODMAN GLS goodman-gls-api*
