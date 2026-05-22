@@ -295,3 +295,21 @@ body {
   border-width: 1px;
   border-color: var(--color-hairline-soft);
 }
+
+/* Intercom Messenger — enforce bottom-right (overrides workspace center alignment) */
+.intercom-namespace .intercom-launcher,
+.intercom-namespace .intercom-lightweight-app-launcher {
+  right: 24px !important;
+  left: auto !important;
+  bottom: 24px !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.intercom-namespace .intercom-messenger-frame,
+.intercom-namespace .intercom-lightweight-app-messenger {
+  right: 24px !important;
+  left: auto !important;
+  bottom: 24px !important;
+  transform: none !important;
+}
