@@ -26,21 +26,21 @@ export default function CompanySection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline panel-bordered mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline panel-bordered mb-20">
           {values.map((item) => (
-            <div key={item.title} className="bg-canvas p-8 md:p-10">
-              <h3 className="headline text-ink mb-3">{item.title}</h3>
+            <div key={item.title} className="bg-canvas px-10 py-10 md:px-12 md:py-12">
+              <h3 className="headline text-ink mb-4">{item.title}</h3>
               <p className="body-default text-muted">{item.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto text-center p-10 md:p-14 panel-bordered">
+        <div className="max-w-3xl mx-auto text-center panel-quote px-12 py-12 md:px-16 md:py-14">
           <blockquote className="subhead text-ink mb-6">
             &ldquo;In logistics, every shipment carries not just cargo, but our clients&apos;
             trust and reputation.&rdquo;
           </blockquote>
-          <cite className="eyebrow not-italic">CEO & Founder</cite>
+          <cite className="eyebrow not-italic">CEO &amp; Founder</cite>
         </div>
       </div>
     </section>

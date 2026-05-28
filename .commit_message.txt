@@ -1,1 +1,1 @@
-🐛 fix(build): app/global-error.tsx 추가로 Next 16 prerender useContext null 차단 (build unblock)
+🎨 fix(layout): * reset 을 @layer base 로 감싸 site-wide Tailwind padding 유틸 활성화 + CompanySection 카드/CEO 인용 clipping 해소 + NetworkManifesto eyebrow 여유 확보 + globals.css 토큰(.subhead 1.45, .body-sm 15px/1.55, --radius-card 28px, .panel-quote, .headline letter-spacing). 사이드: app/not-found.tsx 도 추가(force-dynamic) — Next 16.2 prerender useContext null 차단. Footer gap-32 overflow + /_global-error prerender 잔여 부채는 별도 사이클.

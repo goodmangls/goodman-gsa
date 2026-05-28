@@ -24,6 +24,7 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-pill: 1000px;
+  --radius-card: 28px;
   --radius-feature: 45px;
 
   --spacing-section: 68px;
@@ -60,10 +61,12 @@
 
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 html {
@@ -114,7 +117,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 .card-title {
@@ -126,7 +129,7 @@ body {
 .subhead {
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.45;
 }
 
 .body-lg {
@@ -142,9 +145,9 @@ body {
 }
 
 .body-sm {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.61;
+  line-height: 1.55;
 }
 
 .eyebrow {
@@ -250,6 +253,11 @@ body {
 
 .panel-bordered {
   @apply border border-hairline rounded-[var(--radius-feature)] overflow-hidden;
+}
+
+/* Card variant — smaller radius so corner-anchored text never gets clipped */
+.panel-quote {
+  @apply border border-hairline rounded-[var(--radius-card)] overflow-hidden;
 }
 
 .section-surface-obsidian .panel-bordered {
