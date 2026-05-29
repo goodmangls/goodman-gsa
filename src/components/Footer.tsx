@@ -29,8 +29,8 @@ export default function Footer() {
   return (
     <footer className="section-surface-obsidian pt-32 pb-20 md:pt-40">
       <div className="container-wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 lg:gap-32 mb-24">
-          <div className="lg:col-span-6 flex flex-col justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-20 lg:gap-20 mb-24">
+          <div className="flex flex-col justify-between">
             <div>
               <div className="relative h-10 w-48 mb-16">
                 <Image
@@ -66,7 +66,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-3 lg:pt-4">
+          <div className="lg:pt-4">
             <span className="caption block mb-8 text-canvas-white/50">Company</span>
             <ul className="space-y-4">
               {footerLinks.company.map((link) => (
@@ -82,7 +82,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 lg:pt-4">
+          <div className="lg:pt-4">
             <span className="caption block mb-8 text-canvas-white/50">Services</span>
             <ul className="space-y-4">
               {footerLinks.services.map((link) => (
