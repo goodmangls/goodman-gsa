@@ -1,1 +1,1 @@
-📁 archive(pdca): 2 cycles → docs/archive/2026-05/ (contact-hardening 96% success + prerender-debt 0% framework-debt)
+🧹 chore(i18n): nav 트리 stale 4키 제거 + en.json 최상위 contact stale 트리 19키 제거

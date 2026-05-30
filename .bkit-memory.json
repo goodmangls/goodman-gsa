@@ -1,7 +1,7 @@
 {
-  "activeFeature": null,
-  "phase": "archived",
-  "matchRate": 98,
+  "activeFeature": "nav-i18n-cleanup",
+  "phase": "check",
+  "matchRate": 97,
   "lastArchived": {
     "feature": "goodman-gls-nav-i18n",
     "date": "2026-05-30",
@@ -67,6 +67,48 @@
       "indexUpdated": "docs/archive/2026-05/_INDEX.md",
       "prStatus": "PR #5 CLOSED (사용자 결정, PR #4 bdcb2f0 머지 충돌)",
       "carryForward": "nav-i18n-cleanup mini-cycle — 고유 5건 (semantic HTML aria-labelledby + h2 id + DisplayLines id prop + nav aria-label + stale 키/contact 트리 정리)"
+    },
+    {
+      "phase": "plan",
+      "date": "2026-05-30",
+      "feature": "nav-i18n-cleanup",
+      "document": "docs/01-plan/features/nav-i18n-cleanup.plan.md",
+      "parent": "goodman-gls-nav-i18n (superseded-partial)",
+      "scope": "5 carry-forward: nav aria-label / ContactSection aria-labelledby / DisplayLines id prop / h2 id / nav+contact stale 제거",
+      "estimate": "~50m total",
+      "openQuestions": 0,
+      "note": "Plan 단계에서 R-1 사전 grep 검증 완료 (stale 사용처 0), Open Q 0. Design 단계 빠르게 진입 가능."
+    },
+    {
+      "phase": "design",
+      "date": "2026-05-30",
+      "feature": "nav-i18n-cleanup",
+      "document": "docs/02-design/features/nav-i18n-cleanup.design.md",
+      "fileDiffs": "DisplayLines +3/-1+JSDoc, Navigation +1, ContactSection +2, en.json -25, ko.json -25",
+      "implementationOrder": "2 logical commits (A semantic / B i18n cleanup) recommended ~20m total",
+      "branchStrategy": "Option B (main 직접 push) recommended — 변경 작음 + R 전부 Resolved",
+      "estimate": "~20m do (Plan 50m 추정에서 30m 단축)",
+      "note": "부모 cycle 패턴 재사용으로 design-validator 호출 선택사항. Do 직행 가능."
+    },
+    {
+      "phase": "do",
+      "date": "2026-05-30",
+      "feature": "nav-i18n-cleanup",
+      "branch": "main (직접 push)",
+      "commits": ["3a9dfef ♿ a11y semantic landmark", "42fffca 🧹 i18n stale cleanup"],
+      "verification": "FR-1~FR-5 grep PASS / lint 0 / tsc 0 / vitest 17/17 / build ✓ Compiled in 6.1s",
+      "concurrentPushHandling": "PR #6 9ee9d05 동시 머지 발견 → stash + pull rebase + pop + push 무손실",
+      "note": "rebase onto 9ee9d05 자동 처리, 충돌 0."
+    },
+    {
+      "phase": "check",
+      "date": "2026-05-30",
+      "feature": "nav-i18n-cleanup",
+      "document": "docs/03-analysis/nav-i18n-cleanup.analysis.md",
+      "matchRate": 97,
+      "summary": "FR/file diff/commit/build 100%. -3pp 비코드 (browser smoke + Lighthouse manual). iterate 불요 — pdca-iterator 처리 카테고리 아님.",
+      "method": "gap-detector agent 호출 없이 직접 분석 (메모리 feedback_subagent_file_write_lie + 빠른 사이클 ROI 고려)",
+      "next": "/pdca report nav-i18n-cleanup → 완료 보고서"
     },
     {
       "phase": "plan",
