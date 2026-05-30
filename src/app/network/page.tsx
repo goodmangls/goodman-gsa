@@ -17,7 +17,7 @@ export default function NetworkPage() {
       id: "global",
       name: "Global GSSA",
       fullName: "World-Class GSSA Standards",
-      desc: "We operate to the benchmarks set by the world's leading GSSA groups — ECS Group (59 countries, 181 offices, 1.4M+ tons) and Kales Airline Services (70+ airlines, 34+ countries) — bringing global best practice to the Korean corridor.",
+      desc: "We operate to the benchmarks set by the world's leading GSSA groups — ECS Group (59 countries, 181 offices, 1.4M+ tons) and Kales Airline Services (70+ airlines, 34+ countries), figures as of 2026 — bringing global best practice to the Korean corridor.",
       features: ['Multi-carrier representation model', 'Global cargo capacity standards', 'IATA-aligned operations']
     },
     {

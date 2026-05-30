@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const memberships = [
-  { name: 'GSSA', desc: 'Cargo Sales Agency' },
+  { name: 'GSSA', desc: 'General Sales & Service Agent' },
   { name: 'CSA', desc: 'Cargo Sales Agent' },
   { name: 'IATA', desc: 'IATA Certified Agent' },
   { name: 'ECS', desc: 'ECS Group Partner' },
