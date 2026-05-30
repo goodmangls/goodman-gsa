@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-12 opacity-40 hover:opacity-70 transition-opacity duration-700">
-            {['IATA', 'MPL', 'EAN'].map((badge) => (
+            {['IATA', 'GSSA', 'ECS'].map((badge) => (
               <div key={badge} className="flex flex-col items-center gap-3">
                 <span className="caption text-canvas-white/80 tracking-[0.3em]">
                   {badge}
