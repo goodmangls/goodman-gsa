@@ -1,1 +1,1 @@
-📁 chore(pdca): gsa-positioning-services archive — design·analysis·report → docs/archive/2026-06/, _INDEX 생성, .bkit-memory phase=archived (Match 97%, PR #2 b353a3a)
+🩹 fix(gsa-i18n): URL-i18n 마이그레이션(8cc9e23)이 누락시킨 servicesPage + home.services.logistics 복구 — /services·홈 물류콜아웃 리터럴키 렌더 회귀 수정 (en/ko, item명 새 home에 정렬)

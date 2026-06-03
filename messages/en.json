@@ -89,7 +89,86 @@
           "tagline": "Real-Time Market Vision",
           "description": "Granular data on competitor moves and demand signals, turning market noise into actionable strategy."
         }
+      },
+      "logistics": {
+        "label": "Looking for integrated logistics?",
+        "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
+        "cta": "Visit Goodman GLS"
       }
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Our Capabilities",
+      "title": "Your Cargo Department in Korea.",
+      "lead": "Goodman is a pure-play GSSA — your commercial cargo team in Korea. We sell, price, manage capacity, and report on your business as if the fleet were our own."
+    },
+    "quickAccess": "Quick access",
+    "items": {
+      "sales": {
+        "name": "Cargo Sales Representation",
+        "tagline": "Proactive Revenue Generation",
+        "overview": "We are your dedicated cargo sales force in Korea — working the forwarder community and direct shippers to fill your flights. No middleman markup; just your revenue, grown.",
+        "features": {
+          "f1": "Forwarder & direct-shipper coverage",
+          "f2": "Active demand generation",
+          "f3": "Brand representation in market",
+          "f4": "Joint sales planning with your team"
+        },
+        "whyLabel": "Why it matters",
+        "why": "You gain a fully operational commercial team in Korea without the overhead of building one — and see it in your load factors."
+      },
+      "pricing": {
+        "name": "Yield & Price Management",
+        "tagline": "Defending Your Margin",
+        "overview": "Market-driven pricing and yield management that protect your margin while staying competitive. We read the Korean market daily and price to win the cargo that matters.",
+        "features": {
+          "f1": "Dynamic, lane-level pricing",
+          "f2": "Yield & margin protection",
+          "f3": "Rate filing & quotation",
+          "f4": "Competitor rate intelligence"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Every shipment is priced to balance load factor and yield — not discounted just to fill space."
+      },
+      "capacity": {
+        "name": "Space & Capacity Operations",
+        "tagline": "Optimizing Every Kilo",
+        "overview": "We manage your space and allotments in Korea to your network, season, and commercial goals — coordinating bookings, build-up, and uplift so capacity is sold, not wasted.",
+        "features": {
+          "f1": "Allotment & space management",
+          "f2": "Booking & uplift coordination",
+          "f3": "Seasonal capacity planning",
+          "f4": "ULD & build-up oversight"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Unsold capacity is lost revenue. We treat every kilo of your space as our own."
+      },
+      "intelligence": {
+        "name": "Strategic Reporting",
+        "tagline": "Real-Time Market Vision",
+        "overview": "On-the-ground intelligence on demand, competitors, and regulation — reported back to you so you make commercial decisions with current facts, not last quarter's.",
+        "features": {
+          "f1": "Demand & trade-lane signals",
+          "f2": "Competitor & rate monitoring",
+          "f3": "Regular commercial reporting",
+          "f4": "Regulatory & market updates"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Distance from a market is a disadvantage. We close it with real-time eyes in Korea."
+      }
+    },
+    "cta": {
+      "titleLine1": "Ready to grow",
+      "titleLine2": "your Korea cargo?",
+      "lead": "Whether you're entering the Korean market or sharpening an existing operation, our team is ready to represent your cargo as our own.",
+      "primary": "Talk to our team",
+      "secondary": "About our team →"
+    },
+    "logistics": {
+      "label": "Looking for integrated logistics?",
+      "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
+      "cta": "Visit Goodman GLS"
     }
   }
 }
