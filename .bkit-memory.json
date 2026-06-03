@@ -1,6 +1,6 @@
 {
   "activeFeature": "gsa-positioning-services",
-  "phase": "check",
+  "phase": "completed",
   "matchRate": 97,
   "lastArchived": {
     "feature": "nav-i18n-cleanup",
