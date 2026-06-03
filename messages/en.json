@@ -168,8 +168,8 @@
   "company": {
     "title": "Small Giant. Big Impact.",
     "subtitle": "Korea's Cargo GSSA Specialist Since 2014",
-    "description": "As a dedicated GSSA, airline cargo representation is our core identity — not a side business. Our MPL and EAN network memberships give us capabilities that rival companies many times our size.",
-    "identity": "Est. 2014 Cargo GSSA | ECS Group Partner | MPL & EAN Member",
+    "description": "As a dedicated GSSA, airline cargo representation is our core identity — not a side business. Our deep airline mandates and alignment with the world's leading GSSA networks give us capabilities that rival companies many times our size.",
+    "identity": "Est. 2014 Cargo GSSA | ECS Group Partner | Global GSSA Network",
     "strengths": {
       "local": "Strong local dominance at Incheon/Busan hubs",
       "market": "Optimal route proposals by expert groups",
@@ -205,10 +205,10 @@
   },
   "trust": {
     "title": "Trusted Global Networks",
-    "subtitle": "Trusted Memberships:",
+    "subtitle": "GSSA Credentials:",
     "wca": "World Cargo Alliance",
-    "mpl": "MPL Network",
-    "ean": "Excellence Alliance Network",
+    "gssa": "Cargo Sales Agency",
+    "csa": "Cargo Sales Agent",
     "iata": "IATA Certified Agent"
   },
   "stats": {
@@ -540,8 +540,8 @@
           "desc": "Became General Sales Agent for major airline, proving the 'Small Giant' model works."
         },
         "2018": {
-          "milestone": "MPL & EAN Membership",
-          "desc": "Joined MarcoPoloLine Group and Exclusive Air Network to expand global reach."
+          "milestone": "Global GSSA Network Expansion",
+          "desc": "Aligned with leading international GSSA networks to extend cargo reach across 59+ countries."
         },
         "2020": {
           "milestone": "Project Cargo Division Launch",

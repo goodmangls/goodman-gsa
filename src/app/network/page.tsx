@@ -14,18 +14,18 @@ export default function NetworkPage() {
 
   const networks = [
     {
-      id: "mpl",
-      name: "MPL",
-      fullName: "MarcoPoloLine Group",
-      desc: "Premium logistics network focused on quality service and innovation across Asia-Pacific.",
-      features: ['Exclusive territory protection', 'Quality certification standards', 'Advanced IT integration']
+      id: "global",
+      name: "Global GSSA",
+      fullName: "World-Class GSSA Standards",
+      desc: "We operate to the benchmarks set by the world's leading GSSA groups — ECS Group (59 countries, 181 offices, 1.4M+ tons) and Kales Airline Services (70+ airlines, 34+ countries), figures as of 2026 — bringing global best practice to the Korean corridor.",
+      features: ['Multi-carrier representation model', 'Global cargo capacity standards', 'IATA-aligned operations']
     },
     {
-      id: "ean",
-      name: "EAN",
-      fullName: "Exclusive Air Network",
-      desc: "Elite network of air cargo logistics providers committed to service excellence and innovation.",
-      features: ['Best-in-class service standards', 'Collaborative partnerships', 'Continuous improvement focus']
+      id: "korea",
+      name: "Korea GSSA",
+      fullName: "Korea's Trusted GSSA Landscape",
+      desc: "GOODMAN GLS stands among Korea's established cargo GSSA specialists — alongside long-standing references such as Pacific Air Agency (PAA) and Daejoo Air — with a focused, owner-operator approach to airline cargo sales.",
+      features: ['Incheon & Busan hub depth', 'Dedicated cargo-first mandates', 'Decades of Korea market expertise']
     }
   ];
 
@@ -46,7 +46,7 @@ export default function NetworkPage() {
               className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter"
             />
             <p className="body-lg text-muted max-w-2xl">
-              Connected to over 59 countries through elite logistics networks and strategic GSSA partnerships. We provide the infrastructure for global commerce.
+              Connected to over 59 countries through the global GSSA ecosystem and our strategic ECS Group partnership. We provide the infrastructure for global commerce.
             </p>
           </motion.div>
         </div>
@@ -57,7 +57,7 @@ export default function NetworkPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {networks.map((net) => {
-              const dark = net.id === "ean";
+              const dark = net.id === "korea";
               const main = dark ? "text-canvas-white" : "text-ink";
               const sub = dark ? "text-canvas-white/75" : "text-muted";
               return (
@@ -69,7 +69,7 @@ export default function NetworkPage() {
                 <div>
                   <div className="flex justify-between items-start mb-12">
                     <span className={`display-md font-bold ${main}`}>{net.name}</span>
-                    <span className="eyebrow">Member</span>
+                    <span className="eyebrow">Benchmark</span>
                   </div>
                   <h3 className={`headline mb-6 ${main}`}>{net.fullName}</h3>
                   <p className={`body-lg mb-10 max-w-sm ${sub}`}>{net.desc}</p>
