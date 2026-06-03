@@ -1,17 +1,8 @@
 {
-  "activeFeature": "gsa-positioning-services",
-  "phase": "completed",
+  "activeFeature": null,
+  "phase": "archived",
   "matchRate": 97,
-  "lastArchived": {
-    "feature": "nav-i18n-cleanup",
-    "date": "2026-05-30",
-    "archivedTo": "docs/archive/2026-05/nav-i18n-cleanup/",
-    "matchRate": 97,
-    "status": "completed",
-    "parent": "goodman-gls-nav-i18n (superseded-partial)",
-    "deliverables": "semantic HTML landmark (nav aria-label + section aria-labelledby) + DisplayLines id prop + h2 id + nav stale 4키 제거 + en.json 최상위 contact 19 leaf 제거",
-    "commits": "main: 3a9dfef + 42fffca (rebased onto PR #6 9ee9d05)"
-  },
+  "lastArchived": "gsa-positioning-services",
   "startedAt": "2026-05-28",
   "history": [
     {
@@ -285,6 +276,21 @@
       "indexUpdated": "docs/archive/2026-05/_INDEX.md",
       "moveMethod": "git mv (plan/design history 보존), mv (analysis/report 신규)",
       "followupCandidates": "T1~T7 보고서 §8 참조"
+    },
+    {
+      "phase": "archived",
+      "date": "2026-06-03",
+      "feature": "gsa-positioning-services",
+      "matchRate": 97,
+      "archivedTo": "docs/archive/2026-06/gsa-positioning-services/",
+      "documents": [
+        "gsa-positioning-services.design.md",
+        "gsa-positioning-services.analysis.md",
+        "gsa-positioning-services.report.md"
+      ],
+      "indexUpdated": "docs/archive/2026-06/_INDEX.md",
+      "moveMethod": "git mv",
+      "note": "no plan doc (brainstorming)"
     }
   ]
 }

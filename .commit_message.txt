@@ -1,1 +1,1 @@
-📊 docs(report): gsa-positioning-services 완료 보고서 (Match 97%, PR #2 머지) + 물류콜아웃 텍스트상시 확정 + 후속 F1~F5
+📁 chore(pdca): gsa-positioning-services archive — design·analysis·report → docs/archive/2026-06/, _INDEX 생성, .bkit-memory phase=archived (Match 97%, PR #2 b353a3a)
