@@ -2,7 +2,7 @@
 
 import { useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -37,7 +37,7 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
 }
 
 export default function StatsSection() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const stats = [
     { value: 10, suffix: '+', key: 'years' },
     { value: 15, suffix: '+', key: 'airlines' },

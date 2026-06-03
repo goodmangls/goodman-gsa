@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
-import { useLanguage, type Locale } from '@/contexts/LanguageContext';
+import ShareButton from './ShareButton';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname, useRouter } from '@/navigation';
 
 const navItems = [
   { key: 'company', href: '/company' },
@@ -14,25 +14,32 @@ const navItems = [
   { key: 'network', href: '/network' },
 ];
 
-const localeLabels: Record<Locale, string> = {
+const localeLabels: Record<string, string> = {
   en: 'EN',
   ko: '한국어',
 };
 
 function LocaleToggle({ isHeroNav }: { isHeroNav: boolean }) {
-  const { locale, setLocale } = useLanguage();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  
   const base = isHeroNav
     ? 'text-canvas-white/70 hover:text-canvas-white'
     : 'text-muted hover:text-ink';
   const active = isHeroNav ? 'text-canvas-white' : 'text-ink';
 
+  const switchLocale = (nextLocale: 'en' | 'ko') => {
+    router.replace(pathname, { locale: nextLocale });
+  };
+
   return (
     <div className="flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest" role="group" aria-label="Language">
-      {(['en', 'ko'] as Locale[]).map((code) => (
+      {['en', 'ko'].map((code) => (
         <button
           key={code}
           type="button"
-          onClick={() => setLocale(code)}
+          onClick={() => switchLocale(code as 'en' | 'ko')}
           className={`px-2 py-1 rounded transition-colors ${locale === code ? active : base}`}
           aria-pressed={locale === code}
         >
@@ -44,7 +51,7 @@ function LocaleToggle({ isHeroNav }: { isHeroNav: boolean }) {
 }
 
 export default function Navigation() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
@@ -115,11 +122,13 @@ export default function Navigation() {
             </div>
             <LocaleToggle isHeroNav={isHeroNav} />
             <ThemeToggle />
+            <ShareButton />
           </div>
 
           <div className="lg:hidden flex items-center gap-4">
             <LocaleToggle isHeroNav={isHeroNav} />
             <ThemeToggle />
+            <ShareButton />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 ${isHeroNav ? 'text-canvas-white' : 'text-ink'}`}

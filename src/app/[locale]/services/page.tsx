@@ -1,16 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import DisplayLines from '@/components/DisplayLines';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 import { getLogisticsSiteUrl } from '@/lib/site-links';
 
 const itemKeys = ['sales', 'pricing', 'capacity', 'intelligence'] as const;
 const featureKeys = ['f1', 'f2', 'f3', 'f4'] as const;
 
 export default function ServicesPage() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const logisticsUrl = getLogisticsSiteUrl();
 
   return (

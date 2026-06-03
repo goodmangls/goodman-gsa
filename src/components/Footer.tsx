@@ -1,9 +1,9 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import Image from 'next/image';
 import DisplayLines from './DisplayLines';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 import { getLogisticsSiteUrl } from '@/lib/site-links';
 
 const footerLinks = {
@@ -25,7 +25,7 @@ const footerLinks = {
 };
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const logisticsUrl = getLogisticsSiteUrl();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

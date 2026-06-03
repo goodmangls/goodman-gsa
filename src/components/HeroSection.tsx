@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import Image from 'next/image';
 import DisplayLines from './DisplayLines';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 export default function HeroSection() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   return (
     <section className="relative hero-spacing overflow-hidden">
       {/* Full-bleed imagery */}

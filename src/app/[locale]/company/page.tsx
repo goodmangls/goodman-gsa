@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion';
 import DisplayLines from '@/components/DisplayLines';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 export default function CompanyPage() {
-  const { t } = useLanguage();
+  const t = useTranslations();
 
   const team = [
     {

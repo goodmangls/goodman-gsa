@@ -1,334 +1,95 @@
 {
   "nav": {
     "company": "회사소개",
-    "services": "서비스",
+    "services": "핵심역량",
     "network": "네트워크",
-    "contactSales": "영업 문의",
+    "contactSales": "GSSA 제휴문의",
     "getStarted": "시작하기"
+  },
+  "common": {
+    "share": "공유하기",
+    "shareSuccess": "링크가 복사되었습니다.",
+    "shareError": "공유하기에 실패했습니다.",
+    "copyLink": "링크 복사",
+    "shareTitle": "굿맨지엘에스(GOODMAN GLS)",
+    "shareText": "대한민국 프리미엄 항공 GSSA - 굿맨지엘에스를 확인해보세요."
   },
   "home": {
     "hero": {
       "eyebrow": "Small Giant. Big Impact.",
-      "titleLine1": "한국 시장의",
-      "titleLine2": "화물 영업 팀",
-      "lead": "15개 이상 항공사를 대표하는 GSSA. ECS Group을 통한 59개국 네트워크 — 귀사의 화물을 우리 것처럼 판매하는 전담 팀입니다.",
-      "ctaPrimary": "시작하기",
-      "ctaSecondary": "네트워크 보기"
+      "titleLine1": "항공사의 가치를 파는",
+      "titleLine2": "프리미엄 GSSA 팀",
+      "lead": "전 세계 주요 항공사가 신뢰하는 대한민국 대표 GSSA. ECS Group의 59개국 네트워크와 전문성을 바탕으로, 귀사의 공급력을 우리 사업처럼 책임지고 판매합니다.",
+      "ctaPrimary": "파트너십 문의",
+      "ctaSecondary": "글로벌 네트워크"
     },
     "trust": {
-      "eyebrow": "신뢰의 멤버십"
+      "eyebrow": "신뢰할 수 있는 글로벌 얼라이언스"
     },
     "stats": {
-      "eyebrow": "숫자로 보는 성과",
-      "years": "업력(년)",
+      "eyebrow": "숫자로 검증된 성과",
+      "years": "업력 (Excellence)",
       "airlines": "대표 항공사",
-      "countries": "연결 국가",
-      "offices": "국내 사무소"
+      "countries": "네트워크 국가",
+      "offices": "전략적 거점"
     },
     "why": {
-      "eyebrow": "우리가 하는 일",
-      "titleLine1": "항공사처럼 사고하고,",
-      "titleLine2": "귀사의 팀처럼 움직입니다.",
-      "lead": "GSSA는 단순 중개인이 아닙니다. 우리는 한국에서 귀사의 전담 영업 조직으로서, 귀사의 공급력을 판매하고 브랜드를 관리하며 매출을 우리 사업처럼 키웁니다.",
+      "eyebrow": "GSSA만의 경쟁력",
+      "titleLine1": "항공사의 시각으로 전략을 세우고,",
+      "titleLine2": "현지 팀으로서 실행합니다.",
+      "lead": "GSSA는 단순한 중개인이 아닙니다. 우리는 항공사의 한국 내 영업 부서입니다. 브랜드 가치를 보호하고, 일드(Yield)를 관리하며, 강력한 로컬 영업망을 통해 매출을 극대화합니다.",
       "pillars": {
         "sales": {
-          "title": "시장에서",
-          "description": "똑똑하게 팔고, 빠르게 움직이며, 일관되게 실행합니다. 현지 팀이 한국의 모든 포워더와 노선을 꿰뚫고 있습니다."
+          "title": "영업의 탁월함",
+          "description": "한국 내 모든 주요 포워더와의 긴밀한 네트워크를 바탕으로 스마트한 영업 전략을 실행합니다. 우리는 단순히 주문을 받는 것이 아니라 수요를 창출합니다."
         },
         "capacity": {
-          "title": "하늘에서",
-          "description": "동적 운임, 수익 최적화, 전략적 공간 배분으로 운항편당 매출을 극대화합니다."
+          "title": "수익 최적화",
+          "description": "전략적 스페이스 배분과 동적 운임 관리를 통해 모든 항공편의 수익 잠재력을 최대한으로 끌어올립니다."
         },
         "intelligence": {
-          "title": "현장에서",
-          "description": "교역 흐름 분석, 시즌 예측, 규제 인텔리전스를 매주 업데이트해 파트너에게 제공합니다."
+          "title": "시장 인텔리전스",
+          "description": "교역 흐름, 시즌별 변동성, 규제 변화에 대한 주간 분석을 통해 파트너 항공사가 시장보다 앞서 나갈 수 있도록 돕습니다."
         },
         "digital": {
-          "title": "클라우드에서",
-          "description": "실시간 대시보드, API 연동, 디지털 부킹 플랫폼을 손끝에서 제공합니다."
+          "title": "디지털 혁신",
+          "description": "실시간 대시보드와 API 연동, 자체 부킹 플랫폼을 통해 파트너에게 완벽한 투명성과 데이터 가시성을 제공합니다."
         }
       }
     },
     "gsa": {
-      "eyebrow": "파트너십",
-      "title": "우리가 대표하는 항공사",
-      "lead": "전 세계 항공사가 한국 시장 확대를 위해 신뢰하는 파트너. 국적 항공사부터 전문 화물기까지.",
-      "cta": "파트너 되기"
+      "eyebrow": "항공사 파트너십",
+      "title": "전략적 GSSA 총판권",
+      "lead": "글로벌 국적 항공사와 전문 화물기 항공사들이 한국 시장 확대를 위해 굿맨을 선택합니다. 우리의 성공 지표는 귀사의 매출 성장입니다.",
+      "cta": "제휴 안내"
     },
     "services": {
       "eyebrow": "핵심 역량",
       "titleLine1": "한국 내 항공사의",
       "titleLine2": "전담 화물 영업팀",
-      "lead": "포워더도 중개상도 아닌, 한국에서 항공사의 화물 capacity를 대표하는 전담 GSSA입니다. 우리 사업처럼 팔고, 요율을 매기고, 키웁니다.",
+      "lead": "우리는 항공사의 한국 시장 진출을 위한 독점 게이트웨이입니다. 포워더도 브로커도 아닌, 오직 항공사의 Capacity를 대표하여 절대적인 성실함과 영업력을 발휘하는 순수 GSSA입니다.",
       "items": {
         "sales": {
-          "name": "화물 영업",
-          "tagline": "우리 화물처럼 판매합니다",
-          "description": "한국의 포워더·화주 기반 전담 영업으로 load factor와 매출을 끌어올립니다."
+          "name": "화물 영업 대리",
+          "tagline": "주도적인 매출 창출",
+          "description": "한국 물류 시장 전반에 걸친 공격적인 영업을 통해 로드 팩터(Load Factor)와 시장 점유율을 지속적으로 높입니다."
         },
         "pricing": {
-          "name": "요율·일드 관리",
-          "tagline": "모든 노선에 맞는 요율",
-          "description": "마진을 지키면서 경쟁력을 유지하는 시장 기반 요율·일드 관리."
+          "name": "요율 및 일드 관리",
+          "tagline": "항공사의 마진 보호",
+          "description": "시장의 흐름을 반영한 정교한 프라이싱 모델을 통해 경쟁력을 유지하면서도 항공사의 수익성을 철저히 방어합니다."
         },
         "capacity": {
-          "name": "Capacity 관리",
-          "tagline": "1kg까지 책임집니다",
-          "description": "항공사의 네트워크·시즌·상업 목표에 맞춘 스페이스·allotment 운영."
+          "name": "스페이스 및 운영 관리",
+          "tagline": "1kg의 낭비 없는 최적화",
+          "description": "얼롯먼트, ULD 관리, 빌드업 조율을 통해 가용 공간을 효율적으로 운영하여 매출 유실을 원천 차단합니다."
         },
         "intelligence": {
-          "name": "시장 인텔리전스",
-          "tagline": "한국 시장, 실시간으로",
-          "description": "현장 수요 신호·경쟁사 동향·리포팅으로 의사결정을 돕습니다."
-        }
-      },
-      "logistics": {
-        "label": "종합물류가 필요하신가요?",
-        "body": "Goodman은 항공·해상·육상·통관·창고를 아우르는 종합물류 서비스도 제공합니다.",
-        "cta": "Goodman GLS 보기"
-      }
-    },
-    "company": {
-      "eyebrow": "2014년 설립",
-      "titleLine1": "Small Giant.",
-      "titleLine2": "Big Impact.",
-      "lead": "전문 GSSA로서 항공 화물 대리는 부업이 아니라 우리의 핵심 정체성입니다. ECS Group의 지원과 기술적 정밀함, 현지 전문성으로 몇 배 규모의 기업에 견줍니다.",
-      "values": {
-        "trust": {
-          "title": "신뢰",
-          "desc": "모든 파트너십의 토대"
-        },
-        "velocity": {
-          "title": "속도",
-          "desc": "비즈니스의 속도에 맞춘 물류"
-        },
-        "connectivity": {
-          "title": "연결",
-          "desc": "글로벌 네트워크, 현지 전문성"
-        }
-      },
-      "quote": "“물류에서 모든 화물은 단순한 짐이 아니라 고객의 신뢰와 평판을 함께 싣습니다.”",
-      "quoteCite": "대표이사 · 창업자"
-    },
-    "network": {
-      "eyebrow": "확장을 위한 설계",
-      "titleLine1": "몇 배 규모의 기업에",
-      "titleLine2": "견주는 역량.",
-      "lead": "59개국에 걸친 세계 최대 GSSA 인프라 ECS Group을 통해, 전문 팀의 민첩함을 유지하면서 다국적 기업의 네트워크를 활용합니다.",
-      "cta": "네트워크 보기"
-    },
-    "partnerHub": {
-      "eyebrow": "전용",
-      "title": "파트너 허브",
-      "lead": "글로벌 네트워크를 위한 전용 리소스. 한국에서 비즈니스를 키우기 위한 기술 인텔리전스와 전략적 인사이트를 제공합니다.",
-      "features": {
-        "agent": "에이전트 존 — 파트너 등록 & 운임 조회",
-        "insights": "마켓 인사이트 — 한국 교역 인텔리전스 리포트",
-        "account": "전담 어카운트 매니지먼트"
-      },
-      "cta": "가입 문의하기"
-    },
-    "contact": {
-      "eyebrow": "연결",
-      "titleLine1": "귀사의 화물,",
-      "titleLine2": "이야기해요.",
-      "lead": "물류 수요에 대한 24/7 지원. 기술적 정밀함으로 한국에서 귀사의 브랜드를 대표합니다.",
-      "office": "사무소",
-      "officeValue": "강서 IT 밸리, 서울, 대한민국",
-      "email": "이메일",
-      "hours": "운영 시간",
-      "hoursValue": "월–금 9:00–18:00 KST",
-      "nameLabel": "이름",
-      "namePlaceholder": "이름을 입력하세요",
-      "emailLabel": "이메일",
-      "emailPlaceholder": "이메일을 입력하세요",
-      "messageLabel": "메시지",
-      "messagePlaceholder": "요청 사항을 알려주세요",
-      "send": "메시지 보내기",
-      "sending": "전송 중...",
-      "success": "메시지가 성공적으로 전송되었습니다.",
-      "error": "전송에 실패했습니다. 다시 시도해 주세요."
-    },
-    "footer": {
-      "titleLine1": "The Small Giant.",
-      "titleLine2": "Global Impact.",
-      "lead": "2014년부터 물류 대리의 수준을 끌어올립니다. 현지화된 한국 전문성으로 귀사의 글로벌 비전을 위한 인프라를 제공합니다.",
-      "cta": "파트너십 시작하기",
-      "companyHeading": "회사",
-      "servicesHeading": "서비스",
-      "links": {
-        "about": "회사소개",
-        "network": "네트워크",
-        "partnerHub": "파트너 허브",
-        "privacy": "개인정보처리방침",
-        "terms": "이용약관",
-        "sales": "화물 영업",
-        "pricing": "요율·일드",
-        "capacity": "Capacity 관리",
-        "intelligence": "시장 인텔리전스",
-        "logistics": "Goodman GLS (종합물류)"
-      },
-      "copyright": "© 2026 GOODMAN Global Logistics Service. All rights reserved.",
-      "tagline": "한국 화물 GSSA · ECS Group 파트너"
-    }
-  },
-  "pages": {
-    "company": {
-      "heroEyebrow": "스토리",
-      "heroTitleLine1": "행동으로 쌓은",
-      "heroTitleLine2": "신뢰. 2014년부터.",
-      "heroLead": "규모는 작을 수 있어도, 영향력은 크게 만듭니다. 물류는 사람의 비즈니스라는 원칙 위에 2014년 설립 이후, 신뢰는 주어지는 것이 아니라 쌓아야 한다고 증명해 왔습니다.",
-      "ceoEyebrow": "리더십 메시지",
-      "ceoQuote": "Small Giant, Big Impact. 그것이 우리의 북극성입니다.",
-      "ceoP1": "GOODMAN GLS에 오신 것을 환영합니다. 2014년 설립 이후 우리는 단순한 원칙, 즉 행동을 통한 신뢰 위에 명성을 쌓아 왔습니다.",
-      "ceoP2": "한국을 대표하는 GSSA로서, 글로벌 항공사와 한국 물류 시장을 잇는 관문 역할을 수행합니다.",
-      "ceoP3": "시한이 촉박한 항공 화물과 복잡한 프로젝트 화물에서 수십 년의 경험을 보유한 전문가 팀이, 화물뿐 아니라 고객의 평판까지 책임집니다.",
-      "ceoName": "신현억",
-      "ceoRole": "대표이사 · 창업자",
-      "ceoBio": "항공 화물 업계 38년 이상; 대한항공·아시아나항공 화물 부문 전 임원. GOODMAN 서비스 모델의 설계자.",
-      "heritageEyebrow": "헤리티지",
-      "heritageTitle": "10년의 성과",
-      "teamEyebrow": "전문가 팀",
-      "teamTitleLine1": "물류는",
-      "teamTitleLine2": "사람의 비즈니스입니다.",
-      "teamLead": "우리의 강점은 사람입니다. 한국 항공 화물 분야 최고의 인재가 모여, 고객의 화물과 평판을 안전하게 지킵니다.",
-      "teamDivision": "부서",
-      "teamExpertise": "핵심 역량",
-      "teamViewProfile": "프로필 보기 →",
-      "valuesTitle": "핵심 가치",
-      "timeline": {
-        "2014": {
-          "milestone": "서울에서 GOODMAN GLS 설립",
-          "desc": "한국 시장을 재정의하겠다는 비전으로 항공 화물 GSSA 전문 기업으로 출발했습니다."
-        },
-        "2015": {
-          "milestone": "첫 GSA 파트너십",
-          "desc": "주요 항공사의 General Sales Agent가 되며 'Small Giant' 모델의 가능성을 입증했습니다."
-        },
-        "2018": {
-          "milestone": "글로벌 GSSA 네트워크 확장",
-          "desc": "주요 국제 GSSA 네트워크와 협력해 화물 영업망을 59개국 이상으로 확장했습니다."
-        },
-        "2020": {
-          "milestone": "프로젝트 화물 사업부 출범",
-          "desc": "중량물·특수 화물 등 산업 파트너를 위한 전문 물류로 사업 영역을 넓혔습니다."
-        },
-        "2025": {
-          "milestone": "디지털 플랫폼 리뉴얼",
-          "desc": "파트너에게 실시간 투명성을 제공하는 차세대 기술에 투자하고 있습니다."
-        }
-      },
-      "team": {
-        "lee": {
-          "name": "이창희",
-          "title": "사업개발 매니저",
-          "department": "GSA/CSA 사업부",
-          "expertise": "항공사 파트너십, 노선 개발"
-        },
-        "kim": {
-          "name": "김민지",
-          "title": "운영 이사",
-          "department": "항공·해상 운영",
-          "expertise": "공급망 최적화, 고객 서비스"
-        },
-        "park": {
-          "name": "박승호",
-          "title": "프로젝트 화물 전문가",
-          "department": "특수 프로젝트",
-          "expertise": "중량물, 복합 운송"
-        }
-      },
-      "values": {
-        "trust": {
-          "label": "01",
-          "value": "신뢰",
-          "desc": "일관된 실행과 완전한 투명성으로 쌓습니다."
-        },
-        "velocity": {
-          "label": "02",
-          "value": "속도",
-          "desc": "시한이 중요한 물류에서 우리는 더 빠르게 움직입니다."
-        },
-        "connectivity": {
-          "label": "03",
-          "value": "연결",
-          "desc": "전략적 파트너십을 통한 글로벌 도달 범위."
+          "name": "전략적 리포팅",
+          "tagline": "실시간 시장 시야 확보",
+          "description": "경쟁사 동향과 수요 신호에 대한 세밀한 데이터를 제공하여, 시장의 노이즈를 실행 가능한 전략으로 전환합니다."
         }
       }
-    }
-  },
-  "servicesPage": {
-    "hero": {
-      "eyebrow": "핵심 역량",
-      "title": "한국에 있는 당신의 화물 사업부.",
-      "lead": "Goodman은 GSSA — 항공사 화물 총판(General & Cargo Sales Agent)입니다. 우리가 대표하는 항공사의 한국 내 화물 상업 팀으로서 영업·요율·capacity 관리와 브랜드 보호를 우리 사업처럼 수행합니다."
-    },
-    "quickAccess": "바로가기",
-    "items": {
-      "sales": {
-        "name": "화물 영업",
-        "tagline": "우리 화물처럼 판매합니다.",
-        "overview": "한국 내 전담 화물 영업 조직으로서 포워더 커뮤니티와 직접 화주를 커버하고, 항공편을 채우는 관계를 구축합니다. 중개 마진 없이 항공사의 매출을 키웁니다.",
-        "features": {
-          "f1": "포워더·직접 화주 커버리지",
-          "f2": "능동적 수요 창출",
-          "f3": "시장 내 브랜드 대표",
-          "f4": "항공사와 공동 영업 기획"
-        },
-        "whyLabel": "왜 중요한가",
-        "why": "항공사는 자체 조직 구축 부담 없이 한국에서 완전한 상업 팀을 확보하고, 그 효과를 load factor로 확인합니다."
-      },
-      "pricing": {
-        "name": "요율·일드 관리",
-        "tagline": "모든 노선에 맞는 요율.",
-        "overview": "마진을 지키면서 경쟁력을 유지하는 시장 기반 요율·일드 관리. 한국 시장을 매일 읽고, 중요한 화물을 따내도록 요율을 책정합니다.",
-        "features": {
-          "f1": "노선별 동적 요율",
-          "f2": "일드·마진 보호",
-          "f3": "요율 신고 및 견적",
-          "f4": "경쟁사 요율 인텔리전스"
-        },
-        "whyLabel": "왜 중요한가",
-        "why": "모든 화물은 단순히 스페이스를 채우기 위한 할인이 아니라, load factor와 일드의 균형으로 책정됩니다."
-      },
-      "capacity": {
-        "name": "Capacity 관리",
-        "tagline": "1kg까지 책임집니다.",
-        "overview": "항공사의 네트워크·시즌·상업 목표에 맞춰 한국 내 스페이스와 allotment를 운영하고, 예약·빌드업·탑재를 조율해 capacity가 낭비되지 않고 판매되게 합니다.",
-        "features": {
-          "f1": "Allotment·스페이스 관리",
-          "f2": "예약·탑재 조율",
-          "f3": "시즌별 capacity 계획",
-          "f4": "ULD·빌드업 관리"
-        },
-        "whyLabel": "왜 중요한가",
-        "why": "팔지 못한 capacity는 사라진 매출입니다. 우리는 항공사의 스페이스 1kg까지 우리 것처럼 다룹니다."
-      },
-      "intelligence": {
-        "name": "시장 인텔리전스",
-        "tagline": "한국 시장, 실시간으로.",
-        "overview": "수요·경쟁사·규제에 대한 현장 인텔리전스를 항공사에 보고해, 지난 분기가 아닌 현재의 사실로 상업적 의사결정을 내리도록 돕습니다.",
-        "features": {
-          "f1": "수요·노선 신호",
-          "f2": "경쟁사·요율 모니터링",
-          "f3": "정기 상업 리포팅",
-          "f4": "규제·시장 업데이트"
-        },
-        "whyLabel": "왜 중요한가",
-        "why": "시장과의 거리는 약점입니다. 우리는 한국 현장의 실시간 시야로 그 거리를 좁힙니다."
-      }
-    },
-    "cta": {
-      "titleLine1": "한국 화물 사업을",
-      "titleLine2": "키울 준비가 되셨나요?",
-      "lead": "한국 시장에 진입하든 기존 운영을 가다듬든, 우리 팀은 항공사의 화물을 우리 것처럼 대표할 준비가 되어 있습니다.",
-      "primary": "팀에 문의하기",
-      "secondary": "팀 소개 보기 →"
-    },
-    "logistics": {
-      "label": "종합물류가 필요하신가요?",
-      "body": "Goodman은 항공·해상·육상·통관·창고를 아우르는 종합물류 서비스도 제공합니다.",
-      "cta": "Goodman GLS 보기"
     }
   }
 }

@@ -3,10 +3,10 @@
 import { contactFormSchema, type ContactFormData } from '@/lib/validations/contact';
 import DisplayLines from './DisplayLines';
 import { useState } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 export default function ContactSection() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const [formData, setFormData] = useState<ContactFormData>({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);

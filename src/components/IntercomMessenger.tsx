@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Intercom from '@intercom/messenger-js-sdk';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations, useLocale } from 'next-intl';
 import { buildIntercomSettings, INTERCOM_APP_ID } from '@/lib/intercom';
 
 /**
@@ -17,7 +17,7 @@ import { buildIntercomSettings, INTERCOM_APP_ID } from '@/lib/intercom';
  * issues an `update`, which does not restart a shut-down session.
  */
 export default function IntercomMessenger() {
-  const { locale } = useLanguage();
+  const locale = useLocale();
 
   useEffect(() => {
     if (!INTERCOM_APP_ID) return;

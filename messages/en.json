@@ -1,679 +1,95 @@
 {
   "nav": {
     "company": "Company",
-    "services": "Services",
+    "services": "Capabilities",
     "network": "Network",
-    "contactSales": "Contact sales",
-    "getStarted": "Get started"
+    "contactSales": "GSSA Inquiry",
+    "getStarted": "Get Started"
+  },
+  "common": {
+    "share": "Share",
+    "shareSuccess": "Link copied to clipboard.",
+    "shareError": "Failed to share.",
+    "copyLink": "Copy Link",
+    "shareTitle": "GOODMAN GLS",
+    "shareText": "Premium Cargo GSSA in Korea - Discover GOODMAN GLS."
   },
   "home": {
     "hero": {
       "eyebrow": "Small Giant. Big Impact.",
-      "titleLine1": "Your cargo sales",
-      "titleLine2": "team in Korea",
-      "lead": "GSSA representation for 15+ airlines. 59 countries via ECS Group — one dedicated team selling your capacity as if it were our own.",
-      "ctaPrimary": "Get started",
-      "ctaSecondary": "View network"
+      "titleLine1": "Your Premium",
+      "titleLine2": "Cargo Sales Team",
+      "lead": "Representing world-class airlines as a dedicated GSSA. Powered by ECS Group’s 59-country network, we sell your capacity with the same passion as if it were our own.",
+      "ctaPrimary": "Partner With Us",
+      "ctaSecondary": "Global Network"
     },
     "trust": {
-      "eyebrow": "Trusted memberships"
+      "eyebrow": "Trusted Global Alliances"
     },
     "stats": {
-      "eyebrow": "Performance in numbers",
-      "years": "Years of Experience",
+      "eyebrow": "Proven Performance",
+      "years": "Years of Excellence",
       "airlines": "Airlines Represented",
-      "countries": "Countries Connected",
-      "offices": "Offices in Korea"
+      "countries": "Network Countries",
+      "offices": "Strategic Hubs"
     },
     "why": {
-      "eyebrow": "What we do",
+      "eyebrow": "The GSSA Advantage",
       "titleLine1": "We think like an airline.",
-      "titleLine2": "We act like your team.",
-      "lead": "A GSSA is not a middleman. We are your dedicated commercial team in Korea — selling your capacity, managing your brand, and growing your revenue as if it were our own business.",
+      "titleLine2": "We act as your local team.",
+      "lead": "A GSSA is far more than a middleman. We are your commercial arm in Korea — defending your brand, optimizing your yield, and maximizing your load factor through relentless local sales expertise.",
       "pillars": {
         "sales": {
-          "title": "In the Market",
-          "description": "We sell smart, act fast, and deliver consistently. Our local teams know every forwarder and route in Korea."
+          "title": "Commercial Excellence",
+          "description": "Smart sales strategies backed by deep relationships with every major forwarder in Korea. We don't just take orders; we create demand."
         },
         "capacity": {
-          "title": "In the Air",
-          "description": "Dynamic pricing, yield optimization, and strategic space allocation that maximizes your revenue per flight."
+          "title": "Yield Optimization",
+          "description": "Strategic space allocation and dynamic pricing that ensures every flight reaches its maximum revenue potential."
         },
         "intelligence": {
-          "title": "On the Ground",
-          "description": "Trade flow analysis, seasonal forecasting, and regulatory intelligence updated weekly for our partners."
+          "title": "Market Intelligence",
+          "description": "Weekly deep-dives into trade flows, seasonal shifts, and regulatory changes, keeping our airline partners ahead of the curve."
         },
         "digital": {
-          "title": "In the Cloud",
-          "description": "Real-time dashboards, API connectivity, and digital booking platforms at your fingertips."
+          "title": "Digital Transformation",
+          "description": "Real-time visibility, API integration, and proprietary booking platforms providing full transparency to our partners."
         }
       }
     },
     "gsa": {
-      "eyebrow": "Partnerships",
-      "title": "Airlines we represent",
-      "lead": "Trusted by carriers worldwide to grow their Korean market presence. From flag carriers to specialty freighters.",
-      "cta": "Become a partner"
+      "eyebrow": "Airline Partnerships",
+      "title": "Strategic GSSA Mandates",
+      "lead": "Trusted by global flag carriers and specialty freighters to dominate the Korean cargo market. Our success is measured by your revenue growth.",
+      "cta": "Explore Partnership"
     },
     "services": {
-      "eyebrow": "What we do",
-      "titleLine1": "Your commercial cargo",
-      "titleLine2": "team in Korea",
-      "lead": "Not a forwarder, not a middleman — a dedicated GSSA representing airline capacity in Korea. We sell, price, and grow your cargo business as if it were our own.",
+      "eyebrow": "Our Capabilities",
+      "titleLine1": "Your Dedicated",
+      "titleLine2": "Commercial Cargo Team",
+      "lead": "We are your exclusive gateway to Korea. Not a forwarder, not a broker — but a pure-play GSSA representing your capacity with absolute integrity and commercial drive.",
       "items": {
         "sales": {
-          "name": "Cargo Sales",
-          "tagline": "We sell as if it were our own",
-          "description": "Dedicated sales across Korea's forwarder and shipper base — lifting your load factors and revenue."
+          "name": "Cargo Sales Representation",
+          "tagline": "Proactive Revenue Generation",
+          "description": "Aggressive sales across Korea’s logistics landscape to consistently lift load factors and market share."
         },
         "pricing": {
-          "name": "Pricing & Yield",
-          "tagline": "The right rate on every lane",
-          "description": "Market-driven pricing and yield management that defends margin while staying competitive."
+          "name": "Yield & Price Management",
+          "tagline": "Defending Your Margin",
+          "description": "Sophisticated, market-driven pricing models that protect yield while ensuring high-volume bookings."
         },
         "capacity": {
-          "name": "Capacity Management",
-          "tagline": "Every kilo accounted for",
-          "description": "Space and allotment managed to your network, season, and commercial targets."
+          "name": "Space & Capacity Operations",
+          "tagline": "Optimizing Every Kilo",
+          "description": "Expert management of allotments, ULDs, and build-ups to prevent wasted capacity and maximize revenue."
         },
         "intelligence": {
-          "name": "Market Intelligence",
-          "tagline": "Korea, in real time",
-          "description": "On-the-ground demand signals, competitor moves, and reporting that sharpen your decisions."
-        }
-      },
-      "logistics": {
-        "label": "Looking for integrated logistics?",
-        "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
-        "cta": "Visit Goodman GLS"
-      }
-    },
-    "company": {
-      "eyebrow": "Established 2014",
-      "titleLine1": "Small Giant.",
-      "titleLine2": "Big Impact.",
-      "lead": "As a dedicated GSSA, airline cargo representation is our core identity — not a side business. Backed by ECS Group, we rival companies many times our size through technical precision and local expertise.",
-      "values": {
-        "trust": {
-          "title": "Trust",
-          "desc": "The foundation of every partnership"
-        },
-        "velocity": {
-          "title": "Velocity",
-          "desc": "Logistics at the speed of business"
-        },
-        "connectivity": {
-          "title": "Connectivity",
-          "desc": "Global network, local expertise"
-        }
-      },
-      "quote": "“In logistics, every shipment carries not just cargo, but our clients’ trust and reputation.”",
-      "quoteCite": "CEO & Founder"
-    },
-    "network": {
-      "eyebrow": "Built for scale",
-      "titleLine1": "We rival enterprises",
-      "titleLine2": "many times our size.",
-      "lead": "Through ECS Group — the world’s largest GSSA infrastructure spanning 59 nations — we wield the network of a multinational while preserving the responsiveness of a specialist team.",
-      "cta": "See the network"
-    },
-    "partnerHub": {
-      "eyebrow": "Exclusive",
-      "title": "Partner Hub",
-      "lead": "Exclusive resources for our global network. Access technical intelligence and strategic insights to grow your business in Korea.",
-      "features": {
-        "agent": "Agent Zone — partner registration & tariff access",
-        "insights": "Market insights — Korea trade intelligence reports",
-        "account": "Dedicated account management"
-      },
-      "cta": "Contact us to join"
-    },
-    "contact": {
-      "eyebrow": "Connect",
-      "titleLine1": "Let's talk about",
-      "titleLine2": "your cargo.",
-      "lead": "24/7 support for your logistics needs. We represent your brand in Korea with technical precision.",
-      "office": "Office",
-      "officeValue": "Gangseo IT Valley, Seoul, South Korea",
-      "email": "Email",
-      "hours": "Hours",
-      "hoursValue": "Mon–Fri 9:00–18:00 KST",
-      "nameLabel": "Name",
-      "namePlaceholder": "Enter your name",
-      "emailLabel": "Email",
-      "emailPlaceholder": "Enter your email",
-      "messageLabel": "Message",
-      "messagePlaceholder": "Tell us about your requirements",
-      "send": "Send message",
-      "sending": "Sending...",
-      "success": "Message sent successfully.",
-      "error": "Failed to send message. Please try again."
-    },
-    "footer": {
-      "titleLine1": "The Small Giant.",
-      "titleLine2": "Global Impact.",
-      "lead": "Elevating logistics representation since 2014. We provide the infrastructure for your global ambitions with localized Korean expertise.",
-      "cta": "Start a Partnership",
-      "companyHeading": "Company",
-      "servicesHeading": "Services",
-      "links": {
-        "about": "About Us",
-        "network": "Network",
-        "partnerHub": "Partner Hub",
-        "privacy": "Privacy Policy",
-        "terms": "Terms of Service",
-        "sales": "Cargo Sales",
-        "pricing": "Pricing & Yield",
-        "capacity": "Capacity",
-        "intelligence": "Market Intelligence",
-        "logistics": "Goodman GLS (Logistics)"
-      },
-      "copyright": "© 2026 GOODMAN Global Logistics Service. All rights reserved.",
-      "tagline": "Korea cargo GSSA · ECS Group partner"
-    }
-  },
-  "company": {
-    "title": "Small Giant. Big Impact.",
-    "subtitle": "Korea's Cargo GSSA Specialist Since 2014",
-    "description": "As a dedicated GSSA, airline cargo representation is our core identity — not a side business. Our deep airline mandates and alignment with the world's leading GSSA networks give us capabilities that rival companies many times our size.",
-    "identity": "Est. 2014 Cargo GSSA | ECS Group Partner | Global GSSA Network",
-    "strengths": {
-      "local": "Strong local dominance at Incheon/Busan hubs",
-      "market": "Optimal route proposals by expert groups",
-      "relationship": "Trust-based relationships maximizing partner revenue",
-      "operational": "24/7 Flawless Operational System"
-    },
-    "values": {
-      "trust": "Trust",
-      "trustDesc": "The foundation of every partnership",
-      "velocity": "Velocity",
-      "velocityDesc": "Logistics at the speed of business",
-      "connectivity": "Connectivity",
-      "connectivityDesc": "Global network, local expertise"
-    },
-    "ceoQuote": "\"In logistics, every shipment carries not just cargo, but our clients' trust and reputation.\"",
-    "ceoRole": "CEO & Founder",
-    "since": "Since 2014"
-  },
-  "hero": {
-    "badge": "Cargo GSSA Since 2014",
-    "headlineLine1": "We Sell Your Cargo",
-    "headlineLine2": "as If It Were",
-    "headlineLine3": "Our Own",
-    "subheadline": "5 airlines. 59 countries via ECS Group. One dedicated cargo team in Korea.",
-    "description": "",
-    "ctaPrimary": "Request a Rate",
-    "ctaSecondary": "Meet Our Airlines",
-    "stats": {
-      "years": "Years Experience",
-      "countries": "Countries Served",
-      "shipments": "Shipments/Year"
-    }
-  },
-  "trust": {
-    "title": "Trusted Global Networks",
-    "subtitle": "GSSA Credentials:",
-    "wca": "World Cargo Alliance",
-    "gssa": "Cargo Sales Agency",
-    "csa": "Cargo Sales Agent",
-    "iata": "IATA Certified Agent"
-  },
-  "stats": {
-    "subtitle": "Goodman GLS by the Numbers",
-    "years": "Years of Experience",
-    "airlines": "Airlines Represented",
-    "countries": "Countries Connected",
-    "offices": "Offices in Korea"
-  },
-  "whyGssa": {
-    "badge": "Why Partner With Us?",
-    "title": "We Think Like an Airline. We Act Like Your Team.",
-    "description": "A GSSA is not a middleman. We are your dedicated commercial team in Korea — selling your capacity, managing your brand, and growing your revenue as if it were our own business.",
-    "definitionLabel": "What We Do",
-    "definitionTitle": "Your Cargo Department in Korea",
-    "definitionBody": "We handle everything — from cargo sales and pricing to capacity management and customer relationships. Airlines gain a fully operational commercial team in Korea without the overhead of building one.",
-    "whyLabel": "Why It Matters",
-    "whyTitle": "Measurable Results",
-    "whyBody": "Our airline partners see immediate impact: increased load factors, stronger forwarder relationships, and real-time market intelligence that drives revenue growth. 10+ years of track record in Korea, with leadership bringing 38+ years of airline cargo experience.",
-    "pillars": {
-      "sales": {
-        "title": "In the Market",
-        "description": "We sell smart, act fast, and deliver consistently. Our local teams know every forwarder, every route, every opportunity in Korea."
-      },
-      "capacity": {
-        "title": "In the Air",
-        "description": "Dynamic pricing, yield optimization, and strategic space allocation that maximizes your revenue per flight."
-      },
-      "intelligence": {
-        "title": "On the Ground",
-        "description": "Trade flow analysis, seasonal forecasting, competitive benchmarking, and regulatory intelligence — updated weekly."
-      },
-      "digital": {
-        "title": "In the Cloud",
-        "description": "Real-time dashboards, API connectivity, digital booking platforms, and performance analytics at your fingertips."
-      }
-    }
-  },
-  "gsa": {
-    "title": "Airlines We Represent",
-    "subtitle": "Trusted by carriers worldwide to grow their Korean market presence",
-    "description": "From flag carriers to specialty freighters, we deliver dedicated cargo sales representation across every segment.",
-    "partners": {
-      "ws": "WestJet Cargo (GSA) - Canada, USA, Mexico, Europe",
-      "o3": "ShunFeng Airlines (CSA) - China, SE Asia, Japan, Korea",
-      "bx": "Air Busan (GSA) - China, Japan, SE Asia",
-      "mo": "Aero Mongolia (GSA) - Mongolia",
-      "su": "Aeroflot (CSA) - Russia, CIS, Europe, USA"
-    },
-    "cta": "View Our Airline Partners"
-  },
-  "partnerHub": {
-    "title": "Partner Hub",
-    "subtitle": "Exclusive Resources for Our Global Network",
-    "agentZone": "Agent Zone - Partner Registration & Tariff Access",
-    "marketInsights": "Market Insights - Korea Trade Intelligence Reports",
-    "dedicatedManagement": "Dedicated Account Management",
-    "cta": "Access Partner Portal"
-  },
-  "footer": {
-    "tagline": "GOODMAN GLS - Your Strategic Partner in Korea & Beyond",
-    "description": "Korea's dedicated cargo GSSA, backed by ECS Group's global network since 2014.",
-    "quickLinks": "Quick Links",
-    "memberOf": "Member of:",
-    "copyright": "© 2025 GOODMAN Global Logistics Service. All rights reserved."
-  },
-  "quickTools": {
-    "rateInquiry": "Rate Inquiry",
-    "trackTrace": "Track & Trace",
-    "partnerLogin": "Partner Login",
-    "comingSoon": "Coming Soon",
-    "support": "24/7 Support"
-  },
-  "floatingConnect": {
-    "title": "Connect With Us",
-    "businessHours": "Business Development Team",
-    "availability": "Available Mon-Fri 9:00-18:00 KST",
-    "whatsapp": "WhatsApp",
-    "wechat": "WeChat",
-    "telegram": "Telegram",
-    "kakao": "KakaoTalk",
-    "email": "Email"
-  },
-  "rateInquiryModal": {
-    "title": "Request a Rate Quote",
-    "serviceType": "Service Type",
-    "shipmentType": "Shipment Type",
-    "origin": "Origin",
-    "destination": "Destination",
-    "cargoDetails": "Cargo Details",
-    "cargoPlaceholder": "Weight, dimensions, commodity...",
-    "yourName": "Your Name",
-    "company": "Company",
-    "phone": "Phone (with country code)",
-    "submitInquiry": "Submit Inquiry",
-    "airFreight": "Air Freight",
-    "oceanFreight": "Ocean Freight",
-    "projectCargo": "Project Cargo",
-    "import": "Import",
-    "export": "Export",
-    "cityCountryPlaceholder": "City, Country"
-  },
-  "common": {
-    "readMore": "Read More",
-    "downloadPdf": "Download PDF",
-    "subscribe": "Subscribe",
-    "applyNow": "Apply Now",
-    "requestAccess": "Request Tariff Access",
-    "contactTeam": "Contact Partnership Team"
-  },
-  "auth": {
-    "partnerPortal": "Partner Portal",
-    "loginTitle": "Sign In to Your Account",
-    "registerTitle": "Create Partner Account",
-    "registerSubtitle": "Join our global logistics and airline cargo network",
-    "email": "Email Address",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "yourName": "Your Name",
-    "companyName": "Company Name",
-    "country": "Country",
-    "companyType": "Company Type",
-    "selectCountry": "Select your country",
-    "selectType": "Select company type",
-    "accountInfo": "Account Information",
-    "companyInfo": "Company Information",
-    "networkMemberships": "Network Memberships",
-    "networkMembershipsHint": "Select if your company is a member of any of these networks",
-    "termsAgree": "I agree to the",
-    "termsLink": "Terms of Service",
-    "termsAnd": "and",
-    "privacyLink": "Privacy Policy",
-    "login": "Sign In",
-    "loggingIn": "Signing In...",
-    "createAccount": "Create Account",
-    "registering": "Creating Account...",
-    "noAccount": "Don't have an account?",
-    "registerNow": "Register Now",
-    "haveAccount": "Already have an account?",
-    "loginHere": "Sign In",
-    "rememberMe": "Remember me",
-    "forgotPassword": "Forgot password?",
-    "backToHome": "Back to Home",
-    "backToLogin": "Back to Sign In",
-    "registrationSuccess": "Registration successful! Please check your email to verify your account.",
-    "verificationSuccess": "Your email has been verified! You can now sign in.",
-    "verificationFailed": "Verification Failed",
-    "verifyingEmail": "Verifying Your Email",
-    "pleaseWait": "Please wait while we verify your email address...",
-    "emailVerified": "Email Verified!",
-    "redirectingToLogin": "Redirecting you to sign in...",
-    "noToken": "No verification token provided.",
-    "verificationError": "An error occurred during verification. Please try again.",
-    "registerAgain": "Register Again",
-    "resetPasswordTitle": "Reset Your Password",
-    "resetPasswordSubtitle": "Enter your email address and we'll send you a link to reset your password",
-    "sendResetLink": "Send Reset Link",
-    "sendingResetLink": "Sending...",
-    "resetLinkSent": "Password reset link sent! Please check your email.",
-    "newPassword": "New Password",
-    "confirmNewPassword": "Confirm New Password",
-    "resetPassword": "Reset Password",
-    "resettingPassword": "Resetting...",
-    "passwordResetSuccess": "Your password has been reset successfully. You can now sign in with your new password.",
-    "invalidResetToken": "Invalid or expired reset token.",
-    "passwordsDoNotMatch": "Passwords do not match."
-  },
-  "portal": {
-    "partnerPortal": "Partner Portal",
-    "signOut": "Sign Out",
-    "welcome": "Welcome",
-    "partner": "Partner",
-    "dashboardSubtitle": "Manage your shipments, request quotes, and access exclusive partner resources.",
-    "quickActions": "Quick Actions",
-    "requestQuote": "Request Quote",
-    "requestQuoteDesc": "Get competitive rates for your shipments",
-    "trackShipment": "Track Shipment",
-    "trackShipmentDesc": "Monitor your cargo in real-time",
-    "viewRates": "View Rates",
-    "viewRatesDesc": "Access our latest tariff schedules",
-    "marketInsights": "Market Insights",
-    "marketInsightsDesc": "Korea trade intelligence reports",
-    "recentQuotes": "Recent Quotes",
-    "viewAll": "View All",
-    "noQuotesYet": "No quote requests yet",
-    "requestFirstQuote": "Request Your First Quote",
-    "accountInfo": "Account Information",
-    "memberSince": "Member Since",
-    "accountStatus": "Account Status",
-    "active": "Active",
-    "accountType": "Account Type",
-    "partnerAccount": "Partner Account",
-    "manageAccount": "Manage Account",
-    "needHelp": "Need Help?",
-    "needHelpDesc": "Our team is ready to assist you with any questions.",
-    "contactSupport": "Contact Support",
-    "dashboard": "Dashboard",
-    "quotes": "Quotes",
-    "settings": "Settings",
-    "totalQuotes": "Total Quotes",
-    "pendingQuotes": "Pending",
-    "quotedLabel": "Quoted",
-    "acceptedLabel": "Accepted"
-  },
-  "quotes": {
-    "dashboard": "Dashboard",
-    "quotes": "Quotes",
-    "myQuotes": "My Quotes",
-    "newQuote": "New Quote",
-    "newQuoteTitle": "Request a Rate Quote",
-    "newQuoteSubtitle": "Get competitive rates for your shipment within 24 hours",
-    "totalQuotes": "total quotes",
-    "noQuotes": "No quote requests found",
-    "createFirst": "Request Your First Quote",
-    "selectServiceType": "Select service type",
-    "selectShipmentType": "Select shipment type",
-    "weight": "Weight",
-    "weightPlaceholder": "e.g. 500",
-    "commodity": "Commodity",
-    "commodityPlaceholder": "e.g. Electronics, Textiles",
-    "dimensions": "Dimensions",
-    "dimensionsPlaceholder": "e.g. 120x80x100 cm",
-    "submitting": "Submitting...",
-    "cancel": "Cancel",
-    "submitSuccess": "Quote Submitted!",
-    "submitSuccessDesc": "We've received your request and will respond within 24 business hours.",
-    "submitAnother": "Submit Another Quote",
-    "searchPlaceholder": "Search by origin, destination, commodity...",
-    "allStatuses": "All Statuses",
-    "allServices": "All Services",
-    "statusPending": "Pending",
-    "statusQuoted": "Quoted",
-    "statusAccepted": "Accepted",
-    "statusExpired": "Expired",
-    "statusCancelled": "Cancelled",
-    "guest": "Guest",
-    "previous": "Previous",
-    "next": "Next",
-    "quoteNotFound": "Quote not found",
-    "backToQuotes": "Back to Quotes",
-    "shipmentDetails": "Shipment Details",
-    "serviceType": "Service Type",
-    "shipmentType": "Shipment Type",
-    "origin": "Origin",
-    "destination": "Destination",
-    "cargoDetails": "Cargo Details",
-    "quotedRate": "Quoted Rate",
-    "validUntil": "Valid Until",
-    "adminNotes": "Notes from our team",
-    "acceptQuote": "Accept Quote",
-    "cancelQuote": "Cancel Quote",
-    "confirmAccept": "Are you sure you want to accept this quote?",
-    "confirmCancel": "Are you sure you want to cancel this quote?",
-    "timeline": "Timeline",
-    "quoteInfo": "Quote Information",
-    "created": "Created",
-    "lastUpdated": "Last Updated",
-    "timelineSubmitted": "Submitted",
-    "timelineSubmittedDesc": "Quote request received",
-    "timelineQuoted": "Rate Quoted",
-    "timelineQuotedDesc": "Awaiting admin response",
-    "timelineRespondedBy": "Responded by",
-    "timelineAccepted": "Accepted",
-    "timelineAcceptedDesc": "Quote accepted by partner",
-    "timelineCancelled": "Cancelled",
-    "timelineExpired": "Expired",
-    "quoteAccepted": "Quote accepted successfully!",
-    "quoteCancelled": "Quote has been cancelled.",
-    "confirmAcceptDesc": "This will accept the quoted rate.",
-    "confirmCancelDesc": "This will cancel your quote request.",
-    "goBack": "Go Back"
-  },
-  "pages": {
-    "company": {
-      "heroEyebrow": "The Story",
-      "heroTitleLine1": "Trust Through",
-      "heroTitleLine2": "Action. Since 2014.",
-      "heroLead": "We aren't the biggest, but we aim to be the most impactful. Founded on the principle that logistics is a people business, we've spent a decade proving that trust is earned, not given.",
-      "ceoEyebrow": "Leadership Insight",
-      "ceoQuote": "Small Giant, Big Impact. That's our North Star.",
-      "ceoP1": "Welcome to GOODMAN GLS. Since our founding in 2014, we've built our reputation on a simple principle: trust through action.",
-      "ceoP2": "As a leading GSSA in Korea, we are strategically positioned as the gateway between global airlines and Korea's logistics market.",
-      "ceoP3": "Our team of logistics professionals brings decades of combined experience in time-critical air freight and complex project cargo. We understand that every shipment carries not just cargo, but our clients' reputation.",
-      "ceoName": "Hyeon-Eok SHIN",
-      "ceoRole": "CEO & Founder",
-      "ceoBio": "38+ years in air cargo; former executive at Korean Air & Asiana Airlines Cargo. Architect of the GOODMAN service model.",
-      "heritageEyebrow": "The Heritage",
-      "heritageTitle": "A Decade of Excellence",
-      "teamEyebrow": "The Experts",
-      "teamTitleLine1": "Logistics is a",
-      "teamTitleLine2": "People Business.",
-      "teamLead": "Our advantage is our team. We've brought together the sharpest minds in Korean air freight to ensure your cargo—and your reputation—is in the right hands.",
-      "teamDivision": "Division",
-      "teamExpertise": "Core Expertise",
-      "teamViewProfile": "View Profile →",
-      "valuesTitle": "Our Core Values",
-      "timeline": {
-        "2014": {
-          "milestone": "GOODMAN GLS founded in Seoul",
-          "desc": "Started as a cargo GSSA specializing in airline cargo sales with a vision to redefine the Korean market."
-        },
-        "2015": {
-          "milestone": "First GSA Partnership",
-          "desc": "Became General Sales Agent for major airline, proving the 'Small Giant' model works."
-        },
-        "2018": {
-          "milestone": "Global GSSA Network Expansion",
-          "desc": "Aligned with leading international GSSA networks to extend cargo reach across 59+ countries."
-        },
-        "2020": {
-          "milestone": "Project Cargo Division Launch",
-          "desc": "Expanded into heavy-lift and specialized cargo for industrial partners."
-        },
-        "2025": {
-          "milestone": "Digital Platform Renewal",
-          "desc": "Investing in next-gen technology for real-time partner transparency."
-        }
-      },
-      "team": {
-        "lee": {
-          "name": "Lee Chang-hee (이창희)",
-          "title": "Business Development Manager",
-          "department": "GSA/CSA Division",
-          "expertise": "Airline partnerships, Route development"
-        },
-        "kim": {
-          "name": "Kim Min-ji (김민지)",
-          "title": "Operations Director",
-          "department": "Air & Ocean Operations",
-          "expertise": "Supply chain optimization, Customer service"
-        },
-        "park": {
-          "name": "Park Seung-ho (박승호)",
-          "title": "Project Cargo Specialist",
-          "department": "Special Projects",
-          "expertise": "Heavy-lift, Multi-modal logistics"
-        }
-      },
-      "values": {
-        "trust": {
-          "label": "01",
-          "value": "Trust",
-          "desc": "Earned through consistent delivery and total transparency."
-        },
-        "velocity": {
-          "label": "02",
-          "value": "Velocity",
-          "desc": "Speed matters in time-critical logistics. We move faster."
-        },
-        "connectivity": {
-          "label": "03",
-          "value": "Connectivity",
-          "desc": "Global reach through our elite strategic partnerships."
+          "name": "Strategic Reporting",
+          "tagline": "Real-Time Market Vision",
+          "description": "Granular data on competitor moves and demand signals, turning market noise into actionable strategy."
         }
       }
-    }
-  },
-  "adminQuotes": {
-    "title": "Quote Management",
-    "totalQuotes": "total quotes",
-    "pendingReview": "pending review",
-    "noQuotes": "No quotes found",
-    "backToQuotes": "Back to Quotes",
-    "requesterInfo": "Requester Information",
-    "name": "Name",
-    "email": "Email",
-    "company": "Company",
-    "phone": "Phone",
-    "respondTitle": "Respond with Rate",
-    "quotedRate": "Rate Amount",
-    "currency": "Currency",
-    "validUntil": "Valid Until",
-    "notes": "Notes",
-    "notesPlaceholder": "Add any notes or conditions for this rate...",
-    "submitting": "Submitting...",
-    "submitResponse": "Submit Rate Response",
-    "responseDetails": "Response Details",
-    "respondedBy": "Responded by",
-    "source": "Source",
-    "publicForm": "Public Form",
-    "partnerPortal": "Partner Portal",
-    "respondSubtitle": "Provide a rate quote for this shipment request.",
-    "responseSubmitted": "Response submitted successfully!",
-    "previous": "Previous",
-    "next": "Next"
-  },
-  "servicesPage": {
-    "hero": {
-      "eyebrow": "Our capabilities",
-      "title": "Your cargo department in Korea.",
-      "lead": "Goodman is a GSSA — a General & Cargo Sales Agent. We are the commercial cargo team for the airlines we represent in Korea: selling, pricing, managing capacity, and protecting your brand as if it were our own."
-    },
-    "quickAccess": "Quick access",
-    "items": {
-      "sales": {
-        "name": "Cargo Sales",
-        "tagline": "We sell as if it were our own.",
-        "overview": "We are your dedicated cargo sales force in Korea — covering the forwarder community and direct shippers, and building the relationships that fill your flights. No middleman markup; just your revenue, grown.",
-        "features": {
-          "f1": "Forwarder & direct-shipper coverage",
-          "f2": "Active demand generation",
-          "f3": "Brand representation in market",
-          "f4": "Joint sales planning with your team"
-        },
-        "whyLabel": "Why it matters",
-        "why": "Airlines gain a fully operational commercial team in Korea without the overhead of building one — and see it in their load factors."
-      },
-      "pricing": {
-        "name": "Pricing & Yield",
-        "tagline": "The right rate on every lane.",
-        "overview": "Market-driven pricing and yield management that protect your margin while staying competitive. We read the Korean market daily and price to win the cargo that matters.",
-        "features": {
-          "f1": "Dynamic, lane-level pricing",
-          "f2": "Yield & margin protection",
-          "f3": "Rate filing & quotation",
-          "f4": "Competitor rate intelligence"
-        },
-        "whyLabel": "Why it matters",
-        "why": "Every shipment is priced to balance load factor and yield — not discounted just to fill space."
-      },
-      "capacity": {
-        "name": "Capacity Management",
-        "tagline": "Every kilo accounted for.",
-        "overview": "We manage your space and allotments in Korea to your network, season, and commercial goals — coordinating bookings, build-up, and uplift so capacity is sold, not wasted.",
-        "features": {
-          "f1": "Allotment & space management",
-          "f2": "Booking & uplift coordination",
-          "f3": "Seasonal capacity planning",
-          "f4": "ULD & build-up oversight"
-        },
-        "whyLabel": "Why it matters",
-        "why": "Unsold capacity is lost revenue. We treat every kilo of your space as our own."
-      },
-      "intelligence": {
-        "name": "Market Intelligence",
-        "tagline": "Korea, in real time.",
-        "overview": "On-the-ground intelligence on demand, competitors, and regulation — reported back to you so you make commercial decisions with current facts, not last quarter's.",
-        "features": {
-          "f1": "Demand & trade-lane signals",
-          "f2": "Competitor & rate monitoring",
-          "f3": "Regular commercial reporting",
-          "f4": "Regulatory & market updates"
-        },
-        "whyLabel": "Why it matters",
-        "why": "Distance from a market is a disadvantage. We close it with real-time eyes in Korea."
-      }
-    },
-    "cta": {
-      "titleLine1": "Ready to grow",
-      "titleLine2": "your Korea cargo?",
-      "lead": "Whether you're entering the Korean market or sharpening an existing operation, our team is ready to represent your cargo as our own.",
-      "primary": "Talk to our team",
-      "secondary": "About our team →"
-    },
-    "logistics": {
-      "label": "Looking for integrated logistics?",
-      "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
-      "cta": "Visit Goodman GLS"
     }
   }
 }

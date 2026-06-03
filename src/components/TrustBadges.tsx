@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 const memberships = [
   { name: 'GSSA', desc: 'General Sales & Service Agent' },
@@ -11,7 +11,7 @@ const memberships = [
 ];
 
 export default function TrustBadges() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   return (
     <div className="bg-canvas py-12 border-b border-hairline">
       <div className="container-wide">
