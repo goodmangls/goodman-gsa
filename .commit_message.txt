@@ -1,1 +1,1 @@
-📐 docs(design): gsa-positioning-services 설계 — 홈 ServicesShowcase·/services 재작성·dormant 물류링크 (PR #1 de-dup)
+✨ feat(gsa): GSSA 전용 포지셔닝 — 홈 ServicesShowcase 재카피 + /services GSSA 역량 페이지 전면 재작성(i18n화) + dormant 물류 크로스링크

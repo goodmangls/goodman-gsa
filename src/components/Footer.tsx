@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import DisplayLines from './DisplayLines';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getLogisticsSiteUrl } from '@/lib/site-links';
 
 const footerLinks = {
   company: [
@@ -12,9 +13,10 @@ const footerLinks = {
     { key: 'partnerHub', href: '/#partner-hub' },
   ],
   services: [
-    { key: 'air', href: '/services#air' },
-    { key: 'ocean', href: '/services#ocean' },
-    { key: 'project', href: '/services#project' },
+    { key: 'sales', href: '/services#sales' },
+    { key: 'pricing', href: '/services#pricing' },
+    { key: 'capacity', href: '/services#capacity' },
+    { key: 'intelligence', href: '/services#intelligence' },
   ],
   legal: [
     { key: 'privacy', href: '#' },
@@ -24,6 +26,7 @@ const footerLinks = {
 
 export default function Footer() {
   const { t } = useLanguage();
+  const logisticsUrl = getLogisticsSiteUrl();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -97,6 +100,16 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            {logisticsUrl && (
+              <a
+                href={logisticsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="body-sm font-bold text-canvas-white/55 hover:text-canvas-white transition-colors inline-block mt-6"
+              >
+                {t('home.footer.links.logistics')} ↗
+              </a>
+            )}
           </div>
         </div>
 

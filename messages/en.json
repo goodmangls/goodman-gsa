@@ -56,31 +56,36 @@
       "cta": "Become a partner"
     },
     "services": {
-      "eyebrow": "Capabilities",
-      "titleLine1": "Beyond GSSA —",
-      "titleLine2": "Full logistics capability",
-      "lead": "Air, ocean, and project cargo expertise to complement our airline partnerships. We deliver velocity and trust in every shipment.",
+      "eyebrow": "What we do",
+      "titleLine1": "Your commercial cargo",
+      "titleLine2": "team in Korea",
+      "lead": "Not a forwarder, not a middleman — a dedicated GSSA representing airline capacity in Korea. We sell, price, and grow your cargo business as if it were our own.",
       "items": {
-        "air": {
-          "name": "Air Freight",
-          "tagline": "When Every Minute Counts",
-          "description": "Express and time-critical air cargo solutions with GSA/CSA expertise for major carriers."
+        "sales": {
+          "name": "Cargo Sales",
+          "tagline": "We sell as if it were our own",
+          "description": "Dedicated sales across Korea's forwarder and shipper base — lifting your load factors and revenue."
         },
-        "ocean": {
-          "name": "Ocean Freight",
-          "tagline": "Global Reach, Local Expertise",
-          "description": "Full container load (FCL) and less than container load (LCL) services worldwide."
+        "pricing": {
+          "name": "Pricing & Yield",
+          "tagline": "The right rate on every lane",
+          "description": "Market-driven pricing and yield management that defends margin while staying competitive."
         },
-        "project": {
-          "name": "Project Cargo",
-          "tagline": "Complex Solutions Made Simple",
-          "description": "Specialized handling for oversized, heavy, and high-value project shipments."
+        "capacity": {
+          "name": "Capacity Management",
+          "tagline": "Every kilo accounted for",
+          "description": "Space and allotment managed to your network, season, and commercial targets."
         },
-        "aero": {
-          "name": "Goodman Aero Solutions",
-          "tagline": "Completing Expertise",
-          "description": "Total solutions supporting safe aircraft operations including AOG support and parts sale."
+        "intelligence": {
+          "name": "Market Intelligence",
+          "tagline": "Korea, in real time",
+          "description": "On-the-ground demand signals, competitor moves, and reporting that sharpen your decisions."
         }
+      },
+      "logistics": {
+        "label": "Looking for integrated logistics?",
+        "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
+        "cta": "Visit Goodman GLS"
       }
     },
     "company": {
@@ -155,11 +160,13 @@
         "about": "About Us",
         "network": "Network",
         "partnerHub": "Partner Hub",
-        "air": "Air Cargo",
-        "ocean": "Ocean Freight",
-        "project": "Project Cargo",
         "privacy": "Privacy Policy",
-        "terms": "Terms of Service"
+        "terms": "Terms of Service",
+        "sales": "Cargo Sales",
+        "pricing": "Pricing & Yield",
+        "capacity": "Capacity",
+        "intelligence": "Market Intelligence",
+        "logistics": "Goodman GLS (Logistics)"
       },
       "copyright": "© 2026 GOODMAN Global Logistics Service. All rights reserved.",
       "tagline": "Korea cargo GSSA · ECS Group partner"
@@ -246,31 +253,6 @@
         "description": "Real-time dashboards, API connectivity, digital booking platforms, and performance analytics at your fingertips."
       }
     }
-  },
-  "services": {
-    "title": "Beyond GSSA — Full Logistics Capability",
-    "subtitle": "Air, ocean, and project cargo expertise to complement our airline partnerships.",
-    "air": {
-      "name": "Air Freight",
-      "tagline": "When Every Minute Counts",
-      "description": "Express and time-critical air cargo solutions with GSA/CSA expertise for major carriers."
-    },
-    "ocean": {
-      "name": "Ocean Freight",
-      "tagline": "Global Reach, Local Expertise",
-      "description": "Full container load (FCL) and less than container load (LCL) services worldwide."
-    },
-    "project": {
-      "name": "Project Cargo",
-      "tagline": "Complex Solutions Made Simple",
-      "description": "Specialized handling for oversized, heavy, and high-value project shipments."
-    },
-    "mro": {
-      "name": "Goodman Aero Solutions (MRO)",
-      "tagline": "Completing Expertise",
-      "description": "Total solutions supporting safe aircraft operations including AOG support, parts sale/exchange, and consignment."
-    },
-    "learnMore": "Learn More"
   },
   "gsa": {
     "title": "Airlines We Represent",
@@ -619,5 +601,79 @@
     "responseSubmitted": "Response submitted successfully!",
     "previous": "Previous",
     "next": "Next"
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Our capabilities",
+      "title": "Your cargo department in Korea.",
+      "lead": "Goodman is a GSSA — a General & Cargo Sales Agent. We are the commercial cargo team for the airlines we represent in Korea: selling, pricing, managing capacity, and protecting your brand as if it were our own."
+    },
+    "quickAccess": "Quick access",
+    "items": {
+      "sales": {
+        "name": "Cargo Sales",
+        "tagline": "We sell as if it were our own.",
+        "overview": "We are your dedicated cargo sales force in Korea — covering the forwarder community and direct shippers, and building the relationships that fill your flights. No middleman markup; just your revenue, grown.",
+        "features": {
+          "f1": "Forwarder & direct-shipper coverage",
+          "f2": "Active demand generation",
+          "f3": "Brand representation in market",
+          "f4": "Joint sales planning with your team"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Airlines gain a fully operational commercial team in Korea without the overhead of building one — and see it in their load factors."
+      },
+      "pricing": {
+        "name": "Pricing & Yield",
+        "tagline": "The right rate on every lane.",
+        "overview": "Market-driven pricing and yield management that protect your margin while staying competitive. We read the Korean market daily and price to win the cargo that matters.",
+        "features": {
+          "f1": "Dynamic, lane-level pricing",
+          "f2": "Yield & margin protection",
+          "f3": "Rate filing & quotation",
+          "f4": "Competitor rate intelligence"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Every shipment is priced to balance load factor and yield — not discounted just to fill space."
+      },
+      "capacity": {
+        "name": "Capacity Management",
+        "tagline": "Every kilo accounted for.",
+        "overview": "We manage your space and allotments in Korea to your network, season, and commercial goals — coordinating bookings, build-up, and uplift so capacity is sold, not wasted.",
+        "features": {
+          "f1": "Allotment & space management",
+          "f2": "Booking & uplift coordination",
+          "f3": "Seasonal capacity planning",
+          "f4": "ULD & build-up oversight"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Unsold capacity is lost revenue. We treat every kilo of your space as our own."
+      },
+      "intelligence": {
+        "name": "Market Intelligence",
+        "tagline": "Korea, in real time.",
+        "overview": "On-the-ground intelligence on demand, competitors, and regulation — reported back to you so you make commercial decisions with current facts, not last quarter's.",
+        "features": {
+          "f1": "Demand & trade-lane signals",
+          "f2": "Competitor & rate monitoring",
+          "f3": "Regular commercial reporting",
+          "f4": "Regulatory & market updates"
+        },
+        "whyLabel": "Why it matters",
+        "why": "Distance from a market is a disadvantage. We close it with real-time eyes in Korea."
+      }
+    },
+    "cta": {
+      "titleLine1": "Ready to grow",
+      "titleLine2": "your Korea cargo?",
+      "lead": "Whether you're entering the Korean market or sharpening an existing operation, our team is ready to represent your cargo as our own.",
+      "primary": "Talk to our team",
+      "secondary": "About our team →"
+    },
+    "logistics": {
+      "label": "Looking for integrated logistics?",
+      "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
+      "cta": "Visit Goodman GLS"
+    }
   }
 }
