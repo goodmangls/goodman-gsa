@@ -1,1 +1,1 @@
-🧹 chore(i18n): nav 트리 stale 4키 제거 + en.json 최상위 contact stale 트리 19키 제거
+🔍 docs(check): gsa-positioning-services gap 분석 Match 97% — 범위(A/B/C/D) 전 구현, 역량 6→4 설계허용 결정, 잔여 forwarding 용어·Vercel·prerender debt 범위밖 메모

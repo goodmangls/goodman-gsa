@@ -3,73 +3,15 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import DisplayLines from '@/components/DisplayLines';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { getLogisticsSiteUrl } from '@/lib/site-links';
+
+const itemKeys = ['sales', 'pricing', 'capacity', 'intelligence'] as const;
+const featureKeys = ['f1', 'f2', 'f3', 'f4'] as const;
 
 export default function ServicesPage() {
-  const services = [
-    {
-      name: "Air Freight",
-      id: "air",
-      icon: "✈️",
-      tagline: "When Every Minute Counts",
-      overview: "Our air freight division specializes in time-critical and temperature-sensitive cargo. With GSA/CSA partnerships across major airlines, we offer priority booking and competitive rates.",
-      features: [
-        "Express & Next Flight Out service",
-        "Temperature-controlled solutions",
-        "Dangerous goods certified",
-        "Hand-carry services",
-        "Charter arrangements"
-      ],
-      caseStudy: {
-        title: "Semiconductor Equipment",
-        route: "Seoul to Austin",
-        challenge: "72-hour delivery window for critical manufacturing equipment",
-        solution: "Direct charter arrangement with specialized packaging",
-        result: "Delivered in 48 hours, zero damage"
-      }
-    },
-    {
-      name: "Ocean Freight",
-      id: "ocean",
-      icon: "🚢",
-      tagline: "Global Reach, Local Expertise",
-      overview: "Full-service ocean freight solutions including FCL, LCL, and specialized container services. Our network reaches every major port worldwide.",
-      features: [
-        "FCL & LCL services",
-        "Reefer containers",
-        "Out-of-gauge cargo",
-        "Door-to-door deliveries",
-        "Customs brokerage"
-      ],
-      caseStudy: {
-        title: "Manufacturing Equipment",
-        route: "Busan to Hamburg",
-        challenge: "Oversized machinery requiring specialized container",
-        solution: "Flat rack container with custom securing arrangements",
-        result: "Safe transit, on-time delivery, 20% cost savings"
-      }
-    },
-    {
-      name: "Project Cargo",
-      id: "project",
-      icon: "📦",
-      tagline: "Complex Solutions Made Simple",
-      overview: "Specialized project logistics for oversized, heavy-lift, and high-value cargo. Full project management from planning to final installation.",
-      features: [
-        "Route surveys & feasibility studies",
-        "Multi-modal transportation",
-        "Heavy-lift capabilities",
-        "On-site project management",
-        "Insurance & risk management"
-      ],
-      caseStudy: {
-        title: "Power Plant Turbine",
-        route: "Korea to Vietnam",
-        challenge: "180-ton turbine requiring multi-modal transport",
-        solution: "Combined sea, river barge, and specialized road transport",
-        result: "100% success rate, completed 2 weeks early"
-      }
-    }
-  ];
+  const { t } = useLanguage();
+  const logisticsUrl = getLogisticsSiteUrl();
 
   return (
     <main className="bg-canvas min-h-screen">
@@ -81,100 +23,85 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-5xl"
           >
-            <span className="eyebrow mb-6">Our capabilities</span>
+            <span className="eyebrow mb-6">{t('servicesPage.hero.eyebrow')}</span>
             <h1 className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter">
-              Logistics at the Speed of Trust.
+              {t('servicesPage.hero.title')}
             </h1>
             <p className="body-lg text-muted max-w-2xl">
-              Beyond GSSA expertise, we deliver a full spectrum of logistics services designed for the most demanding supply chains. Small giant, big impact.
+              {t('servicesPage.hero.lead')}
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Services Navigation / Quick Links */}
+      {/* Quick access */}
       <section className="py-6 bg-canvas border-b border-hairline sticky top-16 md:top-16 z-30 backdrop-blur-xl bg-canvas/80">
         <div className="container-wide flex flex-wrap gap-4 md:gap-8 items-center">
-          <span className="eyebrow mr-4">Quick access</span>
-          {services.map((s) => (
-            <a key={s.id} href={`#${s.id}`} className="text-sm font-bold text-ink hover:text-muted transition-colors py-2">
-              {s.name}
+          <span className="eyebrow mr-4">{t('servicesPage.quickAccess')}</span>
+          {itemKeys.map((key) => (
+            <a key={key} href={`#${key}`} className="text-sm font-bold text-ink hover:text-muted transition-colors py-2">
+              {t(`servicesPage.items.${key}.name`)}
             </a>
           ))}
         </div>
       </section>
 
-      {/* Services Modular Blocks */}
+      {/* Capability blocks */}
       <div className="section-spacing space-y-24 md:space-y-32">
-        {services.map((service, index) => { const isDark = index % 2 === 1; const main = isDark ? "text-canvas-white" : "text-ink"; const sub = isDark ? "text-canvas-white/75" : "text-muted"; const border = isDark ? "border-canvas-white/20" : "border-hairline"; const dot = isDark ? "bg-canvas-white/50" : "bg-ink/40"; const caseMeta = isDark ? "text-canvas-white/35" : "text-muted"; const caseBtn = isDark ? "text-canvas-white/55 hover:text-canvas-white" : "text-muted hover:text-ink"; return (
-          <section key={service.id} id={service.id} className="container-wide scroll-mt-32">
-            <motion.div 
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              className={`panel-bordered ${isDark ? "section-surface-obsidian" : "bg-canvas"}`}
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-12">
-                <div className={`lg:col-span-7 p-10 md:p-16 lg:p-24 border-b lg:border-b-0 lg:border-r ${border} flex flex-col justify-between`}>
-                   <div>
+        {itemKeys.map((key, index) => {
+          const isDark = index % 2 === 1;
+          const main = isDark ? 'text-canvas-white' : 'text-ink';
+          const sub = isDark ? 'text-canvas-white/75' : 'text-muted';
+          const border = isDark ? 'border-canvas-white/20' : 'border-hairline';
+          const dot = isDark ? 'bg-canvas-white/50' : 'bg-ink/40';
+          return (
+            <section key={key} id={key} className="container-wide scroll-mt-32">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-100px' }}
+                className={`panel-bordered ${isDark ? 'section-surface-obsidian' : 'bg-canvas'}`}
+              >
+                <div className="grid grid-cols-1 lg:grid-cols-12">
+                  <div className={`lg:col-span-7 p-10 md:p-16 lg:p-24 border-b lg:border-b-0 lg:border-r ${border} flex flex-col justify-between`}>
+                    <div>
                       <div className="flex items-center gap-6 mb-16">
-                         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-4xl border ${border} ${isDark ? "bg-canvas-white/10" : "bg-surface-soft"}`}>
-                            {service.icon}
-                         </div>
-                         <span className="eyebrow">{service.name}</span>
+                        <div className={`w-16 h-16 rounded-2xl flex items-center justify-center border ${border} ${isDark ? 'bg-canvas-white/10' : 'bg-surface-soft'}`}>
+                          <span className={`headline ${main} font-bold tabular-nums`}>{String(index + 1).padStart(2, '0')}</span>
+                        </div>
+                        <span className="eyebrow">{t(`servicesPage.items.${key}.name`)}</span>
                       </div>
-                      <h2 className={`display-lg ${main} mb-8 leading-none tracking-tight`}>{service.tagline}</h2>
-                      <p className={`body-lg ${sub} mb-12 max-w-xl leading-relaxed`}>{service.overview}</p>
-                   </div>
-                   
-                   <div className={`grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 pt-16 border-t ${border}`}>
-                      {service.features.map((feature, i) => (
-                        <div key={i} className="flex items-start gap-4">
-                           <div className={`w-1.5 h-1.5 rounded-full ${dot} mt-2.5 flex-shrink-0`} />
-                           <span className={`body-sm ${main} font-medium`}>{feature}</span>
+                      <h2 className={`display-lg ${main} mb-8 leading-none tracking-tight`}>{t(`servicesPage.items.${key}.tagline`)}</h2>
+                      <p className={`body-lg ${sub} mb-12 max-w-xl leading-relaxed`}>{t(`servicesPage.items.${key}.overview`)}</p>
+                    </div>
+
+                    <div className={`grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 pt-16 border-t ${border}`}>
+                      {featureKeys.map((fk) => (
+                        <div key={fk} className="flex items-start gap-4">
+                          <div className={`w-1.5 h-1.5 rounded-full ${dot} mt-2.5 flex-shrink-0`} />
+                          <span className={`body-sm ${main} font-medium`}>{t(`servicesPage.items.${key}.features.${fk}`)}</span>
                         </div>
                       ))}
-                   </div>
-                </div>
+                    </div>
+                  </div>
 
-                <div className={`lg:col-span-5 p-10 md:p-16 lg:p-24 ${isDark ? "bg-canvas-white/5" : "bg-surface-soft"} flex flex-col`}>
-                   <div className="flex items-center gap-3 mb-16">
-                      <div className={`w-2 h-2 rounded-full ${isDark ? "bg-canvas-white" : "bg-ink"} animate-pulse`} />
-                      <span className="eyebrow mb-8">Field success story</span>
-                   </div>
-                   
-                   <div className="flex-1">
-                      <h4 className={`headline ${main} mb-2`}>{service.caseStudy.title}</h4>
-                      <p className={`caption ${sub} mb-8 uppercase font-medium`}>{service.caseStudy.route}</p>
-                      
-                      <div className="space-y-10">
-                         <div>
-                           <p className="eyebrow mb-3">The challenge</p>
-                           <p className={`body-sm ${sub} leading-relaxed italic border-l-2 ${border} pl-6`}>&ldquo;{service.caseStudy.challenge}&rdquo;</p>
-                         </div>
-                         <div>
-                           <p className="eyebrow mb-3">Our solution</p>
-                           <p className={`body-sm ${sub} leading-relaxed`}>{service.caseStudy.solution}</p>
-                         </div>
-                         <div className={`p-6 border ${border} rounded-2xl shadow-inner-sm`}>
-                           <p className="eyebrow mb-2">Final outcome</p>
-                           <p className={`headline-sm ${main} font-bold`}>{service.caseStudy.result}</p>
-                         </div>
-                      </div>
-                   </div>
-                   
-                   <div className={`mt-12 pt-8 border-t ${border} flex justify-between items-center`}>
-                      <span className={`caption ${caseMeta}`}>CASE REF: {service.id.toUpperCase()}-2026</span>
-                      <button type="button" className={`caption font-bold ${caseBtn} transition-colors`}>Read full story →</button>
-                   </div>
+                  <div className={`lg:col-span-5 p-10 md:p-16 lg:p-24 ${isDark ? 'bg-canvas-white/5' : 'bg-surface-soft'} flex flex-col justify-center`}>
+                    <div className="flex items-center gap-3 mb-10">
+                      <div className={`w-2 h-2 rounded-full ${isDark ? 'bg-canvas-white' : 'bg-ink'}`} />
+                      <span className="eyebrow">{t(`servicesPage.items.${key}.whyLabel`)}</span>
+                    </div>
+                    <p className={`headline-sm ${main} font-semibold leading-relaxed`}>
+                      {t(`servicesPage.items.${key}.why`)}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          </section>
-        );})}
+              </motion.div>
+            </section>
+          );
+        })}
       </div>
 
-      {/* Unified CTA Section */}
+      {/* CTA */}
       <section className="section-surface-obsidian section-spacing overflow-hidden relative">
         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         <div className="container-wide text-center relative z-10">
@@ -185,19 +112,37 @@ export default function ServicesPage() {
           >
             <DisplayLines
               as="h2"
-              lines={['Ready to move?', "Let's Connect."]}
+              lines={[t('servicesPage.cta.titleLine1'), t('servicesPage.cta.titleLine2')]}
               className="display-xl text-canvas-white mb-12 tracking-tighter leading-none"
             />
             <p className="body-lg text-canvas-white/75 mb-16 max-w-xl mx-auto">
-              Whether it&apos;s a one-off express shipment or a complex multi-year project, our team is ready to deliver.
+              {t('servicesPage.cta.lead')}
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link href="/#contact" className="btn-pill-primary w-full sm:w-auto text-lg py-5 px-10">
-                Request a Quote
+                {t('servicesPage.cta.primary')}
               </Link>
               <Link href="/company" className="text-canvas-white/60 hover:text-canvas-white transition-colors eyebrow">
-                Learn About Our Team →
+                {t('servicesPage.cta.secondary')}
               </Link>
+            </div>
+
+            {/* Cross-promo to sister logistics site (link dormant until env set) */}
+            <div className="mt-20 pt-10 border-t border-canvas-white/15 max-w-2xl mx-auto">
+              <p className="body-sm text-canvas-white/55">
+                <span className="text-canvas-white/85 font-medium">{t('servicesPage.logistics.label')}</span>{' '}
+                {t('servicesPage.logistics.body')}
+              </p>
+              {logisticsUrl && (
+                <a
+                  href={logisticsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="caption font-bold text-canvas-white/70 hover:text-canvas-white transition-colors inline-block mt-4"
+                >
+                  {t('servicesPage.logistics.cta')} ↗
+                </a>
+              )}
             </div>
           </motion.div>
         </div>
