@@ -9,6 +9,9 @@
 
 **Tagline**: "Small Giant. Big Impact." — Your Strategic Partner in Korea & Beyond
 
+> **이 레포 = `goodmangls/goodman-gsa` — GOODMAN GLS 의 GSSA 전용 사이트.**
+> 형제 레포 `goodmangls/goodman` 은 같은 회사의 종합물류(Integrated Logistics) 사이트입니다. 한 회사·두 사업·두 사이트 구조이며, 본 레포는 GSSA(항공화물 판매대행)에 집중합니다. (org 이전: `jlinsights` → `goodmangls`, 2026-06)
+
 ## Companion Docs
 
 - **AGENTS.md** — 본 파일의 미러 (Codex 등 타 AI 에이전트 표준)
@@ -64,7 +67,7 @@ npm run build        # Production build
 ## Project Structure
 
 ```
-goodman-gls/                       # 이 레포 (Next.js 마케팅 사이트)
+goodman-gsa/                       # 이 레포 (GSSA Next.js 마케팅 사이트)
   src/
     app/
       api/contact/route.ts         # Resend + api-guards (Origin/Referer + IP rate limit)
@@ -165,7 +168,7 @@ CONTACT_EMAIL_TO=contact@goodmangls.com
 CONTACT_EMAIL_FROM=noreply@goodmangls.com
 
 # /api/contact 가드 (production 필수)
-ALLOWED_ORIGINS=https://goodman-gls.vercel.app    # 콤마 구분 origin 화이트리스트
+ALLOWED_ORIGINS=https://goodman-gsa.vercel.app    # 콤마 구분 origin 화이트리스트
 # preview: VERCEL_ENV=preview + VERCEL_URL 동적 허용
 # development: http://localhost:3000 자동 허용
 

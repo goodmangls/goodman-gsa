@@ -8,7 +8,7 @@
 
 **GOODMAN GLS** is a leading Korean GSSA (General Sales & Service Agent) specializing in airline cargo sales representation. Founded in 2004, we represent 15+ airlines across 6 GSSA groups, connecting 50+ countries through our MPL and EAN network memberships.
 
-This repository contains the marketing website, partner portal, and Rails API backend.
+This repository — **`goodmangls/goodman-gsa`** — is GOODMAN GLS's **GSSA-focused site**. It is the sibling of **[`goodmangls/goodman`](https://github.com/goodmangls/goodman)**, which hosts the company's **Integrated Logistics** site. One company, two business sites. This repo contains the GSSA marketing website (Next.js) and the colocated Rails API backend (`goodman-gls-api/`).
 
 ---
 
@@ -71,8 +71,8 @@ This repository contains the marketing website, partner portal, and Rails API ba
 
 ```bash
 # Clone
-git clone https://github.com/jlinsights/goodman.git
-cd goodman
+git clone https://github.com/goodmangls/goodman-gsa.git
+cd goodman-gsa
 
 # Frontend
 npm install
@@ -107,7 +107,7 @@ SENDGRID_API_KEY=    # Email service
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Frontend | Vercel | goodman-gls.vercel.app |
+| Frontend | Vercel | goodman-gsa.vercel.app |
 | Backend | Render | goodman-gls-api.onrender.com |
 
 ```bash
