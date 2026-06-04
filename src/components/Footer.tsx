@@ -19,8 +19,8 @@ const footerLinks = {
     { key: 'intelligence', href: '/services#intelligence' },
   ],
   legal: [
-    { key: 'privacy', href: '#' },
-    { key: 'terms', href: '#' },
+    { key: 'privacy', href: '/privacy' },
+    { key: 'terms', href: '/terms' },
   ]
 };
 

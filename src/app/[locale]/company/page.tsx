@@ -4,38 +4,15 @@ import { motion } from 'framer-motion';
 import DisplayLines from '@/components/DisplayLines';
 import { useTranslations } from 'next-intl';
 
+const teamKeys = ['changhee', 'minji', 'seungho'] as const;
+const timelineYears = ['2014', '2015', '2018', '2020', '2025'] as const;
+const valueKeys = ['trust', 'velocity', 'connectivity'] as const;
+
 export default function CompanyPage() {
-  const t = useTranslations();
-
-  const team = [
-    {
-      name: "Lee Chang-hee (이창희)",
-      title: "Business Development Manager",
-      department: "GSA/CSA Division",
-      expertise: "Airline partnerships, Route development",
-      icon: "👔"
-    },
-    {
-      name: "Kim Min-ji (김민지)",
-      title: "Operations Director",
-      department: "Air & Ocean Operations",
-      expertise: "Supply chain optimization, Customer service",
-      icon: "⚡"
-    },
-    {
-      name: "Park Seung-ho (박승호)",
-      title: "Project Cargo Specialist",
-      department: "Special Projects",
-      expertise: "Heavy-lift, Multi-modal logistics",
-      icon: "🏗️"
-    },
-  ];
-
-  const timelineYears = ['2014', '2015', '2018', '2020', '2025'] as const;
+  const t = useTranslations('pages.company');
 
   return (
     <main className="bg-canvas min-h-screen">
-      {/* Header */}
       <section className="page-hero bg-canvas border-b border-hairline">
         <div className="container-wide">
           <motion.div
@@ -43,21 +20,20 @@ export default function CompanyPage() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-5xl"
           >
-            <span className="eyebrow mb-6">{t('pages.company.heroEyebrow')}</span>
+            <span className="eyebrow mb-6">{t('heroEyebrow')}</span>
             <DisplayLines
               as="h1"
-              lines={[t('pages.company.heroTitleLine1'), t('pages.company.heroTitleLine2')]}
+              lines={[t('heroTitleLine1'), t('heroTitleLine2')]}
               className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter"
             />
-            <p className="body-lg text-muted max-w-xl">{t('pages.company.heroLead')}</p>
+            <p className="body-lg text-muted max-w-xl">{t('heroLead')}</p>
           </motion.div>
         </div>
       </section>
 
-      {/* CEO Message - Editorial Pink Block */}
       <section className="section-spacing bg-canvas">
         <div className="container-wide">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -66,34 +42,28 @@ export default function CompanyPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12">
               <div className="lg:col-span-7 p-10 md:p-16 lg:p-24 border-b lg:border-b-0 lg:border-r border-ink/10 flex flex-col justify-between">
                 <div>
-                  <span className="figma-mono text-xs tracking-widest text-ink/40 block mb-16 font-bold uppercase">Leadership Insight</span>
-                  <h2 className="display-lg text-ink mb-12 tracking-tight leading-none italic">&ldquo;Small Giant, Big Impact. That&apos;s our North Star.&rdquo;</h2>
+                  <span className="figma-mono text-xs tracking-widest text-ink/40 block mb-16 font-bold uppercase">{t('leadership.eyebrow')}</span>
+                  <h2 className="display-lg text-ink mb-12 tracking-tight leading-none italic">&ldquo;{t('leadership.quote')}&rdquo;</h2>
                   <div className="space-y-8 body-lg text-ink/80 leading-relaxed max-w-2xl">
-                    <p>
-                      Welcome to GOODMAN GLS. Since our founding in 2014, we&apos;ve built our reputation on a simple principle: <strong>trust through action</strong>.
-                    </p>
-                    <p>
-                      As a leading GSSA in Korea, we are strategically positioned as the gateway between global airlines and Korea&apos;s logistics market.
-                    </p>
-                    <p>
-                      Our team of logistics professionals brings decades of combined experience in time-critical air freight and complex project cargo. We understand that every shipment carries not just cargo, but our clients&apos; reputation.
-                    </p>
+                    <p dangerouslySetInnerHTML={{ __html: t.raw('leadership.paragraph1') }} />
+                    <p>{t('leadership.paragraph2')}</p>
+                    <p>{t('leadership.paragraph3')}</p>
                   </div>
                 </div>
               </div>
               <div className="lg:col-span-5 p-10 md:p-16 lg:p-24 flex flex-col justify-end bg-ink/[0.02]">
                 <div className="mb-16">
-                   <div className="w-40 h-40 rounded-full border-2 border-ink/10 flex items-center justify-center bg-canvas shadow-xl relative">
-                      <span className="text-5xl font-black tracking-tighter text-ink/20">SH</span>
-                      <div className="absolute -right-2 -bottom-2 w-12 h-12 bg-ink rounded-full flex items-center justify-center text-canvas text-xl">
-                        ✓
-                      </div>
-                   </div>
+                  <div className="w-40 h-40 rounded-full border-2 border-ink/10 flex items-center justify-center bg-canvas shadow-xl relative">
+                    <span className="text-5xl font-black tracking-tighter text-ink/20">SH</span>
+                    <div className="absolute -right-2 -bottom-2 w-12 h-12 bg-ink rounded-full flex items-center justify-center text-canvas text-xl">
+                      ✓
+                    </div>
+                  </div>
                 </div>
-                <h4 className="display-sm text-ink leading-tight tracking-tight font-black">Hyeon-Eok SHIN</h4>
-                <p className="figma-mono text-xs tracking-[0.2em] text-ink/50 mt-3 font-bold uppercase">CEO & FOUNDER</p>
+                <h4 className="display-sm text-ink leading-tight tracking-tight font-black">{t('leadership.name')}</h4>
+                <p className="figma-mono text-xs tracking-[0.2em] text-ink/50 mt-3 font-bold uppercase">{t('leadership.title')}</p>
                 <div className="mt-12 pt-12 border-t border-ink/10">
-                  <p className="body-sm text-ink/40 leading-loose">38+ years in air cargo; former executive at Korean Air & Asiana Airlines Cargo. Architect of the GOODMAN service model.</p>
+                  <p className="body-sm text-ink/40 leading-loose">{t('leadership.bio')}</p>
                 </div>
               </div>
             </div>
@@ -101,15 +71,14 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Timeline - Heritage Stream */}
       <section className="section-spacing bg-canvas">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-32">
-              <span className="eyebrow block mb-6">{t('pages.company.heritageEyebrow')}</span>
-              <h2 className="display-lg text-ink tracking-tighter">{t('pages.company.heritageTitle')}</h2>
+              <span className="eyebrow block mb-6">{t('heritageEyebrow')}</span>
+              <h2 className="display-lg text-ink tracking-tighter">{t('heritageTitle')}</h2>
             </div>
-            
+
             <div className="relative">
               <div className="absolute left-1/2 top-0 bottom-0 w-px bg-hairline -translate-x-1/2 hidden md:block" />
               <div className="space-y-16 md:space-y-24">
@@ -125,15 +94,15 @@ export default function CompanyPage() {
                     >
                       <div className="md:hidden">
                         <span className="display-md text-ink/10 block mb-4">{year}</span>
-                        <h4 className="headline text-ink mb-4">{t(`pages.company.timeline.${year}.milestone`)}</h4>
-                        <p className="body text-muted leading-relaxed">{t(`pages.company.timeline.${year}.desc`)}</p>
+                        <h4 className="headline text-ink mb-4">{t(`timeline.${year}.milestone`)}</h4>
+                        <p className="body text-muted leading-relaxed">{t(`timeline.${year}.desc`)}</p>
                       </div>
                       <div className={`hidden md:block ${isLeft ? 'md:text-right' : 'invisible'}`}>
                         {isLeft && (
                           <>
                             <span className="display-md text-ink/10 block mb-4">{year}</span>
-                            <h4 className="headline text-ink mb-4">{t(`pages.company.timeline.${year}.milestone`)}</h4>
-                            <p className="body text-muted max-w-md md:ml-auto leading-relaxed">{t(`pages.company.timeline.${year}.desc`)}</p>
+                            <h4 className="headline text-ink mb-4">{t(`timeline.${year}.milestone`)}</h4>
+                            <p className="body text-muted max-w-md md:ml-auto leading-relaxed">{t(`timeline.${year}.desc`)}</p>
                           </>
                         )}
                       </div>
@@ -144,8 +113,8 @@ export default function CompanyPage() {
                         {!isLeft && (
                           <>
                             <span className="display-md text-ink/10 block mb-4">{year}</span>
-                            <h4 className="headline text-ink mb-4">{t(`pages.company.timeline.${year}.milestone`)}</h4>
-                            <p className="body text-muted max-w-md leading-relaxed">{t(`pages.company.timeline.${year}.desc`)}</p>
+                            <h4 className="headline text-ink mb-4">{t(`timeline.${year}.milestone`)}</h4>
+                            <p className="body text-muted max-w-md leading-relaxed">{t(`timeline.${year}.desc`)}</p>
                           </>
                         )}
                       </div>
@@ -158,48 +127,47 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Team - Lilac Grid */}
       <section className="section-spacing bg-color-block-lilac border-y border-hairline">
         <div className="container-wide">
           <div className="max-w-4xl mb-24">
-            <span className="figma-mono text-sm tracking-widest text-ink/40 block mb-6 uppercase font-bold">The Experts</span>
+            <span className="figma-mono text-sm tracking-widest text-ink/40 block mb-6 uppercase font-bold">{t('team.eyebrow')}</span>
             <DisplayLines
               as="h2"
-              lines={[t('pages.company.teamTitleLine1'), t('pages.company.teamTitleLine2')]}
+              lines={[t('teamTitleLine1'), t('teamTitleLine2')]}
               className="display-lg text-ink mb-10 tracking-tight leading-none"
             />
             <p className="body-lg text-muted max-w-2xl leading-relaxed">
-              Our advantage is our team. We&apos;ve brought together the sharpest minds in Korean air freight to ensure your cargo—and your reputation—is in the right hands.
+              {t('team.lead')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div 
-                key={index} 
+            {teamKeys.map((key) => (
+              <motion.div
+                key={key}
                 whileHover={{ y: -6 }}
                 className="p-10 bg-canvas border border-ink/10 rounded-[32px] shadow-sm flex flex-col h-full"
               >
                 <div className="w-20 h-20 bg-ink/[0.03] rounded-2xl flex items-center justify-center mb-12 border border-ink/5 text-4xl">
-                  {member.icon}
+                  {t(`team.members.${key}.icon`)}
                 </div>
                 <div className="flex-1">
-                  <h4 className="headline text-ink mb-1">{member.name}</h4>
-                  <p className="figma-mono text-[10px] tracking-[0.2em] text-ink/50 mb-8 uppercase font-bold">{member.title}</p>
-                  
+                  <h4 className="headline text-ink mb-1">{t(`team.members.${key}.name`)}</h4>
+                  <p className="figma-mono text-[10px] tracking-[0.2em] text-ink/50 mb-8 uppercase font-bold">{t(`team.members.${key}.title`)}</p>
+
                   <div className="space-y-6 pt-8 border-t border-ink/5">
                     <div>
-                      <p className="text-[10px] text-ink/30 figma-mono mb-2 uppercase tracking-widest font-bold">Division</p>
-                      <p className="body-sm text-ink/80 font-medium">{member.department}</p>
+                      <p className="text-[10px] text-ink/30 figma-mono mb-2 uppercase tracking-widest font-bold">{t('team.divisionLabel')}</p>
+                      <p className="body-sm text-ink/80 font-medium">{t(`team.members.${key}.department`)}</p>
                     </div>
                     <div>
-                      <p className="text-[10px] text-ink/30 figma-mono mb-2 uppercase tracking-widest font-bold">Core Expertise</p>
-                      <p className="body-sm text-ink/80 font-medium">{member.expertise}</p>
+                      <p className="text-[10px] text-ink/30 figma-mono mb-2 uppercase tracking-widest font-bold">{t('team.expertiseLabel')}</p>
+                      <p className="body-sm text-ink/80 font-medium">{t(`team.members.${key}.expertise`)}</p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-12 pt-8 border-t border-ink/5">
-                   <button className="text-[10px] figma-mono text-ink/40 hover:text-ink transition-colors font-bold uppercase tracking-widest">View Profile →</button>
+                  <button className="text-[10px] figma-mono text-ink/40 hover:text-ink transition-colors font-bold uppercase tracking-widest">{t('team.profileCta')} →</button>
                 </div>
               </motion.div>
             ))}
@@ -207,7 +175,6 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* Values - High Contrast Dark */}
       <section className="section-spacing bg-ink text-canvas overflow-hidden relative">
         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         <div className="container-wide text-center relative z-10">
@@ -216,18 +183,14 @@ export default function CompanyPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="display-xl mb-32 tracking-tighter leading-none">Our Core Values</h2>
-            
+            <h2 className="display-xl mb-32 tracking-tighter leading-none">{t('values.title')}</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-24 max-w-6xl mx-auto">
-              {[
-                { label: "01", value: "Trust", desc: "Earned through consistent delivery and total transparency." },
-                { label: "02", value: "Velocity", desc: "Speed matters in time-critical logistics. We move faster." },
-                { label: "03", value: "Connectivity", desc: "Global reach through our elite strategic partnerships." },
-              ].map((item, index) => (
-                <div key={index} className="text-center group">
-                  <span className="figma-mono text-xs tracking-[0.3em] text-canvas/40 block mb-8 font-black group-hover:text-canvas/60 transition-colors uppercase">{item.label}</span>
-                  <h3 className="display-md text-canvas mb-8 tracking-tight font-black leading-none">{item.value}</h3>
-                  <p className="body-lg text-canvas/60 leading-relaxed max-w-xs mx-auto">{item.desc}</p>
+              {valueKeys.map((key, index) => (
+                <div key={key} className="text-center group">
+                  <span className="figma-mono text-xs tracking-[0.3em] text-canvas/40 block mb-8 font-black group-hover:text-canvas/60 transition-colors uppercase">{String(index + 1).padStart(2, '0')}</span>
+                  <h3 className="display-md text-canvas mb-8 tracking-tight font-black leading-none">{t(`values.items.${key}.value`)}</h3>
+                  <p className="body-lg text-canvas/60 leading-relaxed max-w-xs mx-auto">{t(`values.items.${key}.desc`)}</p>
                 </div>
               ))}
             </div>

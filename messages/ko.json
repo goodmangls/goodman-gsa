@@ -285,7 +285,190 @@
         }
       },
       "teamTitleLine1": "시니어 항공화물 전문성,",
-      "teamTitleLine2": "현장 중심 시장 커버리지"
+      "teamTitleLine2": "현장 중심 시장 커버리지",
+      "leadership": {
+        "eyebrow": "리더십 메시지",
+        "quote": "작지만 강한 팀, 큰 임팩트. 이것이 우리의 기준입니다.",
+        "paragraph1": "GOODMAN GLS는 2014년 설립 이후 <strong>실행으로 증명하는 신뢰</strong>를 기준으로 성장해 왔습니다.",
+        "paragraph2": "우리는 한국 시장에서 항공사를 대신해 움직이는 책임 있는 Cargo GSSA 조직으로, 글로벌 항공사와 한국 물류시장을 연결합니다.",
+        "paragraph3": "시니어 항공화물 경험을 바탕으로 시간 민감 화물, 노선 개발, 시장 실행을 치밀하게 관리합니다. 모든 화물에는 단순한 물건이 아니라 고객의 평판이 함께 실려 있음을 알고 있습니다.",
+        "name": "신현억",
+        "title": "CEO & Founder",
+        "bio": "38년 이상 항공화물 분야에서 활동했으며 Korean Air 및 Asiana Airlines Cargo 임원 경험을 바탕으로 GOODMAN 서비스 모델을 설계했습니다."
+      },
+      "team": {
+        "eyebrow": "전문가 팀",
+        "lead": "GOODMAN GLS의 강점은 사람입니다. 한국 항공화물 시장에 대한 시니어급 이해와 현장 실행력을 결합해 항공사의 매출과 평판을 함께 지킵니다.",
+        "divisionLabel": "담당 부문",
+        "expertiseLabel": "핵심 전문성",
+        "profileCta": "프로필 보기",
+        "members": {
+          "changhee": {
+            "name": "Lee Chang-hee (이창희)",
+            "title": "Business Development Manager",
+            "department": "GSA/CSA Division",
+            "expertise": "항공사 파트너십, 노선 개발",
+            "icon": "👔"
+          },
+          "minji": {
+            "name": "Kim Min-ji (김민지)",
+            "title": "Operations Director",
+            "department": "Air & Ocean Operations",
+            "expertise": "공급망 최적화, 고객 서비스",
+            "icon": "⚡"
+          },
+          "seungho": {
+            "name": "Park Seung-ho (박승호)",
+            "title": "Project Cargo Specialist",
+            "department": "Special Projects",
+            "expertise": "중량화물, 복합운송",
+            "icon": "🏗️"
+          }
+        }
+      },
+      "values": {
+        "title": "핵심 가치",
+        "items": {
+          "trust": {
+            "value": "신뢰",
+            "desc": "일관된 실행과 투명한 커뮤니케이션으로 쌓습니다."
+          },
+          "velocity": {
+            "value": "속도",
+            "desc": "시간 민감 물류에서는 속도가 경쟁력입니다. 더 빠르게 움직입니다."
+          },
+          "connectivity": {
+            "value": "연결성",
+            "desc": "검증된 전략적 파트너십으로 글로벌 기회를 한국 시장과 연결합니다."
+          }
+        }
+      }
+    },
+    "network": {
+      "hero": {
+        "eyebrow": "글로벌 네트워크",
+        "titleLine1": "세계와 연결하고,",
+        "titleLine2": "한국에 깊게 실행합니다.",
+        "lead": "GOODMAN GLS는 글로벌 GSSA 운영 기준을 한국 항공화물 시장의 현장 실행력과 결합합니다. 항공사가 한국에서 매출을 성장시키는 데 필요한 로컬 영업·운영 기반을 제공합니다."
+      },
+      "cards": {
+        "benchmarkLabel": "벤치마크",
+        "global": {
+          "name": "글로벌 GSSA",
+          "fullName": "항공사 대표권의 글로벌 운영 기준",
+          "desc": "글로벌 GSSA 리더들은 항공사 화물 영업 전문 조직으로 움직입니다. 폭넓은 지점망, 항공사별 전담 권한, 체계적 리포팅, 현지 영업팀을 통해 항공사의 시장 영업조직처럼 운영됩니다. GOODMAN GLS는 이 운영 논리를 한국 시장에 맞게 실행합니다.",
+          "features": {
+            "f1": "전문 Cargo Sales Representation",
+            "f2": "항공사 우선의 mandate governance",
+            "f3": "일관된 리포팅 체계"
+          }
+        },
+        "korea": {
+          "name": "한국 GSSA",
+          "fullName": "요구 수준 높은 한국 화물시장의 현장 실행",
+          "desc": "한국 GSSA 시장에는 Daejoo Air Group, PAA Group 등 장기간 항공사 영업·관리 경험을 축적한 조직들이 있습니다. GOODMAN GLS는 인천 시장 이해, 시니어 항공화물 리더십, 책임 있는 오너십 실행을 기반으로 cargo-first 모델을 구축합니다.",
+          "features": {
+            "f1": "인천 항공화물 시장 커버리지",
+            "f2": "포워더·화주 계정 기반",
+            "f3": "포워딩 활동과 명확한 분리"
+          }
+        }
+      },
+      "advantage": {
+        "eyebrow": "GSSA 경쟁력",
+        "title": "한국 시장으로 들어오는 관문",
+        "lead": "우리는 오너십을 가진 현지 영업조직처럼 항공사를 대표합니다. 노선 개발, 계정 커버리지, 상업 리포팅까지 한국과 동북아 화물시장에서 항공사의 성장을 지원합니다.",
+        "gsa": {
+          "title": "GSA (General Sales Agent)",
+          "body": "항공사를 대신해 특정 시장에서 영업 개발, 현지 계정 커버리지, 상업 실행을 조율하는 시장 대표 기능입니다."
+        },
+        "csa": {
+          "title": "CSA (Cargo Sales Agent)",
+          "body": "항공화물에 특화된 영업 대표 기능으로, 시장 수요와 항공사 capacity를 연결하고 서비스 실행력을 관리합니다."
+        }
+      },
+      "benchmarks": {
+        "label": "시장 참고사례",
+        "ecs": {
+          "name": "ECS Group",
+          "routes": "전 세계 GSSA 규모, 지점망 운영, 항공화물 영업 전문성"
+        },
+        "kales": {
+          "name": "Kales Airline Services",
+          "routes": "다국가 Cargo GSSA 커버리지와 항공사 대표권 운영 체계"
+        },
+        "atc": {
+          "name": "ATC Aviation Services",
+          "routes": "글로벌 영업조직으로 포지셔닝된 Cargo GSSA 및 관리 서비스"
+        },
+        "koreaRefs": {
+          "name": "Daejoo Air Group / PAA Group",
+          "routes": "한국 기반 항공사 management outsourcing 및 GSSA 시장 참고사례"
+        }
+      },
+      "cta": "파트너십 기회 논의하기",
+      "ecosystem": {
+        "title": "글로벌 생태계",
+        "eyebrow": "전략적 네트워크 관점",
+        "metric": "개 시장 연결",
+        "body": "체계적인 파트너 관리와 시장 커버리지를 통해 글로벌 화물 기회를 한국 시장의 수요와 연결합니다."
+      }
+    },
+    "legal": {
+      "privacy": {
+        "eyebrow": "개인정보",
+        "title": "개인정보처리방침",
+        "lead": "이 페이지는 GOODMAN GLS 웹사이트 문의 및 비즈니스 연락처 정보 처리 방식을 요약합니다.",
+        "sections": {
+          "information": {
+            "title": "수집하는 정보",
+            "body": "문의 양식 또는 직접 비즈니스 커뮤니케이션을 통해 이름, 이메일, 회사 정보, 문의 내용을 수집할 수 있습니다."
+          },
+          "use": {
+            "title": "이용 목적",
+            "body": "수집된 정보는 문의 대응, GSSA 또는 물류 협력 가능성 검토, 적절한 비즈니스 기록 관리를 위해 사용됩니다."
+          },
+          "sharing": {
+            "title": "제3자 제공",
+            "body": "개인정보를 판매하지 않습니다. 문의 처리, 법적 준수, 승인된 서비스 운영에 필요한 경우에만 제한적으로 공유될 수 있습니다."
+          },
+          "retention": {
+            "title": "보관 기간",
+            "body": "비즈니스 문의 기록은 정당한 업무, 컴플라이언스, 분쟁 대응에 필요한 기간 동안만 보관됩니다."
+          },
+          "contact": {
+            "title": "문의",
+            "body": "개인정보 관련 문의는 본 웹사이트에 게시된 GOODMAN GLS 공식 비즈니스 연락처로 연락해 주십시오."
+          }
+        }
+      },
+      "terms": {
+        "eyebrow": "이용약관",
+        "title": "이용약관",
+        "lead": "이 약관은 GOODMAN GLS 웹사이트 이용 및 비즈니스 문의 개시에 관한 일반 조건을 안내합니다.",
+        "sections": {
+          "scope": {
+            "title": "웹사이트 범위",
+            "body": "본 웹사이트는 GOODMAN GLS의 역량을 소개하기 위한 것으로, 그 자체로 구속력 있는 서비스 제안, 견적, 대리점 지정이 아닙니다."
+          },
+          "rfq": {
+            "title": "문의 및 RFQ",
+            "body": "요율, capacity, 운송 시간, 서비스 가능 여부는 화물 세부정보와 관련 규정에 따라 별도 서면 확인이 필요합니다."
+          },
+          "compliance": {
+            "title": "컴플라이언스",
+            "body": "모든 화물 및 비즈니스 논의는 정확한 품명 신고, 제재 심사, 수출입 통제, 항공사 및 세관 요건을 준수해야 합니다."
+          },
+          "liability": {
+            "title": "책임 범위",
+            "body": "웹사이트 정보는 일반 비즈니스 참고용이며, 최종 책임과 의무는 적용 계약 및 표준 거래조건에 따릅니다."
+          },
+          "contact": {
+            "title": "문의",
+            "body": "공식 견적, 서비스 조건, 파트너십 논의는 GOODMAN GLS에 직접 문의해 주십시오."
+          }
+        }
+      }
     }
   }
 }

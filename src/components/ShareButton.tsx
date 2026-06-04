@@ -59,7 +59,7 @@ export default function ShareButton() {
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            className="absolute bottom-full right-0 mb-4 w-48 bg-[#1A1A1A] border border-white/10 rounded-xl shadow-2xl p-2 z-50 overflow-hidden"
+            className="absolute top-full right-0 mt-3 w-48 bg-[#1A1A1A] border border-white/10 rounded-xl shadow-2xl p-2 z-50 overflow-hidden"
           >
             <button
               onClick={copyToClipboard}
@@ -68,9 +68,9 @@ export default function ShareButton() {
               {copied ? (
                 <Check className="w-4 h-4 text-orange-500" />
               ) : (
-                <Link className="w-4 h-4 text-ink/60 group-hover:text-ink transition-colors" />
+                <Link className="w-4 h-4 text-canvas-white/65 group-hover:text-canvas-white transition-colors" />
               )}
-              <span className={`text-sm font-medium ${copied ? 'text-orange-500' : 'text-ink/80 group-hover:text-ink'}`}>
+              <span className={`text-sm font-medium ${copied ? 'text-orange-500' : 'text-canvas-white/80 group-hover:text-canvas-white'}`}>
                 {copied ? t('shareSuccess') : t('copyLink')}
               </span>
             </button>
