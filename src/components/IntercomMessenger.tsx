@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Intercom from '@intercom/messenger-js-sdk';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { buildIntercomSettings, INTERCOM_APP_ID } from '@/lib/intercom';
 
 /**

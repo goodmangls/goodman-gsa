@@ -15,17 +15,21 @@ vi.mock('next-intl/server', () => ({
   getMessages: async () => ({}),
 }));
 
+type MotionProps<T extends HTMLElement> = React.HTMLAttributes<T> & {
+  children?: React.ReactNode;
+};
+
 // Mock framer-motion to avoid animation issues in tests
 vi.mock('framer-motion', () => ({
   motion: {
-    div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
-    section: ({ children, ...props }: any) => <section {...props}>{children}</section>,
-    span: ({ children, ...props }: any) => <span {...props}>{children}</span>,
-    h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,
-    h2: ({ children, ...props }: any) => <h2 {...props}>{children}</h2>,
-    p: ({ children, ...props }: any) => <p {...props}>{children}</p>,
-    button: ({ children, ...props }: any) => <button {...props}>{children}</button>,
-    a: ({ children, ...props }: any) => <a {...props}>{children}</a>,
+    div: ({ children, ...props }: MotionProps<HTMLDivElement>) => <div {...props}>{children}</div>,
+    section: ({ children, ...props }: MotionProps<HTMLElement>) => <section {...props}>{children}</section>,
+    span: ({ children, ...props }: MotionProps<HTMLSpanElement>) => <span {...props}>{children}</span>,
+    h1: ({ children, ...props }: MotionProps<HTMLHeadingElement>) => <h1 {...props}>{children}</h1>,
+    h2: ({ children, ...props }: MotionProps<HTMLHeadingElement>) => <h2 {...props}>{children}</h2>,
+    p: ({ children, ...props }: MotionProps<HTMLParagraphElement>) => <p {...props}>{children}</p>,
+    button: ({ children, ...props }: MotionProps<HTMLButtonElement>) => <button {...props}>{children}</button>,
+    a: ({ children, ...props }: MotionProps<HTMLAnchorElement>) => <a {...props}>{children}</a>,
   },
-  AnimatePresence: ({ children }: any) => children,
+  AnimatePresence: ({ children }: { children?: React.ReactNode }) => children,
 }));
