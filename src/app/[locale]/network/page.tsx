@@ -5,27 +5,27 @@ import Link from 'next/link';
 import DisplayLines from '@/components/DisplayLines';
 
 export default function NetworkPage() {
-  const airlines = [
-    { name: "Korean Air Cargo", routes: "Seoul-LAX, Seoul-JFK, Seoul-FRA" },
-    { name: "Asiana Cargo", routes: "Seoul-SFO, Seoul-ORD, Seoul-CDG" },
-    { name: "Air China Cargo", routes: "Seoul-PEK, PEK-LAX, PEK-FRA" },
-    { name: "Singapore Airlines Cargo", routes: "Seoul-SIN, SIN-AMS, SIN-NYC" },
+  const benchmarks = [
+    { name: "ECS Group", routes: "Worldwide GSSA scale, office-network discipline, airline cargo sales specialization" },
+    { name: "Kales Airline Services", routes: "Multi-country cargo GSSA coverage with carrier representation routines" },
+    { name: "ATC Aviation Services", routes: "Cargo GSSA and management services positioned as a global salesforce" },
+    { name: "Daejoo Air Group / PAA Group", routes: "Korea-based airline management outsourcing and GSSA market references" },
   ];
 
   const networks = [
     {
       id: "global",
       name: "Global GSSA",
-      fullName: "World-Class GSSA Standards",
-      desc: "We operate to the benchmarks set by the world's leading GSSA groups — ECS Group (59 countries, 181 offices, 1.4M+ tons) and Kales Airline Services (70+ airlines, 34+ countries), figures as of 2026 — bringing global best practice to the Korean corridor.",
-      features: ['Multi-carrier representation model', 'Global cargo capacity standards', 'IATA-aligned operations']
+      fullName: "Worldwide standards for airline representation",
+      desc: "Global GSSA leaders position themselves as specialist airline sales organizations: broad office networks, dedicated carrier mandates, disciplined reporting, and local teams that act as each airline’s salesforce. Goodman GLS brings that operating logic to Korea.",
+      features: ['Specialist cargo sales representation', 'Carrier-first mandate governance', 'Consistent reporting cadence']
     },
     {
       id: "korea",
       name: "Korea GSSA",
-      fullName: "Korea's Trusted GSSA Landscape",
-      desc: "GOODMAN GLS stands among Korea's established cargo GSSA specialists — alongside long-standing references such as Pacific Air Agency (PAA) and Daejoo Air — with a focused, owner-operator approach to airline cargo sales.",
-      features: ['Incheon & Busan hub depth', 'Dedicated cargo-first mandates', 'Decades of Korea market expertise']
+      fullName: "Local execution for a demanding cargo market",
+      desc: "Korea’s GSSA landscape includes long-running aviation sales organizations such as Daejoo Air Group and PAA Group. Goodman GLS competes with a focused cargo-first model: Incheon market depth, senior air-cargo leadership, and accountable owner-operator execution.",
+      features: ['Incheon cargo-market coverage', 'Forwarder and shipper account depth', 'Clear separation from forwarding activity']
     }
   ];
 
@@ -115,11 +115,11 @@ export default function NetworkPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {airlines.map((airline, index) => (
+            {benchmarks.map((benchmark, index) => (
               <div key={index} className="p-8 bg-canvas border border-hairline rounded-2xl hover:border-desert-sienna/60 transition-all group">
-                <span className="eyebrow block mb-4">Partner carrier</span>
-                <h4 className="headline-sm text-ink mb-3">{airline.name}</h4>
-                <p className="caption text-muted line-clamp-2 leading-relaxed">{airline.routes}</p>
+                <span className="eyebrow block mb-4">Market reference</span>
+                <h4 className="headline-sm text-ink mb-3">{benchmark.name}</h4>
+                <p className="caption text-muted line-clamp-2 leading-relaxed">{benchmark.routes}</p>
               </div>
             ))}
           </div>

@@ -19,7 +19,7 @@
       "eyebrow": "Small Giant. Big Impact.",
       "titleLine1": "Your Premium",
       "titleLine2": "Cargo Sales Team",
-      "lead": "Representing world-class airlines as a dedicated GSSA. Powered by ECS Group’s 59-country network, we sell your capacity with the same passion as if it were our own.",
+      "lead": "A Korea-based cargo GSSA built for airlines that need disciplined sales coverage, yield protection, and accountable local execution. Through our strategic ECS Group connection, we combine Korea market depth with worldwide GSSA standards.",
       "ctaPrimary": "Partner With Us",
       "ctaSecondary": "Global Network"
     },
@@ -37,57 +37,57 @@
       "eyebrow": "The GSSA Advantage",
       "titleLine1": "We think like an airline.",
       "titleLine2": "We act as your local team.",
-      "lead": "A GSSA is far more than a middleman. We are your commercial arm in Korea — defending your brand, optimizing your yield, and maximizing your load factor through relentless local sales expertise.",
+      "lead": "A cargo GSSA is the airline’s local commercial extension. We protect the carrier brand, develop forwarder demand, manage yield discipline, and turn Korean market signals into accountable sales action.",
       "pillars": {
         "sales": {
           "title": "Commercial Excellence",
-          "description": "Smart sales strategies backed by deep relationships with every major forwarder in Korea. We don't just take orders; we create demand."
+          "description": "Structured coverage of Korea’s forwarder and shipper community, from regular sales calls to campaign-led demand creation."
         },
         "capacity": {
           "title": "Yield Optimization",
-          "description": "Strategic space allocation and dynamic pricing that ensures every flight reaches its maximum revenue potential."
+          "description": "Commercially disciplined space control, allocation follow-up, and lane-level pricing support to improve both load factor and yield."
         },
         "intelligence": {
           "title": "Market Intelligence",
-          "description": "Weekly deep-dives into trade flows, seasonal shifts, and regulatory changes, keeping our airline partners ahead of the curve."
+          "description": "Actionable reporting on trade lanes, seasonality, competitors, and regulatory changes so headquarters can move with current Korea-market facts."
         },
         "digital": {
-          "title": "Digital Transformation",
-          "description": "Real-time visibility, API integration, and proprietary booking platforms providing full transparency to our partners."
+          "title": "Transparent Communication",
+          "description": "Fast response, clear escalation, and shared reporting routines that give airline partners visibility without building a local office from scratch."
         }
       }
     },
     "gsa": {
       "eyebrow": "Airline Partnerships",
       "title": "Strategic GSSA Mandates",
-      "lead": "Trusted by global flag carriers and specialty freighters to dominate the Korean cargo market. Our success is measured by your revenue growth.",
+      "lead": "Built for airlines seeking Korea representation with the focus of a specialist GSSA and the operating discipline expected by global cargo organizations.",
       "cta": "Explore Partnership"
     },
     "services": {
       "eyebrow": "Our Capabilities",
       "titleLine1": "Your Dedicated",
       "titleLine2": "Commercial Cargo Team",
-      "lead": "We are your exclusive gateway to Korea. Not a forwarder, not a broker — but a pure-play GSSA representing your capacity with absolute integrity and commercial drive.",
+      "lead": "Goodman GLS is the carrier-facing GSSA arm for Korea: sales representation, pricing support, space coordination, and commercial reporting delivered with a clear separation from forwarding activity.",
       "items": {
         "sales": {
           "name": "Cargo Sales Representation",
           "tagline": "Proactive Revenue Generation",
-          "description": "Aggressive sales across Korea’s logistics landscape to consistently lift load factors and market share."
+          "description": "Structured Korea sales coverage across forwarders, consolidators, and selected direct shippers to build sustainable cargo demand."
         },
         "pricing": {
           "name": "Yield & Price Management",
-          "tagline": "Defending Your Margin",
-          "description": "Sophisticated, market-driven pricing models that protect yield while ensuring high-volume bookings."
+          "tagline": "Yield Discipline",
+          "description": "Market-aware quotation and pricing support designed to win the right cargo without eroding carrier yield."
         },
         "capacity": {
           "name": "Space & Capacity Operations",
           "tagline": "Optimizing Every Kilo",
-          "description": "Expert management of allotments, ULDs, and build-ups to prevent wasted capacity and maximize revenue."
+          "description": "Allotment follow-up, booking coordination, and uplift communication to keep every kilo visible from sales lead to flight departure."
         },
         "intelligence": {
-          "name": "Strategic Reporting",
+          "name": "Market Intelligence & Reporting",
           "tagline": "Real-Time Market Vision",
-          "description": "Granular data on competitor moves and demand signals, turning market noise into actionable strategy."
+          "description": "Practical reporting on demand shifts, competitor activity, commodity flows, and account opportunities for headquarters decision-making."
         }
       },
       "logistics": {
@@ -95,6 +95,89 @@
         "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
         "cta": "Visit Goodman GLS"
       }
+    },
+    "company": {
+      "eyebrow": "Korea GSSA specialist",
+      "titleLine1": "Built for airline",
+      "titleLine2": "representation in Korea",
+      "lead": "We combine the speed of an owner-operated Korean team with the discipline of global GSSA practice: clear mandates, direct account coverage, and transparent commercial reporting.",
+      "values": {
+        "trust": {
+          "title": "Mandate Integrity",
+          "desc": "Carrier interests come first: brand protection, clean reporting, and careful separation between representation and forwarding activity."
+        },
+        "velocity": {
+          "title": "Commercial Speed",
+          "desc": "Fast quotations, quick account follow-up, and decisive escalation for time-sensitive air cargo opportunities."
+        },
+        "connectivity": {
+          "title": "Local Depth, Global Reach",
+          "desc": "Korea-market relationships supported by global GSSA know-how and ECS Group’s worldwide ecosystem."
+        }
+      },
+      "quote": "We do not simply introduce capacity to the market. We act as the airline’s accountable cargo sales office in Korea.",
+      "quoteCite": "Goodman GLS GSSA team"
+    },
+    "network": {
+      "eyebrow": "Global standard, Korea execution",
+      "titleLine1": "Worldwide GSSA discipline.",
+      "titleLine2": "Korean market ownership.",
+      "lead": "Global GSSA leaders such as ECS Group, Kales, and ATC show what airlines expect: specialist sales coverage, broad office networks, and consistent reporting. Goodman GLS applies those standards to Korea with hands-on local execution.",
+      "cta": "View network benchmarks"
+    },
+    "partnerHub": {
+      "eyebrow": "Partner hub",
+      "title": "A cleaner operating rhythm for airline partners",
+      "lead": "From rate requests and account pipelines to market reports and escalation channels, we keep the carrier-side workflow visible and easy to govern.",
+      "features": {
+        "agent": "Forwarder/account coverage and sales pipeline updates",
+        "insights": "Korea trade-lane, commodity, and competitor intelligence",
+        "account": "Named account ownership with clear escalation paths"
+      },
+      "cta": "Discuss a GSSA mandate"
+    },
+    "contact": {
+      "eyebrow": "GSSA inquiry",
+      "titleLine1": "Let’s discuss your",
+      "titleLine2": "Korea cargo mandate",
+      "lead": "Tell us your Korea objective — new market entry, revenue recovery, freighter development, or sharper local sales coverage. We will respond with a focused next-step proposal.",
+      "office": "Korea office",
+      "officeValue": "Seoul / Incheon cargo market coverage",
+      "email": "Email",
+      "hours": "Response",
+      "hoursValue": "Business hours plus urgent cargo escalation",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your.email@airline.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your route, capacity, or representation objective.",
+      "success": "Thank you. Our GSSA team will review and respond shortly.",
+      "error": "The message could not be sent. Please email contact@goodmangls.com directly.",
+      "sending": "Sending…",
+      "send": "Send GSSA inquiry"
+    },
+    "footer": {
+      "titleLine1": "Korea cargo sales,",
+      "titleLine2": "represented with discipline.",
+      "lead": "Goodman GLS supports airlines with cargo GSSA representation, local market intelligence, and transparent commercial execution in Korea.",
+      "cta": "Start a GSSA conversation",
+      "companyHeading": "Company",
+      "servicesHeading": "Capabilities",
+      "links": {
+        "about": "Company",
+        "network": "Network",
+        "partnerHub": "Partner hub",
+        "sales": "Cargo sales representation",
+        "pricing": "Yield & pricing",
+        "capacity": "Capacity operations",
+        "intelligence": "Market reporting",
+        "logistics": "Goodman GLS logistics",
+        "privacy": "Privacy",
+        "terms": "Terms"
+      },
+      "copyright": "© 2026 GOODMAN GLS. All rights reserved.",
+      "tagline": "Premium cargo GSSA representation in Korea."
     }
   },
   "servicesPage": {
@@ -169,6 +252,40 @@
       "label": "Looking for integrated logistics?",
       "body": "Goodman also delivers air, ocean, road, customs, and warehousing as an integrated logistics provider.",
       "cta": "Visit Goodman GLS"
+    }
+  },
+  "pages": {
+    "company": {
+      "heroEyebrow": "Company",
+      "heroTitleLine1": "Small giant.",
+      "heroTitleLine2": "Serious execution.",
+      "heroLead": "Goodman GLS is a Korea-based aviation sales and logistics organization focused on practical execution: airline representation, cargo sales, and market development with senior air-cargo leadership.",
+      "heritageEyebrow": "Heritage",
+      "heritageTitle": "Built step by step in Korea’s air-cargo market",
+      "timeline": {
+        "2014": {
+          "milestone": "Goodman GLS established",
+          "desc": "Founded in Korea with a focus on reliable air logistics service and customer-first execution."
+        },
+        "2015": {
+          "milestone": "Air cargo sales foundation",
+          "desc": "Expanded relationships with airlines, forwarders, and Korean cargo accounts."
+        },
+        "2018": {
+          "milestone": "GSA/CSA capability strengthened",
+          "desc": "Built dedicated airline representation routines across sales, operations, and reporting."
+        },
+        "2020": {
+          "milestone": "Resilient cargo response",
+          "desc": "Supported urgent and time-sensitive cargo flows during a volatile global aviation market."
+        },
+        "2025": {
+          "milestone": "Premium cargo GSSA focus",
+          "desc": "Sharpened the Goodman GSSA proposition around Korea market entry, sales coverage, yield discipline, and global GSSA standards."
+        }
+      },
+      "teamTitleLine1": "Senior cargo minds,",
+      "teamTitleLine2": "hands-on market coverage"
     }
   }
 }
