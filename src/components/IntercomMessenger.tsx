@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import Intercom from '@intercom/messenger-js-sdk';
 import { useLocale } from 'next-intl';
-import { buildIntercomSettings, INTERCOM_APP_ID } from '@/lib/intercom';
+import { buildIntercomSettings, INTERCOM_APP_ID, type Locale } from '@/lib/intercom';
 
 /**
  * Boots the Intercom Messenger on the client for anonymous visitors and keeps
@@ -17,7 +17,7 @@ import { buildIntercomSettings, INTERCOM_APP_ID } from '@/lib/intercom';
  * issues an `update`, which does not restart a shut-down session.
  */
 export default function IntercomMessenger() {
-  const locale = useLocale();
+  const locale = useLocale() as Locale;
 
   useEffect(() => {
     if (!INTERCOM_APP_ID) return;

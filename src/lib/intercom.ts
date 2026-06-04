@@ -1,4 +1,4 @@
-import type { Locale } from '@/lib/i18n-messages';
+export type Locale = 'en' | 'ko';
 
 export const INTERCOM_APP_ID =
   process.env.NEXT_PUBLIC_INTERCOM_APP_ID ?? 'k5z51xs2';
