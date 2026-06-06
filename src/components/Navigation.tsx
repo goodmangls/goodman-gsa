@@ -107,7 +107,7 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex items-center gap-4">
               <Link
-                href="#contact"
+                href="/#contact"
                 className={
                   isHeroNav
                     ? 'btn-pill-ghost !py-3 !px-5'
@@ -116,7 +116,7 @@ export default function Navigation() {
               >
                 {t('nav.contactSales')}
               </Link>
-              <Link href="#contact" className="btn-pill-primary">
+              <Link href="/#contact" className="btn-pill-primary">
                 {t('nav.getStarted')}
               </Link>
             </div>
@@ -171,14 +171,14 @@ export default function Navigation() {
               ))}
               <hr className="border-hairline" />
               <Link
-                href="#contact"
+                href="/#contact"
                 className="btn-pill-primary w-full py-4 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('nav.getStarted')}
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="btn-pill-secondary w-full py-4 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >

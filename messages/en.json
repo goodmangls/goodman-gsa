@@ -285,7 +285,190 @@
         }
       },
       "teamTitleLine1": "Senior cargo minds,",
-      "teamTitleLine2": "hands-on market coverage"
+      "teamTitleLine2": "hands-on market coverage",
+      "leadership": {
+        "eyebrow": "Leadership Insight",
+        "quote": "Small Giant, Big Impact. That's our North Star.",
+        "paragraph1": "Welcome to GOODMAN GLS. Since our founding in 2014, we have built our reputation on a simple principle: <strong>trust through action</strong>.",
+        "paragraph2": "As a focused cargo GSSA in Korea, we are positioned as the accountable bridge between global airlines and Korea's logistics market.",
+        "paragraph3": "Our team brings decades of air-cargo experience in time-critical freight, route development, and market execution. We understand that every shipment carries not just cargo, but our clients' reputation.",
+        "name": "Hyeon-Eok SHIN",
+        "title": "CEO & Founder",
+        "bio": "38+ years in air cargo; former executive at Korean Air & Asiana Airlines Cargo. Architect of the GOODMAN service model."
+      },
+      "team": {
+        "eyebrow": "The Experts",
+        "lead": "Our advantage is our team. We bring senior Korean air-freight market knowledge and hands-on execution discipline to protect your cargo revenue and reputation.",
+        "divisionLabel": "Division",
+        "expertiseLabel": "Core Expertise",
+        "profileCta": "View Profile",
+        "members": {
+          "changhee": {
+            "name": "Lee Chang-hee (이창희)",
+            "title": "Business Development Manager",
+            "department": "GSA/CSA Division",
+            "expertise": "Airline partnerships, route development",
+            "icon": "👔"
+          },
+          "minji": {
+            "name": "Kim Min-ji (김민지)",
+            "title": "Operations Director",
+            "department": "Air & Ocean Operations",
+            "expertise": "Supply chain optimization, customer service",
+            "icon": "⚡"
+          },
+          "seungho": {
+            "name": "Park Seung-ho (박승호)",
+            "title": "Project Cargo Specialist",
+            "department": "Special Projects",
+            "expertise": "Heavy-lift, multi-modal logistics",
+            "icon": "🏗️"
+          }
+        }
+      },
+      "values": {
+        "title": "Our Core Values",
+        "items": {
+          "trust": {
+            "value": "Trust",
+            "desc": "Earned through consistent delivery and total transparency."
+          },
+          "velocity": {
+            "value": "Velocity",
+            "desc": "Speed matters in time-critical logistics. We move faster."
+          },
+          "connectivity": {
+            "value": "Connectivity",
+            "desc": "Global reach through disciplined strategic partnerships."
+          }
+        }
+      }
+    },
+    "network": {
+      "hero": {
+        "eyebrow": "Global footprint",
+        "titleLine1": "World Reach.",
+        "titleLine2": "Local Depth.",
+        "lead": "Connected to the global GSSA ecosystem while staying deeply embedded in the Korean air-cargo market. Goodman GLS provides the local execution discipline airlines need to grow revenue in Korea."
+      },
+      "cards": {
+        "benchmarkLabel": "Benchmark",
+        "global": {
+          "name": "Global GSSA",
+          "fullName": "Worldwide standards for airline representation",
+          "desc": "Global GSSA leaders operate as specialist airline sales organizations: broad office networks, dedicated carrier mandates, disciplined reporting, and local teams that act as each airline’s salesforce. Goodman GLS brings that operating logic to Korea.",
+          "features": {
+            "f1": "Specialist cargo sales representation",
+            "f2": "Carrier-first mandate governance",
+            "f3": "Consistent reporting cadence"
+          }
+        },
+        "korea": {
+          "name": "Korea GSSA",
+          "fullName": "Local execution for a demanding cargo market",
+          "desc": "Korea’s GSSA landscape includes long-running aviation sales organizations such as Daejoo Air Group and PAA Group. Goodman GLS competes with a focused cargo-first model: Incheon market depth, senior air-cargo leadership, and accountable owner-operator execution.",
+          "features": {
+            "f1": "Incheon cargo-market coverage",
+            "f2": "Forwarder and shipper account depth",
+            "f3": "Clear separation from forwarding activity"
+          }
+        }
+      },
+      "advantage": {
+        "eyebrow": "The GSSA advantage",
+        "title": "Your Gateway to the Korean Market",
+        "lead": "We represent airlines with an owner-operator mindset. From local route development to disciplined sales reporting, we support airline cargo growth in the Northeast Asian corridor.",
+        "gsa": {
+          "title": "GSA (General Sales Agent)",
+          "body": "Market representation for airlines, coordinating sales development, local account coverage, and commercial execution with focused local expertise."
+        },
+        "csa": {
+          "title": "CSA (Cargo Sales Agent)",
+          "body": "Specialized cargo sales representation for airlines and logistics partners, connecting market demand with available capacity and service discipline."
+        }
+      },
+      "benchmarks": {
+        "label": "Market reference",
+        "ecs": {
+          "name": "ECS Group",
+          "routes": "Worldwide GSSA scale, office-network discipline, airline cargo sales specialization"
+        },
+        "kales": {
+          "name": "Kales Airline Services",
+          "routes": "Multi-country cargo GSSA coverage with carrier representation routines"
+        },
+        "atc": {
+          "name": "ATC Aviation Services",
+          "routes": "Cargo GSSA and management services positioned as a global salesforce"
+        },
+        "koreaRefs": {
+          "name": "Daejoo Air Group / PAA Group",
+          "routes": "Korea-based airline management outsourcing and GSSA market references"
+        }
+      },
+      "cta": "Explore Partnership Opportunities",
+      "ecosystem": {
+        "title": "Global Ecosystem",
+        "eyebrow": "Strategic network mindset",
+        "metric": "markets connected",
+        "body": "Through disciplined partner management and market coverage, we help airlines connect global cargo opportunities with Korean demand."
+      }
+    },
+    "legal": {
+      "privacy": {
+        "eyebrow": "Privacy",
+        "title": "Privacy Policy",
+        "lead": "This page summarizes how Goodman GLS handles website inquiries and business contact information.",
+        "sections": {
+          "information": {
+            "title": "Information we collect",
+            "body": "We may collect the name, email address, company details, and message contents submitted through our contact forms or direct business communications."
+          },
+          "use": {
+            "title": "How we use information",
+            "body": "We use submitted information to respond to inquiries, evaluate potential GSSA or logistics cooperation, and maintain appropriate business records."
+          },
+          "sharing": {
+            "title": "Sharing",
+            "body": "We do not sell personal information. We may share information only when required for inquiry handling, legal compliance, or authorized service operations."
+          },
+          "retention": {
+            "title": "Retention",
+            "body": "Business inquiry records are retained only as long as necessary for legitimate business, compliance, and dispute-resolution purposes."
+          },
+          "contact": {
+            "title": "Contact",
+            "body": "For privacy-related questions, please contact Goodman GLS through the published business contact channels on this website."
+          }
+        }
+      },
+      "terms": {
+        "eyebrow": "Terms",
+        "title": "Terms of Use",
+        "lead": "These terms provide general conditions for using the Goodman GLS website and initiating business inquiries.",
+        "sections": {
+          "scope": {
+            "title": "Website scope",
+            "body": "The website introduces Goodman GLS capabilities and does not constitute a binding service offer, quotation, or agency appointment by itself."
+          },
+          "rfq": {
+            "title": "Inquiries and RFQs",
+            "body": "Rates, capacity, transit times, and service availability are subject to separate written confirmation based on shipment details and applicable regulations."
+          },
+          "compliance": {
+            "title": "Compliance",
+            "body": "All shipments and business discussions remain subject to lawful commodity declaration, sanctions screening, export/import controls, and carrier or customs requirements."
+          },
+          "liability": {
+            "title": "Liability",
+            "body": "Website information is provided for general business reference. Final responsibilities and liabilities are governed by applicable contracts and standard trading conditions."
+          },
+          "contact": {
+            "title": "Contact",
+            "body": "Please contact Goodman GLS directly for formal quotations, service terms, or partnership discussions."
+          }
+        }
+      }
     }
   }
 }

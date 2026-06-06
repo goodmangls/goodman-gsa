@@ -1,7 +1,7 @@
 export type Locale = 'en' | 'ko';
 
-export const INTERCOM_APP_ID =
-  process.env.NEXT_PUBLIC_INTERCOM_APP_ID ?? 'k5z51xs2';
+const RAW_INTERCOM_APP_ID = process.env.NEXT_PUBLIC_INTERCOM_APP_ID?.trim() ?? '';
+export const INTERCOM_APP_ID: string | null = RAW_INTERCOM_APP_ID.length > 0 ? RAW_INTERCOM_APP_ID : null;
 
 /** Distance from viewport edges (Intercom minimum: 20). */
 export const INTERCOM_LAUNCHER_PADDING = 24;
@@ -27,10 +27,12 @@ export type IntercomBootSettings = {
 
 /**
  * Boot settings for the Intercom Messenger. The messenger UI follows the
- * site's EN/KO toggle: re-invoking `Intercom()` with a new `language_override`
- * swaps the messenger locale on the fly (no reboot needed).
+ * site's EN/KO toggle. Returns null when NEXT_PUBLIC_INTERCOM_APP_ID is not
+ * configured, so preview builds never boot an unintended workspace.
  */
-export function buildIntercomSettings(locale: Locale): IntercomBootSettings {
+export function buildIntercomSettings(locale: Locale): IntercomBootSettings | null {
+  if (!INTERCOM_APP_ID) return null;
+
   return {
     app_id: INTERCOM_APP_ID,
     alignment: 'right',

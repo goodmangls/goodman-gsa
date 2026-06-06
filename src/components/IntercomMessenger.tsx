@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import Intercom from '@intercom/messenger-js-sdk';
 import { useLocale } from 'next-intl';
-import { buildIntercomSettings, INTERCOM_APP_ID, type Locale } from '@/lib/intercom';
+import { buildIntercomSettings, type Locale } from '@/lib/intercom';
 
 /**
  * Boots the Intercom Messenger on the client for anonymous visitors and keeps
@@ -20,8 +20,9 @@ export default function IntercomMessenger() {
   const locale = useLocale() as Locale;
 
   useEffect(() => {
-    if (!INTERCOM_APP_ID) return;
-    Intercom(buildIntercomSettings(locale));
+    const settings = buildIntercomSettings(locale);
+    if (!settings) return;
+    Intercom(settings);
   }, [locale]);
 
   return null;
