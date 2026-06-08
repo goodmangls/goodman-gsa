@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
-import ShareButton from './ShareButton';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/navigation';
 
@@ -123,13 +122,11 @@ export default function Navigation() {
             </div>
             <LocaleToggle isHeroNav={isHeroNav} />
             <ThemeToggle />
-            <ShareButton />
           </div>
 
           <div className="lg:hidden flex items-center gap-4">
             <LocaleToggle isHeroNav={isHeroNav} />
             <ThemeToggle />
-            <ShareButton />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`min-h-11 min-w-11 p-2 ${isHeroNav ? 'text-canvas-white' : 'text-ink'}`}

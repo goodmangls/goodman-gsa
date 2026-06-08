@@ -26,6 +26,24 @@ describe('site operational quality', () => {
     expect(intercom).toContain('string | null');
   });
 
+  it('does not expose the legacy share button in the primary navigation', () => {
+    const navigation = read('src/components/Navigation.tsx');
+    expect(navigation).not.toContain('ShareButton');
+    expect(navigation).not.toContain('<ShareButton />');
+  });
+
+  it('uses GSA-specific share metadata if share copy is retained', () => {
+    const enMessages = JSON.parse(read('messages/en.json'));
+    const koMessages = JSON.parse(read('messages/ko.json'));
+
+    expect(enMessages.common.shareTitle).toBe('GOODMAN GSA');
+    expect(enMessages.common.shareText).toContain('GOODMAN GSA');
+    expect(enMessages.common.shareText).not.toContain('GOODMAN GLS');
+    expect(koMessages.common.shareTitle).toContain('GOODMAN GSA');
+    expect(koMessages.common.shareText).toContain('GOODMAN GSA');
+    expect(koMessages.common.shareText).not.toContain('굿맨지엘에스');
+  });
+
   it('keeps locale-specific page copy in message catalogs instead of page components', () => {
     const companyPage = read('src/app/[locale]/company/page.tsx');
     const networkPage = read('src/app/[locale]/network/page.tsx');
