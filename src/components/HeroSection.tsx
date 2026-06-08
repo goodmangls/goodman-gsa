@@ -20,10 +20,12 @@ export default function HeroSection() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/50 to-obsidian/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-obsidian/55 to-obsidian/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_24%,rgba(188,113,85,0.38),transparent_25%),linear-gradient(90deg,transparent_0,transparent_48%,rgba(255,255,255,0.12)_49%,transparent_50%)] bg-[length:auto,72px_72px] opacity-80" />
       </div>
 
       <div className="container-wide relative z-10 w-full">
+        <div className="grid items-end gap-10 lg:grid-cols-[minmax(0,1fr)_390px]">
         <div className="max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -68,6 +70,43 @@ export default function HeroSection() {
               {t('home.hero.ctaSecondary')}
             </Link>
           </motion.div>
+        </div>
+
+        <motion.aside
+          aria-label="GOODMAN GSA premium airline sales desk"
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.45 }}
+          className="hidden rounded-[34px] border border-canvas-white/20 bg-canvas-white/[0.07] p-6 shadow-2xl shadow-obsidian/40 backdrop-blur-md lg:block"
+        >
+          <div className="mb-7 flex items-start justify-between gap-4">
+            <div>
+              <p className="caption text-canvas-white/50">AIRLINE SALES DESK</p>
+              <p className="mt-2 text-2xl font-bold leading-tight text-canvas-white">Premium Korea GSSA mandate</p>
+            </div>
+            <span className="rounded-full border border-desert-sienna/70 px-3 py-1 text-xs font-bold text-canvas-white">GSA</span>
+          </div>
+
+          <div className="rounded-[26px] border border-canvas-white/15 bg-obsidian/65 p-5">
+            <div className="mb-5 flex items-center justify-between">
+              <span className="caption text-canvas-white/45">ICN</span>
+              <span className="h-px flex-1 bg-gradient-to-r from-desert-sienna via-canvas-white/50 to-desert-sienna mx-4" />
+              <span className="caption text-canvas-white/45">GLOBAL</span>
+            </div>
+            <div className="grid gap-3">
+              {[
+                ['Sales coverage', 'Forwarder demand'],
+                ['Yield guardrail', 'Rate discipline'],
+                ['Capacity rhythm', 'Every kilo visible'],
+              ].map(([label, value]) => (
+                <div key={label} className="rounded-2xl border border-canvas-white/10 bg-canvas-white/[0.06] p-4">
+                  <p className="caption text-desert-sienna">{label}</p>
+                  <p className="mt-2 text-lg font-bold text-canvas-white">{value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.aside>
         </div>
       </div>
     </section>
