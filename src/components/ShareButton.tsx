@@ -47,8 +47,9 @@ export default function ShareButton() {
     <div className="relative inline-block">
       <button
         onClick={handleShare}
-        className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors border border-white/10 flex items-center justify-center group"
+        className="flex min-h-11 min-w-11 items-center justify-center rounded-full bg-white/10 p-2 transition-colors hover:bg-white/20 border border-white/10 group"
         title={t('share')}
+        aria-label={t('share')}
       >
         <Share2 className="w-5 h-5 text-ink group-hover:scale-110 transition-transform" />
       </button>

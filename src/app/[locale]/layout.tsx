@@ -29,16 +29,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
  
   return {
     title: {
-      template: '%s | GOODMAN GLS',
-      default: 'GOODMAN GLS - Premium Cargo GSSA in Korea'
+      template: '%s | GOODMAN GSA',
+      default: 'GOODMAN GSA - Premium Cargo GSSA in Korea'
     },
     description: t('lead'),
-    keywords: ['GSSA', 'Cargo GSSA', 'Korea Logistics', 'Air Freight Korea', 'Goodman GLS'],
+    keywords: ['GSSA', 'Cargo GSSA', 'Korea Logistics', 'Air Freight Korea', 'Goodman GSA'],
     openGraph: {
-      title: 'GOODMAN GLS',
+      title: 'GOODMAN GSA',
       description: t('lead'),
       url: 'https://goodman-gsa.vercel.app',
-      siteName: 'GOODMAN GLS',
+      siteName: 'GOODMAN GSA',
       locale: locale === 'ko' ? 'ko_KR' : 'en_US',
       type: 'website',
     },
