@@ -23,14 +23,39 @@ export default async function ServicesShowcase() {
           </p>
         </div>
 
-        <div className="feature-stack max-w-4xl">
-          {serviceKeys.map((key) => (
-            <div key={key} className="feature-stack-item">
-              <h3 className="headline text-canvas-white mb-2">{t(`items.${key}.name`)}</h3>
-              <p className="caption text-canvas-white/50 mb-4">{t(`items.${key}.tagline`)}</p>
-              <p className="body-default text-canvas-white/75">{t(`items.${key}.description`)}</p>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
+          <div className="feature-stack max-w-4xl">
+            {serviceKeys.map((key) => (
+              <div key={key} className="feature-stack-item">
+                <h3 className="headline text-canvas-white mb-2">{t(`items.${key}.name`)}</h3>
+                <p className="caption text-canvas-white/50 mb-4">{t(`items.${key}.tagline`)}</p>
+                <p className="body-default text-canvas-white/75">{t(`items.${key}.description`)}</p>
+              </div>
+            ))}
+          </div>
+
+          <aside
+            aria-label="GSSA commercial operating rhythm"
+            className="rounded-[32px] border border-canvas-white/15 bg-canvas-white/[0.06] p-6 shadow-2xl shadow-obsidian/30"
+          >
+            <p className="caption text-canvas-white/45">COMMERCIAL RHYTHM</p>
+            <div className="mt-6 grid gap-4">
+              {[
+                ['01', 'Sales pipeline'],
+                ['02', 'Yield decision'],
+                ['03', 'Space control'],
+                ['04', 'HQ reporting'],
+              ].map(([step, label]) => (
+                <div key={step} className="flex items-center justify-between rounded-2xl border border-canvas-white/10 bg-obsidian/55 px-4 py-3">
+                  <span className="caption text-desert-sienna">{step}</span>
+                  <span className="text-sm font-bold text-canvas-white/85">{label}</span>
+                </div>
+              ))}
             </div>
-          ))}
+            <p className="body-sm mt-7 text-canvas-white/60">
+              Carrier-first governance keeps sales activity, pricing discipline, and capacity visibility in one premium mandate.
+            </p>
+          </aside>
         </div>
 
         {/* Cross-promo to the sister integrated-logistics site. Link is dormant
