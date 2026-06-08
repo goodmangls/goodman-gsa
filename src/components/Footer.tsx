@@ -77,7 +77,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="body-sm font-bold text-canvas-white hover:text-canvas-white/70 transition-colors"
+                    className="body-sm inline-flex min-h-11 items-center font-bold text-canvas-white hover:text-canvas-white/70 transition-colors"
                   >
                     {t(`home.footer.links.${link.key}`)}
                   </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="body-sm font-bold text-canvas-white hover:text-canvas-white/70 transition-colors"
+                    className="body-sm inline-flex min-h-11 items-center font-bold text-canvas-white hover:text-canvas-white/70 transition-colors"
                   >
                     {t(`home.footer.links.${link.key}`)}
                   </Link>
@@ -105,7 +105,7 @@ export default function Footer() {
                 href={logisticsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="body-sm font-bold text-canvas-white/55 hover:text-canvas-white transition-colors inline-block mt-6"
+                className="body-sm inline-flex min-h-11 items-center text-canvas-white/55 hover:text-canvas-white transition-colors font-bold mt-6"
               >
                 {t('home.footer.links.logistics')} ↗
               </a>
@@ -120,7 +120,7 @@ export default function Footer() {
                 <Link
                   key={link.key}
                   href={link.href}
-                  className="body-sm text-canvas-white/50 hover:text-canvas-white font-semibold transition-colors"
+                  className="body-sm inline-flex min-h-11 items-center text-canvas-white/50 hover:text-canvas-white font-semibold transition-colors"
                 >
                   {t(`home.footer.links.${link.key}`)}
                 </Link>
