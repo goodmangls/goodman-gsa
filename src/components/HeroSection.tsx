@@ -61,12 +61,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
           >
-            <Link href="#contact" className="btn-pill-primary">
+            <Link href="#contact" className="btn-pill-primary w-full sm:w-auto justify-center">
               {t('home.hero.ctaPrimary')}
             </Link>
-            <Link href="/network" className="btn-pill-ghost">
+            <Link href="/network" className="btn-pill-ghost w-full sm:w-auto justify-center">
               {t('home.hero.ctaSecondary')}
             </Link>
           </motion.div>
