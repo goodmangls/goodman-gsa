@@ -2,8 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Link } from '@/navigation';
+import PageHeroBackground from '@/components/PageHeroBackground';
 import DisplayLines from '@/components/DisplayLines';
 import { useTranslations } from 'next-intl';
+import { getMenuHeroUnsplashImage } from '@/lib/unsplash';
 
 const networkKeys = ['global', 'korea'] as const;
 const featureKeys = ['f1', 'f2', 'f3'] as const;
@@ -11,10 +13,12 @@ const benchmarkKeys = ['ecs', 'kales', 'atc', 'koreaRefs'] as const;
 
 export default function NetworkPage() {
   const t = useTranslations('pages.network');
+  const heroImage = getMenuHeroUnsplashImage('network');
 
   return (
     <main className="bg-canvas min-h-screen">
-      <section className="page-hero">
+      <section className="page-hero with-menu-hero-bg">
+        <PageHeroBackground image={heroImage} />
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -25,9 +29,9 @@ export default function NetworkPage() {
             <DisplayLines
               as="h1"
               lines={[t('hero.titleLine1'), t('hero.titleLine2')]}
-              className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter"
+              className="display-xl text-canvas-white mb-10 leading-[0.85] tracking-tighter"
             />
-            <p className="body-lg text-muted max-w-2xl">
+            <p className="body-lg text-canvas-white/78 max-w-2xl">
               {t('hero.lead')}
             </p>
           </motion.div>

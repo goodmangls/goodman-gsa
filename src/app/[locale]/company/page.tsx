@@ -1,8 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import PageHeroBackground from '@/components/PageHeroBackground';
 import DisplayLines from '@/components/DisplayLines';
 import { useTranslations } from 'next-intl';
+import { getMenuHeroUnsplashImage } from '@/lib/unsplash';
 
 const teamKeys = ['changhee', 'minji', 'seungho'] as const;
 const timelineYears = ['2014', '2015', '2018', '2020', '2025'] as const;
@@ -10,10 +12,12 @@ const valueKeys = ['trust', 'velocity', 'connectivity'] as const;
 
 export default function CompanyPage() {
   const t = useTranslations('pages.company');
+  const heroImage = getMenuHeroUnsplashImage('company');
 
   return (
     <main className="bg-canvas min-h-screen">
-      <section className="page-hero bg-canvas border-b border-hairline">
+      <section className="page-hero with-menu-hero-bg">
+        <PageHeroBackground image={heroImage} />
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,9 +28,9 @@ export default function CompanyPage() {
             <DisplayLines
               as="h1"
               lines={[t('heroTitleLine1'), t('heroTitleLine2')]}
-              className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter"
+              className="display-xl text-canvas-white mb-10 leading-[0.85] tracking-tighter"
             />
-            <p className="body-lg text-muted max-w-xl">{t('heroLead')}</p>
+            <p className="body-lg text-canvas-white/78 max-w-xl">{t('heroLead')}</p>
           </motion.div>
         </div>
       </section>
