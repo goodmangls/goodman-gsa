@@ -39,9 +39,15 @@ describe('approved Unsplash image pool', () => {
     };
 
     expect(Object.values(menuImages).map((image) => image.topic)).toEqual(['global', 'terminal', 'airline']);
+    expect(Object.values(menuImages).map((image) => image.id)).toEqual([
+      'gsa-company-premium-gate-operations',
+      'gsa-services-premium-terminal-front',
+      'gsa-network-premium-airline-flight',
+    ]);
 
     for (const image of Object.values(menuImages)) {
       expect(image.brandUse).toBe('approved-menu-hero-candidate');
+      expect(image.selectionNote.toLowerCase()).toContain('premium fixed curation');
       expect(image.src).toContain('images.unsplash.com');
       expect(image.unsplashUrl).toContain('utm_source=goodman_gsa');
       expect(image.downloadLocation).toContain('/download');
