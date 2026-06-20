@@ -5,23 +5,44 @@ import { Link } from '@/navigation';
 import Image from 'next/image';
 import DisplayLines from './DisplayLines';
 import { useTranslations } from 'next-intl';
+import { getHeroUnsplashImages } from '@/lib/unsplash';
 
 export default function HeroSection() {
   const t = useTranslations();
+  const heroImages = getHeroUnsplashImages();
+
   return (
     <section className="relative hero-spacing overflow-hidden">
-      {/* Full-bleed imagery */}
+      {/* Full-bleed approved Unsplash imagery */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?q=80&w=2940&auto=format&fit=crop"
-          alt="Cargo aircraft on approach"
-          fill
-          className="object-cover object-center"
-          priority
-          sizes="100vw"
-        />
+        {heroImages.map((image, index) => (
+          <Image
+            key={image.id}
+            src={image.src}
+            alt={image.alt}
+            fill
+            className="ks-hero-bg-slide object-cover object-center"
+            priority={index === 0}
+            sizes="100vw"
+            data-unsplash-topic={image.topic}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian/95 via-obsidian/55 to-obsidian/20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_24%,rgba(188,113,85,0.38),transparent_25%),linear-gradient(90deg,transparent_0,transparent_48%,rgba(255,255,255,0.12)_49%,transparent_50%)] bg-[length:auto,72px_72px] opacity-80" />
+        <div className="ks-hero-bg-attribution">
+          {heroImages.map((image, index) => (
+            <span key={image.id} className="ks-hero-bg-credit" style={{ animationDelay: `${index * 6}s` }}>
+              Photo:{' '}
+              <a href={image.photographerUrl} target="_blank" rel="noreferrer">
+                {image.photographer}
+              </a>{' '}
+              on{' '}
+              <a href={image.unsplashUrl} target="_blank" rel="noreferrer">
+                Unsplash
+              </a>
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="container-wide relative z-10 w-full">
