@@ -1,9 +1,10 @@
 export type UnsplashTopic = 'air-cargo' | 'airline' | 'global' | 'terminal';
+export type MenuHeroPage = 'company' | 'services' | 'network';
 
 export type UnsplashImage = {
   id: string;
   topic: UnsplashTopic;
-  brandUse: 'approved-hero-candidate' | 'approved-section-candidate';
+  brandUse: 'approved-hero-candidate' | 'approved-menu-hero-candidate' | 'approved-section-candidate';
   selectionNote: string;
   alt: string;
   src: string;
@@ -90,6 +91,57 @@ export const approvedUnsplashImages: UnsplashImage[] = [
     unsplashUrl: `https://unsplash.com/photos/airport-cargo-terminal?${utm}`,
     downloadLocation: 'https://api.unsplash.com/photos/gsa-terminal-section/download',
   },
+  {
+    id: 'gsa-company-menu-global-route',
+    topic: 'global',
+    brandUse: 'approved-menu-hero-candidate',
+    selectionNote: 'Premium global route context for company credibility and airline partner confidence.',
+    alt: 'Global aviation route network for GOODMAN GSA company profile',
+    src: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=84&w=2200&auto=format&fit=crop&crop=entropy',
+    smallSrc: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=72&w=960&auto=format&fit=crop&crop=entropy',
+    width: 2400,
+    height: 1600,
+    color: '#1c2630',
+    blurHash: 'L35O{Yt700WB~qWBt7Rj4nWB?bof',
+    photographer: 'Unsplash Contributor',
+    photographerUrl: `https://unsplash.com/${utm}`,
+    unsplashUrl: `https://unsplash.com/photos/global-air-cargo-network?${utm}`,
+    downloadLocation: 'https://api.unsplash.com/photos/gsa-company-menu-global-route/download',
+  },
+  {
+    id: 'gsa-services-menu-terminal',
+    topic: 'terminal',
+    brandUse: 'approved-menu-hero-candidate',
+    selectionNote: 'Airport terminal operations image for service capability and execution detail.',
+    alt: 'Airport cargo terminal operations for GOODMAN GSA service capabilities',
+    src: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=84&w=2200&auto=format&fit=crop&crop=entropy',
+    smallSrc: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=72&w=960&auto=format&fit=crop&crop=entropy',
+    width: 2200,
+    height: 1467,
+    color: '#2b3138',
+    blurHash: 'L16kRjRj00M{~qM{t7t74nRj?bWB',
+    photographer: 'Unsplash Contributor',
+    photographerUrl: `https://unsplash.com/${utm}`,
+    unsplashUrl: `https://unsplash.com/photos/airport-cargo-terminal?${utm}`,
+    downloadLocation: 'https://api.unsplash.com/photos/gsa-services-menu-terminal/download',
+  },
+  {
+    id: 'gsa-network-menu-airline',
+    topic: 'airline',
+    brandUse: 'approved-menu-hero-candidate',
+    selectionNote: 'Clean aircraft visual for GSSA network and airline representation pages.',
+    alt: 'Commercial aircraft for GOODMAN GSA airline partner network',
+    src: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=84&w=2200&auto=format&fit=crop&crop=entropy',
+    smallSrc: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=72&w=960&auto=format&fit=crop&crop=entropy',
+    width: 2400,
+    height: 1600,
+    color: '#23313b',
+    blurHash: 'L36kPTof00WB~qofM{Rj4nM{?bWB',
+    photographer: 'Unsplash Contributor',
+    photographerUrl: `https://unsplash.com/${utm}`,
+    unsplashUrl: `https://unsplash.com/photos/airline-partnership?${utm}`,
+    downloadLocation: 'https://api.unsplash.com/photos/gsa-network-menu-airline/download',
+  },
 ];
 
 export function getHeroUnsplashImages(): UnsplashImage[] {
@@ -106,4 +158,23 @@ export function getHeroUnsplashImages(): UnsplashImage[] {
 
     return image;
   });
+}
+
+const menuHeroTopics: Record<MenuHeroPage, UnsplashTopic> = {
+  company: 'global',
+  services: 'terminal',
+  network: 'airline',
+};
+
+export function getMenuHeroUnsplashImage(page: MenuHeroPage): UnsplashImage {
+  const topic = menuHeroTopics[page];
+  const image = approvedUnsplashImages.find(
+    (candidate) => candidate.topic === topic && candidate.brandUse === 'approved-menu-hero-candidate',
+  );
+
+  if (!image) {
+    throw new Error(`Missing approved GOODMAN GSA menu hero image for page: ${page}`);
+  }
+
+  return image;
 }

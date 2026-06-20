@@ -2,9 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { Link } from '@/navigation';
+import PageHeroBackground from '@/components/PageHeroBackground';
 import DisplayLines from '@/components/DisplayLines';
 import { useTranslations } from 'next-intl';
 import { getLogisticsSiteUrl } from '@/lib/site-links';
+import { getMenuHeroUnsplashImage } from '@/lib/unsplash';
 
 const itemKeys = ['sales', 'pricing', 'capacity', 'intelligence'] as const;
 const featureKeys = ['f1', 'f2', 'f3', 'f4'] as const;
@@ -12,11 +14,13 @@ const featureKeys = ['f1', 'f2', 'f3', 'f4'] as const;
 export default function ServicesPage() {
   const t = useTranslations();
   const logisticsUrl = getLogisticsSiteUrl();
+  const heroImage = getMenuHeroUnsplashImage('services');
 
   return (
     <main className="bg-canvas min-h-screen">
       {/* Page Hero */}
-      <section className="page-hero">
+      <section className="page-hero with-menu-hero-bg">
+        <PageHeroBackground image={heroImage} />
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,10 +28,10 @@ export default function ServicesPage() {
             className="max-w-5xl"
           >
             <span className="eyebrow mb-6">{t('servicesPage.hero.eyebrow')}</span>
-            <h1 className="display-xl text-ink mb-10 leading-[0.85] tracking-tighter">
+            <h1 className="display-xl text-canvas-white mb-10 leading-[0.85] tracking-tighter">
               {t('servicesPage.hero.title')}
             </h1>
-            <p className="body-lg text-muted max-w-2xl">
+            <p className="body-lg text-canvas-white/78 max-w-2xl">
               {t('servicesPage.hero.lead')}
             </p>
           </motion.div>
